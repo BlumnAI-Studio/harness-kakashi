@@ -150,16 +150,23 @@ document.addEventListener('click', (ev) => {
     return;
   }
 
-  // skip if explicit new-window or no href
+  // explicit opt-out: clicking modal's own "↗ raw" / "GitHub" link with rel=noopener
+  // (these set rel attribute, so check rel)
+  if (a.rel && a.rel.includes('noopener') && a.target === '_blank') return;
+
   const href = a.getAttribute('href');
   if (!href) return;
-  if (a.target === '_blank') return;
   if (href.startsWith('#')) return;
   if (/^(mailto:|tel:|javascript:)/i.test(href)) return;
 
   // .md target detection (works for relative and absolute paths)
+  // .md links are ALWAYS intercepted — even with target="_blank" — because
+  // raw .md is unreadable on Pages. Users can click "↗ raw" inside the modal.
   const stripQuery = href.split('#')[0].split('?')[0];
-  if (!/\.md$/.test(stripQuery)) return;
+  if (!/\.md$/.test(stripQuery)) {
+    // for non-md, respect target="_blank"
+    return;
+  }
 
   // resolve to repo-relative path
   const repoRel = toRepoRel(href, location.href);
