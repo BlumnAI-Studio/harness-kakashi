@@ -222,8 +222,10 @@ async function renderFoot() {
 // ── boot ────────────────────────────────────────────────────────────────────
 window.addEventListener('hashchange', route);
 window.addEventListener('DOMContentLoaded', async () => {
-  // Preload wikilink index in background — does not block first paint.
-  preloadWikilinks().catch(err => console.warn('wikilink preload', err));
+  // Wikilink index must load before first render so [[name]] resolves.
+  // Indexes are small (~30KB total) — wait inline rather than show broken links.
   renderFoot();
+  try { await preloadWikilinks(); }
+  catch (err) { console.warn('wikilink preload', err); }
   route();
 });
