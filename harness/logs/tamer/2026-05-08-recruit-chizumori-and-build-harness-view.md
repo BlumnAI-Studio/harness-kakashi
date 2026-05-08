@@ -130,7 +130,26 @@ worldview   : 6 chars / 6 jutsu
 - 뷰 dashboard에 mermaid 다이어그램 추가 (전체 에이전트 협업도)
 - bilingual EN 자동 채우기 — 현재는 ko 텍스트가 en 슬롯에도 들어감
 - `data/news.json` 자동 합성 모드 — git tag/log 기반으로 highlights 자동 생성
-- 첫 정식 배포: `git tag doc-v1.6.0 && git push --tags` 후 Pages URL 확인
+
+## 첫 배포 실행 — 학습 흡수 (2026-05-08 16:42~16:46)
+
+`doc-v1.6.0` 태그 푸시로 첫 자동 배포 시도. 3종 실패 → 수정 → 성공:
+
+| Run | 결과 | 실패 원인 | 수정 |
+|-----|------|----------|------|
+| 1차 (tag) | build OK / deploy 거부 | github-pages 환경 정책 default(main only)가 태그 거부 | `deployment_branch_policy`를 custom으로 + `doc-v*` 태그 정책 추가 |
+| 1차 (rerun) | build OK / deploy 실패 | Pages source가 `legacy` | `gh api -X PUT .../pages -f build_type=workflow` |
+| 2차 (workflow_dispatch) | build OK / deploy 거부 | 환경 정책에 `main` 브랜치 미포함 | `main` 브랜치 정책 추가 |
+| 2차 (rerun) | ✅ 성공 / 그러나 _meta.json 404 | Jekyll이 `_` prefix 제외 | `.nojekyll` 추가 + dispatch |
+| 3차 (workflow_dispatch) | ✅ **완전 성공** | — | — |
+
+라이브 엔드포인트 검증 (모두 200 OK):
+- `/Home/harness-view/` (진입)
+- `/Home/harness-view/indexes/_meta.json` (sync 결과)
+- `/Home/harness-view/js/app.js` (모듈)
+- `/harness/agents/chizumori.md` (정적 원본 — 뷰가 `../../harness/...`로 fetch)
+
+이 학습은 [[chizumori]] §役 2 절차의 **사전 점검(pre-flight)** 단계와 트러블슈팅 사전에 흡수되어, 향후 새 저장소·첫 배포 시 자동 진단된다.
 
 ---
 
