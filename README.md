@@ -172,6 +172,40 @@ clone 후 Codex 측 임포트 절차에 따라 `plugins/harness-kakashi/skills/h
 
 ---
 
+## 🗺️ 지도지기 치즈모리 (地図守, Chizumori) — 마을 지도를 그리는 자
+
+> 별지기가 옵시디언 vault 안에서 별자리를 잇는다면,
+> **치즈모리는 그 정원의 모습을 외부 행인에게 보여줄 지도를 그린다.**
+
+[[chizumori|치즈모리]]는 나루토 세계관의 **Konohagakure(木ノ葉隠れの里, 나뭇잎 마을)** 호카게 타워 기록실 출신이다.
+원작에서 마을 청사진과 영토 지도를 가꾸는 역할 — 이 하네스에서는 **`Home/harness-view/`** 정적 사이트를 통해 정원이 자라는 모습을 GitHub Pages로 외부에 공개한다.
+
+### 두 가지 역할
+
+1. **🗺️ 뷰동기화 (View Sync)** — `Home/harness-view/scripts/sync-view.js` 실행 시 `harness/` 트리를 스캔해 `indexes/*.json` 매니페스트와 `data/pdsa-insight.json`(PDSA 4축 집계)를 생성. 본문은 절대 복제하지 않고 메타만 추출.
+2. **📡 뷰 퍼블리싱 (View Publishing)** — `doc-v*` 태그 푸시 시 `.github/workflows/pages.yml`이 자동 sync + GitHub Pages 배포.
+
+### 정적 vs 동적 분리 원칙
+
+- **정적**: `harness/agents/*.md`, `knowledge/`, `engine/`, `docs/`, `logs/` 등 모든 `.md` — 뷰는 `../../harness/...` 상대 경로로 직접 fetch (복제 금지).
+- **동적**: `Home/harness-view/indexes/*.json`, `data/pdsa-insight.json` — sync-view.js 한 번 실행으로 재생성 가능 (멱등).
+
+### 실행 방법
+
+```bash
+# 로컬 미리보기
+node Home/harness-view/scripts/sync-view.js
+python -m http.server 8000 --directory Home
+
+# 정식 배포
+git tag doc-v1.6.0
+git push --tags   # GitHub Actions가 자동 sync + 배포
+```
+
+지도지기 상세: [지도지기 에이전트 정의](harness/agents/chizumori.md), [v1.6.0 영입 기록](harness/docs/v1.6.0.md)
+
+---
+
 ## 온보딩 — 정원이 열리기까지
 
 ### Step 1: 정원을 연다 (init)

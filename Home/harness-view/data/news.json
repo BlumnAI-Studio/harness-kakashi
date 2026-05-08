@@ -1,0 +1,53 @@
+{
+  "updatedAt": "2026-05-08",
+  "headline": {
+    "ko": "🗺️ 마을 지도가 열렸다 — 치즈모리 영입 (v1.6.0)",
+    "en": "The village map opened — Chizumori joined (v1.6.0)"
+  },
+  "narrative": {
+    "ko": "Konohagakure 출신 지도지기 치즈모리가 영입되었습니다. 정원이 자랄수록 이 지도(harness-view)도 갱신됩니다. PDSA는 sage-deming의 사상이고, 이 지도에서는 집계만 합니다.",
+    "en": "Chizumori, the map keeper from Konohagakure, has joined. As the garden grows, this map updates. PDSA is sage-deming's doctrine; the map only aggregates."
+  },
+  "highlights": [
+    {
+      "label": "v1.6.0",
+      "tone": "leaf",
+      "text": {
+        "ko": "지도지기 치즈모리 영입 + Home/harness-view 신설 + GitHub Pages 배포",
+        "en": "Chizumori recruited + Home/harness-view built + GitHub Pages deploy"
+      }
+    },
+    {
+      "label": "v1.5.0",
+      "tone": "star",
+      "text": {
+        "ko": "별지기 호시모리 영입 + 위키링크 별자리 일괄 적용",
+        "en": "Hoshimori recruited + wiki-link constellation applied"
+      }
+    },
+    {
+      "label": "v1.4.0",
+      "tone": "sage",
+      "text": {
+        "ko": "두꺼비 소환술 + 데밍 현자 영입 (PDSA 기본 평가)",
+        "en": "Toad summoning + Sage Deming recruited (PDSA base evaluation)"
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "tag": "지도지기",
+      "text": {
+        "ko": "치즈모리, 뷰동기화 해줘",
+        "en": "Chizumori, sync the view"
+      }
+    },
+    {
+      "tag": "퍼블리싱",
+      "text": {
+        "ko": "doc-v1.6.0 태그로 퍼블리싱",
+        "en": "Publish with doc-v1.6.0 tag"
+      }
+    }
+  ]
+}

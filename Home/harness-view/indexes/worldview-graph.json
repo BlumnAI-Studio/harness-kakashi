@@ -1,0 +1,84 @@
+{
+  "characters": [
+    {
+      "name": "나루토 (Naruto Uzumaki)",
+      "summary": "하네스를 사용하는 주체 — 사용자/세션을 대리한다. 직접 싸우는 닌자이자, 능력은 후천적으로 익힌다.",
+      "file": null,
+      "icon": "🥷",
+      "role": null
+    },
+    {
+      "name": "카카시 (Hatake Kakashi)",
+      "summary": "정원지기(tamer). 직접 싸우지 않고, 누구를 어디에 배치할지 안다. 사륜안으로 스킬을 복사한다.",
+      "file": "harness/agents/tamer.md",
+      "icon": "🥷",
+      "role": "tamer"
+    },
+    {
+      "name": "현자(賢者, Sage)",
+      "summary": "두꺼비 소환술로 불려나오는 과거의 거장. 데밍, 마틴 파울러, 코드 코덱… 한 명씩 영입된다.",
+      "file": "harness/agents/sage-*.md",
+      "icon": "🐸",
+      "role": "sage"
+    },
+    {
+      "name": "차크라 카카시 (Chakra Kakashi)",
+      "summary": "그림자 옵저버. 작업 중에는 끼어들지 않고, 끝난 뒤 토큰 사용을 감사한다.",
+      "file": null,
+      "icon": "🥷",
+      "role": "shadow"
+    },
+    {
+      "name": "호시모리 (星守, Hoshimori)",
+      "summary": "별지기. **Hoshigakure(星隠れの里, 별의 마을)** 출신의 별 수호자. 문서를 별로, 위키링크를 별자리로 본다. 옵시디언 vault에서 별빛을 잇는 자.",
+      "file": "harness/agents/hoshimori.md",
+      "icon": "🌟",
+      "role": "keeper"
+    },
+    {
+      "name": "치즈모리 (地図守, Chizumori)",
+      "summary": "지도지기. **Konohagakure(木ノ葉隠れの里, 나뭇잎 마을)** 호카게 타워의 기록실 출신. 마을이 자라는 모습을 지도(harness-view)로 그려 외부 행인에게 보여준다. 뷰 동기화·뷰 퍼블리싱 두 역을 가진다.",
+      "file": "harness/agents/chizumori.md",
+      "icon": "🗺️",
+      "role": "keeper"
+    }
+  ],
+  "jutsu": [
+    {
+      "name": "두꺼비 소환술",
+      "kanji": "口寄せの術 (Kuchiyose no Jutsu)",
+      "component": "현자 에이전트 호출 엔진 (`harness/engine/toad-summoning.md`)",
+      "caster": "나루토 (사용자/호출자)"
+    },
+    {
+      "name": "사륜안",
+      "kanji": "写輪眼 (Sharingan)",
+      "component": "스킬 복사 (Mode C: Kakashi Copy)",
+      "caster": "카카시 (tamer)"
+    },
+    {
+      "name": "분신술",
+      "kanji": "影分身の術 (Kage Bunshin)",
+      "component": "서브에이전트 병렬 소환 (Task tool)",
+      "caster": "모든 에이전트"
+    },
+    {
+      "name": "차크라",
+      "kanji": "チャクラ",
+      "component": "토큰 (input/output/cache)",
+      "caster": "모든 행위의 자원"
+    },
+    {
+      "name": "별 수련",
+      "kanji": "星修行 (Hoshi Shugyō)",
+      "component": "위키링크 별자리화 (Obsidian 그래프 점등)",
+      "caster": "호시모리 (별지기)"
+    },
+    {
+      "name": "지도술",
+      "kanji": "地図術 (Chizu Jutsu)",
+      "component": "정원의 현재 모습을 정적 사이트로 시각화·퍼블리싱 (harness-view + GitHub Pages)",
+      "caster": "치즈모리 (지도지기)"
+    }
+  ]
+}

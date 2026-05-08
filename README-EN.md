@@ -172,6 +172,40 @@ Constellation keeper details: [agent definition](harness/agents/hoshimori.md), [
 
 ---
 
+## 🗺️ Chizumori (地図守) — The Map Keeper Who Draws the Village
+
+> Where the Star Keeper threads the constellation inside an Obsidian vault,
+> **Chizumori draws the map shown to outsiders.**
+
+[[chizumori|Chizumori]] hails from the canonical Naruto location **Konohagakure (木ノ葉隠れの里, the Hidden Leaf Village)**, specifically the Hokage Tower's records archive.
+In this harness, Chizumori publishes the garden's current state as a static site at `Home/harness-view/`, deployed to GitHub Pages.
+
+### Two roles
+
+1. **🗺️ View Sync** — `Home/harness-view/scripts/sync-view.js` scans the `harness/` tree and emits `indexes/*.json` manifests + `data/pdsa-insight.json` (PDSA 4-axis aggregation). Bodies are never duplicated — only metadata is extracted.
+2. **📡 View Publishing** — Pushing a `doc-v*` tag triggers `.github/workflows/pages.yml`, which runs sync + deploys to GitHub Pages.
+
+### Static vs dynamic separation
+
+- **Static**: every `.md` under `harness/` — the view fetches them directly via `../../harness/...` (no duplication).
+- **Dynamic**: `indexes/*.json`, `data/pdsa-insight.json` — regenerated idempotently by sync-view.js.
+
+### How to run
+
+```bash
+# Local preview
+node Home/harness-view/scripts/sync-view.js
+python -m http.server 8000 --directory Home
+
+# Official release
+git tag doc-v1.6.0
+git push --tags   # GitHub Actions auto-syncs + deploys
+```
+
+Map keeper details: [agent definition](harness/agents/chizumori.md), [v1.6.0 recruitment log](harness/docs/v1.6.0.md)
+
+---
+
 ## Onboarding — until the garden opens
 
 ### Step 1: Open the garden (init)

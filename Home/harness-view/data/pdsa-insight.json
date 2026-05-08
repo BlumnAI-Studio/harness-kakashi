@@ -1,0 +1,46 @@
+{
+  "analyzedAt": "2026-05-08",
+  "windowDays": 14,
+  "sources": [
+    {
+      "date": "2026-05-08",
+      "category": "tamer",
+      "file": "harness/logs/tamer/2026-05-08-recruit-chizumori-and-build-harness-view.md",
+      "title": {
+        "ko": "지도지기 치즈모리 영입 & harness-view + GitHub Pages 신설",
+        "en": "지도지기 치즈모리 영입 & harness-view + GitHub Pages 신설"
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "category": "tamer",
+      "file": "harness/logs/tamer/2026-05-08-recruit-hoshimori-and-apply-wikilinks.md",
+      "title": {
+        "ko": "별지기 호시모리 영입 & 위키링크 일괄 적용",
+        "en": "별지기 호시모리 영입 & 위키링크 일괄 적용"
+      }
+    }
+  ],
+  "tried": [],
+  "solved": [
+    {
+      "ko": "[지도지기 치즈모리 영입 & harness-view + GitHub Pages 신설] 채택",
+      "en": "[지도지기 치즈모리 영입 & harness-view + GitHub Pages 신설] 채택"
+    },
+    {
+      "ko": "[별지기 호시모리 영입 & 위키링크 일괄 적용] 채택",
+      "en": "[별지기 호시모리 영입 & 위키링크 일괄 적용] 채택"
+    }
+  ],
+  "remaining": [],
+  "learned": {
+    "lead": {
+      "ko": "학습된 가설이 아직 모이지 않음.",
+      "en": "No learned hypothesis yet."
+    },
+    "body": {
+      "ko": "",
+      "en": ""
+    }
+  }
+}

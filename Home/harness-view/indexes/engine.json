@@ -1,0 +1,27 @@
+{
+  "base": "harness/engine",
+  "items": [
+    {
+      "id": "toad-summoning",
+      "file": "harness/engine/toad-summoning.md",
+      "name": "toad-summoning",
+      "title": "🐸 Toad Summoning Engine — 두꺼비 소환술",
+      "heading": "🐸 Toad Summoning Engine — 두꺼비 소환술",
+      "description": "과거의 거장(현자)을 도메인별로 소환해 그들의 사상을 작업에 적용하는 하네스의 비기. 영입된 현자만 호출 가능.",
+      "type": null,
+      "domain": null,
+      "village": null,
+      "status": "active",
+      "triggers": [
+        "현자 소환",
+        "현자 호출",
+        "두꺼비 소환술",
+        "소환술 발동",
+        "{현자명} 소환",
+        "summon sage"
+      ],
+      "size": 7145,
+      "modified": "2026-05-08T06:31:49"
+    }
+  ]
+}

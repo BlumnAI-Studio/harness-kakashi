@@ -1,0 +1,67 @@
+name: Deploy Harness View to GitHub Pages
+
+# 🗺️ 치즈모리(地図守, Chizumori) — 뷰 퍼블리싱
+# Triggers:
+#   - tag push matching doc-v*  (intentional release gate)
+#   - workflow_dispatch          (manual deploy)
+#
+# Steps:
+#   1. Checkout (full history for git stats)
+#   2. Run sync-view.js (regenerates indexes/ + pdsa-insight.json)
+#   3. Upload entire repo as artifact (so view can fetch ../../harness/...)
+#   4. Deploy to GitHub Pages
+
+on:
+  push:
+    tags:
+      - 'doc-v*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history for git contributor stats
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sync harness view (chizumori)
+        run: node Home/harness-view/scripts/sync-view.js
+        env:
+          CI: 'true'
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload the whole repo so the view can reach harness/, docs/, README.md
+          # via relative paths (../../harness/...). No duplication.
+          path: '.'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

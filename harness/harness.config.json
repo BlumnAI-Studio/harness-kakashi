@@ -3,7 +3,7 @@
   "$schemaVersion": "1.0.0",
   "name": "Kakashi's Harness",
   "description": "카카시 하네스 이용기록기(테스트겸)",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "agents": [
     "tamer",
     "performance-scout",
@@ -18,7 +18,8 @@
     "docfx-specialist",
     "roslyn-incremental-generator-specialist",
     "sage-deming",
-    "hoshimori"
+    "hoshimori",
+    "chizumori"
   ],
   "engine": [
     "toad-summoning"
@@ -43,6 +44,16 @@
       "exclude": ["plugins/**", "tmp/**", ".claude/**", "node_modules/**", "prompt/**"],
       "trigger": "doc-change",
       "doctrineDoc": "harness/knowledge/methodology/zettelkasten-llm-era.md"
+    },
+    "chizumori": {
+      "alwaysOn": false,
+      "viewRoot": "Home/harness-view",
+      "scope": ["harness/**/*.md", "docs/**/*.md", "README.md", "README-EN.md"],
+      "exclude": ["plugins/**", "tmp/**", ".claude/**", "node_modules/**", "prompt/**", "Home/harness-view/indexes/**", "Home/harness-view/data/pdsa-insight.json"],
+      "syncTrigger": "manual-or-pre-publish",
+      "publishTrigger": "tag:doc-v* | workflow_dispatch",
+      "deployTarget": "github-pages",
+      "principles": "static-as-reference, dynamic-in-sync"
     }
   },
   "created": "2026-04-19",
