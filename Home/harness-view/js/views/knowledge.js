@@ -1,6 +1,6 @@
 // knowledge.js — 지식 (Layer 1, 햇빛)
 import { h, mount } from '../utils/dom.js';
-import { loadIndex, loadMd, repoLink, renderMd } from '../utils/loader.js';
+import { loadIndex, loadMd, repoLink, renderMdRich } from '../utils/loader.js';
 
 export async function renderKnowledge({ view, sub }) {
   const idx = await loadIndex('knowledge');
@@ -47,7 +47,7 @@ async function renderDetail({ view, sub, item }) {
     h('span', { class: 'crumb' }, [h('span', {}, ' / 지식 / '), h('b', {}, item.title || item.id)]));
 
   const md = await loadMd(item.file);
-  view.appendChild(h('div', { class: 'md', html: renderMd(stripFrontmatter(md)) }));
+  view.appendChild(h('div', { class: 'md', html: renderMdRich(stripFrontmatter(md), item.file) }));
 }
 
 function stripFrontmatter(text) {

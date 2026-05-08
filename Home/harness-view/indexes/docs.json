@@ -133,16 +133,31 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 6513,
-      "modified": "2026-05-08T07:25:54"
+      "size": 7482,
+      "modified": "2026-05-08T07:44:34"
+    },
+    {
+      "id": "v1.6.1",
+      "file": "harness/docs/v1.6.1.md",
+      "name": "v1.6.1",
+      "title": "v1.6.1 — md 모달 뷰어 + 위키링크 자동 해석 + mermaid 지원",
+      "heading": "v1.6.1 — md 모달 뷰어 + 위키링크 자동 해석 + mermaid 지원",
+      "description": "**날짜**: 2026-05-08 **유형**: Patch (뷰 enhancement, 호환성 변경 없음)",
+      "type": null,
+      "domain": null,
+      "village": null,
+      "status": null,
+      "triggers": [],
+      "size": 3881,
+      "modified": "2026-05-08T07:57:28"
     }
   ],
   "contributors": [
     {
       "name": "psmon",
-      "commits": 8,
+      "commits": 10,
       "percent": 100
     }
   ],
-  "commitCount": 8
+  "commitCount": 10
 }

@@ -1,6 +1,6 @@
 // agents.js — 에이전트 카드 + 상세
 import { h, mount } from '../utils/dom.js';
-import { loadIndex, loadMd, repoLink, renderMd } from '../utils/loader.js';
+import { loadIndex, loadMd, repoLink, renderMdRich } from '../utils/loader.js';
 
 export async function renderAgents({ view, sub }) {
   const idx = await loadIndex('agents');
@@ -59,7 +59,7 @@ async function renderDetail({ view, sub, item }) {
     ]),
   ]));
 
-  view.appendChild(h('div', { class: 'md', html: renderMd(stripFrontmatter(md)) }));
+  view.appendChild(h('div', { class: 'md', html: renderMdRich(stripFrontmatter(md), item.file) }));
 }
 
 function stripFrontmatter(text) {

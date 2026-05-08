@@ -3,7 +3,7 @@
   "$schemaVersion": "1.0.0",
   "name": "Kakashi's Harness",
   "description": "카카시 하네스 이용기록기(테스트겸)",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "agents": [
     "tamer",
     "performance-scout",

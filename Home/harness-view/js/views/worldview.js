@@ -1,6 +1,6 @@
 // worldview.js — 나루토 세계관 캔바스
 import { h, mount } from '../utils/dom.js';
-import { loadIndex, loadMd, repoLink, renderMd } from '../utils/loader.js';
+import { loadIndex, loadMd, repoLink, renderMdRich } from '../utils/loader.js';
 
 export async function renderWorldview({ view }) {
   const [graph, md] = await Promise.all([
@@ -53,7 +53,7 @@ export async function renderWorldview({ view }) {
 
   if (md) {
     view.appendChild(h('div', { class: 'panel-title' }, '정전 본문'));
-    const body = h('div', { class: 'md', html: renderMd(stripFrontmatter(md)) });
+    const body = h('div', { class: 'md', html: renderMdRich(stripFrontmatter(md), 'harness/knowledge/lore/naruto-worldview.md') });
     view.appendChild(body);
   }
 }
