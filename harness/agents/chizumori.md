@@ -150,15 +150,49 @@ description: 지도지기 — Konohagakure 출신 마을 지도 수호자. harne
 ```
 1. 사용자 의도 확인:
    - "doc-v* 태그 푸시" — 자동 배포 (CI에 위임)
-   - "지금 배포해" — workflow_dispatch 수동 트리거
-2. 사전 점검:
+   - "지금 배포해" / "퍼블리싱" — workflow_dispatch 수동 트리거
+2. 사전 점검 (Pre-flight):
    - indexes/ 가 존재하는가? (없으면 役 1 먼저 실행)
    - _meta.json 의 builtAt이 1시간 이내인가? (오래되었으면 sync 권고)
    - .github/workflows/pages.yml 이 활성화되어 있는가?
-3. 태그 또는 dispatch 트리거
-4. CI 결과 모니터링 안내
-5. 배포 URL 보고 (예: https://psmon.github.io/harness-kakashi/Home/harness-view/)
+   - .nojekyll 파일이 저장소 root에 있는가? (없으면 _meta.json 등이 Jekyll에 의해 누락됨)
+3. GitHub Pages 설정 점검 (CRITICAL — 첫 배포 또는 새 저장소 시):
+   - `gh api repos/{owner}/{repo}/pages` 로 build_type 확인
+   - build_type이 "legacy"이면 → workflow로 전환:
+     `gh api -X PUT repos/{owner}/{repo}/pages -f build_type=workflow`
+   - github-pages 환경의 deployment_branch_policy 확인:
+     `gh api repos/{owner}/{repo}/environments/github-pages`
+   - default 정책(branch:main만 허용)이면 → 태그 허용으로 전환:
+     1) deployment_branch_policy 를 custom으로:
+        `gh api -X PUT .../environments/github-pages --input <<<'{"deployment_branch_policy":{"protected_branches":false,"custom_branch_policies":true}}'`
+     2) doc-v* 태그 패턴 추가:
+        `gh api -X POST .../environments/github-pages/deployment-branch-policies --input <<<'{"name":"doc-v*","type":"tag"}'`
+4. 태그 또는 workflow_dispatch 트리거
+5. CI 모니터링 — 실패 시 자동 진단:
+   - "not allowed to deploy ... environment protection rules" → Step 3의 환경 정책 누락
+   - "actions/deploy-pages ... source not configured" → Step 3의 build_type=workflow 누락
+   - artifact는 OK인데 _meta.json 404 → .nojekyll 누락
+   진단 후 수정 → `gh run rerun {run_id}` 로 재실행 (성공할 때까지 반복)
+6. 라이브 사이트 검증:
+   - 진입 URL HEAD 요청으로 200 확인
+   - indexes/_meta.json 200 확인 (Jekyll 회귀 방지)
+   - js/app.js 200 확인 (모듈 fetch 가능 확인)
+7. 배포 URL 보고
+   (예: https://psmon.github.io/harness-kakashi/Home/harness-view/)
 ```
+
+> **이 절차는 v1.6.0 첫 배포 시 실패 → 수정 → 성공의 실제 학습을 반영한 것이다.**
+> 첫 배포 실패 사유 3종 — Pages source가 legacy / 환경 보호 규칙 / Jekyll의 `_meta.json` 제외 — 은 모두 게이트로 사전 검증한다.
+
+#### 트러블슈팅 사전 (자주 만나는 실패 매핑)
+
+| 증상 | 원인 | 수정 |
+|------|------|------|
+| `Tag "doc-v*" is not allowed to deploy` | github-pages 환경 정책이 default | Step 3-2 두 명령으로 태그 허용 |
+| `actions/deploy-pages` 가 No Pages site found | Pages source가 legacy | Step 3-1 build_type=workflow |
+| 사이트 진입은 OK, `indexes/_meta.json` 404 | Jekyll이 `_` 파일 제외 | 저장소 root에 `.nojekyll` 추가 후 재배포 |
+| 빌드 OK인데 indexes/ 비어 있음 | sync-view.js가 CI에서 실행 안됨 | pages.yml 의 `Sync harness view` step 확인 |
+| 배포는 성공인데 빈 페이지 | `path: '.'` 미사용 | upload-pages-artifact path가 저장소 root여야 (../../로 fetch 위해) |
 
 ---
 
