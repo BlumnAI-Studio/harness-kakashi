@@ -147,3 +147,15 @@ description: 과거의 거장(현자)을 도메인별로 소환해 그들의 사
 - 영문 PDSA 정전: [`harness/knowledge/methodology/pdsa-deming.en.md`](../knowledge/methodology/pdsa-deming.en.md)
 - 기본 평가 운용: [`harness/knowledge/methodology/evaluation-base-pdsa.md`](../knowledge/methodology/evaluation-base-pdsa.md)
 - 첫 현자: [`harness/agents/sage-deming.md`](../agents/sage-deming.md)
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[naruto-worldview|🥷 세계관 매핑]] — 술법 카탈로그 등록
+- [[sage-deming|🐸 첫 현자 데밍]] — 영입된 첫 거장
+- [[pdsa-deming.en|📘 PDSA — Deming's Doctrine (English canon)]]
+- [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
+- [[tamer|🧑‍🌾 정원지기 카카시]] — 사륜안과 두꺼비 소환술의 관계
+- [[hoshimori|🌟 호시모리 (별지기)]] — 별 수련은 소환술과 다른 비기
+- [[v1.4.0|📝 v1.4.0 영입 기록]]

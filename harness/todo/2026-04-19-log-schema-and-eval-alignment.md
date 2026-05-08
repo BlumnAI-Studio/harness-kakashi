@@ -110,3 +110,12 @@ harness-build 로그 3건 모두 `trigger:` 없음 — SKILL.md 형식상 필수
 
 - 이 todo는 `/harness-build` 마더 생성기의 작업 범위. 배포판 수정 시 `plugins/` → `.claude/skills/` 동기화 절차 준수.
 - 기존 로그 retrofit은 선택 사항 — git 이력에 남으므로 새 스키마만 이후 로그에 강제해도 됨.
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
+- [[sage-deming|🐸 데밍 현자]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[hoshimori|🌟 호시모리 (별지기)]]

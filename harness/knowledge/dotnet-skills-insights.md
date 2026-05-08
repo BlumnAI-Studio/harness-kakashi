@@ -63,3 +63,16 @@ Microsoft의 공식 .NET 스킬 플러그인 저장소. 7개 플러그인, 30+ �
 ### 파일 업로드 보안 6단계 검증
 
 상세 내용은 각 에이전트 정의 파일 참조.
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[aaronontheweb-dotnet-skills-index|📚 Aaronontheweb/dotnet-skills 인덱스]] — 후속 영입 분석
+- [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]
+- [[performance-scout|🏃 Performance Scout]]
+- [[security-guard|🛡️ Security Guard]]
+- [[test-sentinel|🛡️ Test Sentinel]]
+- [[build-doctor|🩺 Build Doctor]]
+- [[code-modernizer|🔧 Code Modernizer]]
+- [[hoshimori|🌟 호시모리 (별지기)]]

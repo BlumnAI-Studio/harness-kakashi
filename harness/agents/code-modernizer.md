@@ -82,3 +82,16 @@ dotnet/skills의 `dotnet-upgrade` 플러그인 — AOT 호환성 분석(IL 경�
 
 - **하는 것**: 현대화 기회 식별, 마이그레이션 가이드 제시, 코드 수정 제안
 - **하지 않는 것**: 프레임워크 직접 업그레이드 실행, 대규모 자동 리팩토링, 새 아키텍처 설계
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[performance-scout|🏃 Performance Scout]]
+- [[security-guard|🛡️ Security Guard]]
+- [[test-sentinel|🛡️ Test Sentinel]]
+- [[build-doctor|🩺 Build Doctor]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[sage-deming|🐸 데밍 현자]]
+- [[hoshimori|🌟 호시모리 (별지기)]]
+- [[agents-and-evaluation|👥 전문가 및 평가 체계]]

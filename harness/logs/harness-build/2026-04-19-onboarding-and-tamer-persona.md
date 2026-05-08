@@ -54,3 +54,11 @@ mode: Mode 1 + Mode 2 + Mode 3
 - onboarding-best-case.md는 references/에만 존재 — 기본 하네스에 설치되지 않음
 - 온보딩 모드는 로그를 기록하지 않음 (안내 모드)
 - 사용자가 제안을 수락하여 에이전트 생성 시에만 로그 기록 시작
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[2026-04-19-23-27-skill-separation-principle|📝 스킬 분리 원칙]]
+- [[2026-04-19-plugin-harness-build-and-readme|📝 plugin harness-build & README]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]

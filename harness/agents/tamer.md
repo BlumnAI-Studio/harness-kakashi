@@ -57,3 +57,14 @@ description: 하네스의 에이전트, 스킬, 엔진을 설명/개선/평가�
 ## 위임 규칙
 
 - 스킬 생성/복사 → `/skill-creator` 호출
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[naruto-worldview|🥷 세계관 매핑]] — 카카시(tamer) 캐릭터의 출처
+- [[hoshimori|🌟 별지기 호시모리]] — 메타 협업 동료 (지식 그래프 keeper)
+- [[sage-deming|🐸 데밍 현자]] — PDSA 평가의 always-on 베이스
+- [[toad-summoning|🐸 두꺼비 소환술]] — 현자 소환 엔진
+- [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
+- [[agents-and-evaluation|👥 전문가 및 평가 체계]]

@@ -142,6 +142,36 @@ The harness's ultimate technique. Summon a domain master (a *Sage*) and apply th
 
 ---
 
+## 🌟 Hoshimori (星守) — The Star Keeper Who Threads the Constellation
+
+> Where the Gardener tends flowers and the Sage applies doctrines,
+> **Hoshimori threads the constellation (the knowledge graph).**
+
+[[hoshimori|Hoshimori (Star Keeper)]] hails from the canonical Naruto location **Hoshigakure (星隠れの里, the Village Hidden Among Stars)**.
+In the source canon the village protects a sacred "Star (星)" meteorite as a chakra source. In this harness, **the stars are documents** and **the constellation is the wiki-link graph**.
+
+### Doctrine — link density ∝ value
+
+> 1000 notes + 50 links < 100 notes + 500 links
+
+[Karpathy's LLM Wiki pattern](https://aimaker.substack.com/p/llm-wiki-obsidian-knowledge-base-andrej-karphaty), [Anthropic's context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), and [A-Mem (NeurIPS 2025)](https://arxiv.org/abs/2502.12110) all agree — a knowledge base's value is determined by its **link density**.
+
+### Open as an Obsidian vault
+
+Open this repository as an [Obsidian](https://obsidian.md/) vault and every `.md` becomes a star, every `[[wikilink]]` an edge — the graph view **lights up like a constellation**. Hoshimori threads them all.
+
+### Always-on — fires whenever docs change
+
+Hoshimori activates **without explicit invocation** when:
+- A new `.md` is added under README / `harness/` / `docs/`
+- An existing doc gains a new reference to another doc
+- `harness.config.json`'s agents/engine array changes
+- A new version history (`harness/docs/vX.Y.Z.md`) is written
+
+Constellation keeper details: [agent definition](harness/agents/hoshimori.md), [academic doctrine](harness/knowledge/methodology/zettelkasten-llm-era.md)
+
+---
+
 ## Onboarding — until the garden opens
 
 ### Step 1: Open the garden (init)
@@ -361,3 +391,21 @@ Or run `/harness-build design an agent` for a guided flow.
 ## License
 
 MIT
+
+---
+
+## 🌟 Constellation
+
+> Open this repository as an Obsidian vault — the graph view lights up. The Star Keeper [[hoshimori]] tends the constellation.
+
+- [[README|🌐 한국어 README]] — Korean entry star
+- [[naruto-worldview|🥷 Worldview Mapping]] — Kakashi / Sage / Hoshimori / Naruto 1:1 mapping
+- [[hoshimori|🌟 Hoshimori (Star Keeper)]] — Obsidian vault constellation keeper
+- [[zettelkasten-llm-era|📚 Zettelkasten · Wiki-Tag Doctrine]] — Academic basis of the Star Keeper's doctrine
+- [[tamer|🧑‍🌾 Gardener Kakashi]] — Meta agent
+- [[sage-deming|🐸 Sage Deming]] — PDSA base evaluation
+- [[toad-summoning|🐸 Toad Summoning Engine]] — Sage invocation
+- [[pdsa-deming.en|📘 PDSA Doctrine (English canon)]]
+- [[evaluation-base-pdsa|⚙️ Base Evaluation Operating Rules]]
+- [[naruto-harness-story-tutorial.en|📖 Naruto Harness Story Tutorial (EN)]]
+- [[pdsa-vs-pdca|📜 PDSA vs PDCA history]]

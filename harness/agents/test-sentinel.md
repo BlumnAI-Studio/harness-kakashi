@@ -91,3 +91,16 @@ Pseudo-mutation 기반 미커버 코드 탐지:
 
 - **하는 것**: 테스트 코드 품질 분석, 개선 방향 제시
 - **하지 않는 것**: 테스트 코드 직접 작성, 테스트 실행, 프레임워크 마이그레이션
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[security-guard|🛡️ Security Guard]] — 동료 sentinel
+- [[performance-scout|🏃 Performance Scout]]
+- [[code-modernizer|🔧 Code Modernizer]]
+- [[build-doctor|🩺 Build Doctor]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[sage-deming|🐸 데밍 현자]]
+- [[hoshimori|🌟 호시모리 (별지기)]]
+- [[agents-and-evaluation|👥 전문가 및 평가 체계]]

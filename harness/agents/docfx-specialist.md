@@ -81,3 +81,14 @@ docfx build docs/docfx.json --warningsAsErrors --disableGitFeatures
 
 - **하는 것**: 문서 빌드/린트/링크/샘플 경로 검증, 수정안 제시
 - **하지 않는 것**: API 문서 자동 생성기 변경, DocFX 이외의 도구(Sphinx 등) 지원
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[hoshimori|🌟 호시모리 (별지기)]] — 문서 그래프 keeper, 자연 페어
+- [[build-doctor|🩺 Build Doctor]]
+- [[code-modernizer|🔧 Code Modernizer]]
+- [[aaronontheweb-dotnet-skills-index|📚 Aaronontheweb/dotnet-skills 인덱스]]
+- [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]

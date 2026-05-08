@@ -113,3 +113,18 @@ Aaron Stannard(Akka.NET/Petabridge 창시자)가 큐레이션한 **5 specialized
 | EF Core N+1 | efcore-patterns, database-performance | (project agent) |
 | Aspire 통합 테스트 | aspire-integration-testing | (project agent) |
 | 이메일 템플릿 | mjml-email-templates, verify-email-snapshots | (project agent) |
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[dotnet-skills-insights|📑 dotnet/skills 분석 인사이트]] — 선행 분석
+- [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]
+- [[akka-net-specialist|🎭 Akka.NET Specialist]]
+- [[dotnet-concurrency-specialist|🔀 .NET Concurrency Specialist]]
+- [[dotnet-performance-analyst|⚙️ .NET Performance Analyst]]
+- [[dotnet-benchmark-designer|📊 .NET Benchmark Designer]]
+- [[docfx-specialist|📚 DocFX Specialist]]
+- [[roslyn-incremental-generator-specialist|🛠️ Roslyn Incremental Generator]]
+- [[v1.2.0|📝 v1.2.0 영입 기록]]
+- [[hoshimori|🌟 호시모리 (별지기)]]

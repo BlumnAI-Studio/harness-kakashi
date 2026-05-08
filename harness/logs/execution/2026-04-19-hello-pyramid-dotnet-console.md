@@ -41,3 +41,11 @@ projects/HelloPyramid/
 - 애니메이션 효과 추가 (Thread.Sleep으로 한 줄씩 출력)
 - 사용자 입력으로 문구 변경 가능하게 확장
 - 프로젝트를 솔루션(.sln)에 통합
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[2026-04-19-hello-pyramid-full-evaluation|📝 HelloPyramid 전체 평가 로그]]
+- [[2026-04-19-hello-pyramid-security-doc|📝 HelloPyramid 보안 평가 로그]]
+- [[sample-security-review-hello-pyramid|📑 Security Review 샘플]]

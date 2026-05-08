@@ -51,3 +51,16 @@ trigger: "dotnet/skills 전체코드 파악 후 전문가 영입"
 - 엔진(engine) 워크플로우 정의: 전문가들을 조합한 "전체 점검" 엔진 생성
 - 실제 프로젝트에서 수행부 테스트: 각 에이전트 트리거로 실행해보기
 - dotnet-ai, dotnet-data 인사이트를 추가 전문가로 확장 검토
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[v1.1.0|📝 v1.1.0 영입 기록]]
+- [[dotnet-skills-insights|📑 dotnet/skills 분석 인사이트]]
+- [[performance-scout|🏃 Performance Scout]]
+- [[security-guard|🛡️ Security Guard]]
+- [[test-sentinel|🛡️ Test Sentinel]]
+- [[build-doctor|🩺 Build Doctor]]
+- [[code-modernizer|🔧 Code Modernizer]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]

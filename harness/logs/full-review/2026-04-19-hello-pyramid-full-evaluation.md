@@ -60,3 +60,16 @@ trigger: "projects/HelloPyramid 프로젝트 전체평가 수행"
 - 4개 도형 생성 로직을 개별 static 메서드로 추출 (아키텍처 B→A)
 - xUnit 테스트 프로젝트 추가 + StringWriter 기반 출력 검증 (테스트 D→B)
 - 프로덕션 배포 계획 시 안정 SDK 버전으로 전환
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[2026-04-19-hello-pyramid-dotnet-console|📝 HelloPyramid 실행 로그]]
+- [[2026-04-19-hello-pyramid-security-doc|📝 HelloPyramid 보안 평가 로그]]
+- [[sample-security-review-hello-pyramid|📑 Security Review 샘플]]
+- [[security-guard|🛡️ Security Guard]]
+- [[performance-scout|🏃 Performance Scout]]
+- [[test-sentinel|🛡️ Test Sentinel]]
+- [[build-doctor|🩺 Build Doctor]]
+- [[code-modernizer|🔧 Code Modernizer]]

@@ -85,3 +85,14 @@ triggers:
 
 - **하는 것**: 인크리멘털 생성기 설계/리뷰/리팩토링
 - **하지 않는 것**: Analyzer 룰 작성(별도 영역), 런타임 성능 분석(→ dotnet-performance-analyst)
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[dotnet-performance-analyst|⚙️ .NET Performance Analyst]]
+- [[dotnet-benchmark-designer|📊 .NET Benchmark Designer]]
+- [[code-modernizer|🔧 Code Modernizer]]
+- [[aaronontheweb-dotnet-skills-index|📚 Aaronontheweb/dotnet-skills 인덱스]]
+- [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]
+- [[hoshimori|🌟 호시모리 (별지기)]]

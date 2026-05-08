@@ -103,3 +103,18 @@ Aaronontheweb/dotnet-skills에서 영입한 6인의 전문가를 활용해 .NET 
 - 평가축 점수는 **근거 포함**이 의무다. 숫자만 남기는 평가는 로그로 인정하지 않는다.
 - 합격선은 프로젝트마다 조정 가능하지만, 조정 사실을 로그에 명시해야 한다.
 - 관문 간 상호작용(예: G2 실패가 G3 측정 신뢰성을 훼손)은 판정에 반영한다.
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[aaronontheweb-dotnet-skills-index|📚 Aaronontheweb/dotnet-skills 인덱스]] — 영입 출처
+- [[dotnet-skills-insights|📑 dotnet/skills 분석 인사이트]]
+- [[akka-net-specialist|🎭 Akka.NET Specialist]]
+- [[dotnet-concurrency-specialist|🔀 .NET Concurrency Specialist]]
+- [[dotnet-performance-analyst|⚙️ .NET Performance Analyst]]
+- [[dotnet-benchmark-designer|📊 .NET Benchmark Designer]]
+- [[docfx-specialist|📚 DocFX Specialist]]
+- [[roslyn-incremental-generator-specialist|🛠️ Roslyn Incremental Generator]]
+- [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
+- [[hoshimori|🌟 호시모리 (별지기)]]

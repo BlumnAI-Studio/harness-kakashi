@@ -33,3 +33,11 @@ mode: Mode 1 + Mode 5
 - plugins/에 harness-build 추가됨 — 배포판에 포함
 - .claude/skills/harness-build는 마더 생성기로 별도 유지 (이 저장소 전용)
 - plugins/ 내 harness-build는 사용자의 하네스를 설계하는 도구
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[2026-04-19-onboarding-and-tamer-persona|📝 온보딩 & tamer 페르소나]]
+- [[2026-04-19-23-27-skill-separation-principle|📝 스킬 분리 원칙]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]

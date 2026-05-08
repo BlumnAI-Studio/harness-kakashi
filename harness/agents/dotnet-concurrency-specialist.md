@@ -84,3 +84,15 @@ triggers:
 
 - **하는 것**: .NET 동시성 전반 분석 (Task/Thread/Sync primitive/Channel)
 - **하지 않는 것**: 액터 모델 전용 이슈 (→ akka-net-specialist), 성능 벤치마크 실행 (→ dotnet-performance-analyst)
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[akka-net-specialist|🎭 Akka.NET Specialist]]
+- [[dotnet-performance-analyst|⚙️ .NET Performance Analyst]]
+- [[dotnet-benchmark-designer|📊 .NET Benchmark Designer]]
+- [[performance-scout|🏃 Performance Scout]]
+- [[aaronontheweb-dotnet-skills-index|📚 Aaronontheweb/dotnet-skills 인덱스]]
+- [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]
+- [[hoshimori|🌟 호시모리 (별지기)]]

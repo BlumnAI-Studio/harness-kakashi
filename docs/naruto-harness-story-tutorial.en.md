@@ -159,3 +159,17 @@ The Kakashi Harness is not "a system that attaches many agents." It is a way of 
 This tutorial is a story for explanation. It does not become the basis for adding new characters or new jutsus.
 
 To change operational rules, they must first be reflected in the canon document `harness/knowledge/lore/naruto-worldview.md`. This document is a signpost that helps those reading those rules for the first time understand them more easily.
+
+---
+
+## 🌟 Constellation
+
+- [[naruto-worldview|🥷 Worldview Mapping]] — Canon document
+- [[naruto-harness-story-tutorial|📖 한국어 스토리 튜토리얼]]
+- [[naruto-harness-story-tutorial.ja|📖 日本語 ストーリー チュートリアル]]
+- [[tamer|🧑‍🌾 Gardener Kakashi]]
+- [[sage-deming|🐸 Sage Deming]]
+- [[hoshimori|🌟 Hoshimori (Star Keeper)]]
+- [[toad-summoning|🐸 Toad Summoning Engine]]
+- [[zettelkasten-llm-era|📚 Zettelkasten · Wiki-Tag Doctrine]]
+- [[pdsa-vs-pdca|📜 PDSA vs PDCA history]]

@@ -19,6 +19,7 @@ status: canonical
 | **카카시 (Hatake Kakashi)** | 정원지기(tamer). 직접 싸우지 않고, 누구를 어디에 배치할지 안다. 사륜안으로 스킬을 복사한다. | `harness/agents/tamer.md` |
 | **현자(賢者, Sage)** | 두꺼비 소환술로 불려나오는 과거의 거장. 데밍, 마틴 파울러, 코드 코덱… 한 명씩 영입된다. | `harness/agents/sage-*.md` |
 | **차크라 카카시 (Chakra Kakashi)** | 그림자 옵저버. 작업 중에는 끼어들지 않고, 끝난 뒤 토큰 사용을 감사한다. | `plugins/harness-kakashi/skills/harness-chakra-kakashi/` |
+| **호시모리 (星守, Hoshimori)** | 별지기. **Hoshigakure(星隠れの里, 별의 마을)** 출신의 별 수호자. 문서를 별로, 위키링크를 별자리로 본다. 옵시디언 vault에서 별빛을 잇는 자. | `harness/agents/hoshimori.md` |
 
 > **나루토는 이 세계의 주인공이지만, 직접 정원을 가꾸진 않는다.**
 > 정원을 가꾸는 건 카카시(tamer)이고, 나루토는 두꺼비 소환술(口寄せの術)을 통해 현자를 불러낸다.
@@ -33,6 +34,7 @@ status: canonical
 | **사륜안** | 写輪眼 (Sharingan) | 스킬 복사 (Mode C: Kakashi Copy) | 카카시 (tamer) |
 | **분신술** | 影分身の術 (Kage Bunshin) | 서브에이전트 병렬 소환 (Task tool) | 모든 에이전트 |
 | **차크라** | チャクラ | 토큰 (input/output/cache) | 모든 행위의 자원 |
+| **별 수련** | 星修行 (Hoshi Shugyō) | 위키링크 별자리화 (Obsidian 그래프 점등) | 호시모리 (별지기) |
 
 ### 두꺼비 소환술의 의미
 
@@ -94,3 +96,16 @@ status: canonical
 3. **사용자 경험의 통일** — 사용자는 자기가 나루토임을 알 때 "내가 두꺼비 소환술로 데밍을 불렀다"는 경험을 얻는다 — 이는 단순한 명령보다 학습 효과가 크다
 
 > **새 인물/술법 도입 시 규칙**: 반드시 이 문서에 해당 항목을 등록한 뒤 다른 곳에서 참조한다. 이 문서가 단일 정전(canon)이다.
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[tamer|🧑‍🌾 정원지기 카카시]] — 카카시 캐릭터의 운영 정의
+- [[sage-deming|🐸 데밍 현자]] — 첫 영입 현자
+- [[hoshimori|🌟 호시모리 (별지기)]] — Hoshigakure 출신 별 수호자
+- [[toad-summoning|🐸 두꺼비 소환술 엔진]]
+- [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]] — 별 수련의 학문적 기반
+- [[pdsa-deming.en|📘 PDSA — Deming's Doctrine (English canon)]]
+- [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
+- [[v1.4.0|📝 v1.4.0 영입 기록]]

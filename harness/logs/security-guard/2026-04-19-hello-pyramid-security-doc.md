@@ -26,3 +26,12 @@ trigger: "보안평가 별도 문서 작성 및 README 연결"
 ## 다음 단계 제안
 - 다른 에이전트(performance-scout 등)의 샘플 평가 문서도 추가
 - engine/ 워크플로우 정의 후 전체 점검 자동화
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[security-guard|🛡️ Security Guard]]
+- [[sample-security-review-hello-pyramid|📑 Security Review 샘플]]
+- [[2026-04-19-hello-pyramid-full-evaluation|📝 HelloPyramid 전체 평가 로그]]
+- [[2026-04-19-hello-pyramid-dotnet-console|📝 HelloPyramid 실행 로그]]

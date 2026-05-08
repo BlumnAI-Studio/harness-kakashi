@@ -177,3 +177,16 @@ Changing "Check" to "Study" is **moving the organization from an entity that ins
 - [History of the Kaizen PDCA Cycle — Creative Safety Supply](https://www.creativesafetysupply.com/articles/history-of-the-kaizen-pdca-cycle/)
 - [PDCA — Wikipedia](https://en.wikipedia.org/wiki/PDCA)
 - [W. Edwards Deming — Wikipedia](https://en.wikipedia.org/wiki/W._Edwards_Deming)
+
+---
+
+## 🌟 Constellation
+
+- [[pdsa-deming.en|📘 PDSA — Deming's Doctrine (English canon)]]
+- [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
+- [[sage-deming|🐸 데밍 현자]]
+- [[toad-summoning|🐸 두꺼비 소환술 엔진]]
+- [[naruto-worldview|🥷 세계관 매핑]]
+- [[v1.4.0|📝 v1.4.0 영입 기록]]
+- [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]]
+- [[hoshimori|🌟 호시모리 (별지기)]]

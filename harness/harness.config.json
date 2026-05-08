@@ -3,7 +3,7 @@
   "$schemaVersion": "1.0.0",
   "name": "Kakashi's Harness",
   "description": "카카시 하네스 이용기록기(테스트겸)",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "agents": [
     "tamer",
     "performance-scout",
@@ -17,7 +17,8 @@
     "dotnet-benchmark-designer",
     "docfx-specialist",
     "roslyn-incremental-generator-specialist",
-    "sage-deming"
+    "sage-deming",
+    "hoshimori"
   ],
   "engine": [
     "toad-summoning"
@@ -35,8 +36,17 @@
       "mappingDoc": "harness/knowledge/methodology/evaluation-base-pdsa.md"
     }
   },
+  "keepers": {
+    "hoshimori": {
+      "alwaysOn": true,
+      "scope": ["README.md", "README-EN.md", "harness/**/*.md", "docs/**/*.md"],
+      "exclude": ["plugins/**", "tmp/**", ".claude/**", "node_modules/**", "prompt/**"],
+      "trigger": "doc-change",
+      "doctrineDoc": "harness/knowledge/methodology/zettelkasten-llm-era.md"
+    }
+  },
   "created": "2026-04-19",
-  "lastUpdated": "2026-04-24",
+  "lastUpdated": "2026-05-08",
   "plugins": {
     "harness-kakashi": {
       "skills": ["harness-kakashi-creator", "harness-chakra-kakashi"]

@@ -323,3 +323,18 @@
 /harness-kakashi-creator 하네스를 설명해    → tamer
 /harness-kakashi-creator 하네스를 개선해    → tamer
 ```
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[performance-scout|🏃 Performance Scout]]
+- [[security-guard|🛡️ Security Guard]]
+- [[test-sentinel|🛡️ Test Sentinel]]
+- [[build-doctor|🩺 Build Doctor]]
+- [[code-modernizer|🔧 Code Modernizer]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[sage-deming|🐸 데밍 현자]]
+- [[hoshimori|🌟 호시모리 (별지기)]]
+- [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
+- [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]

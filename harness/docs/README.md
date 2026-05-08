@@ -49,3 +49,17 @@ harness/
 # 3. 전체 평가 수행 (5개 에이전트 동시)
 /harness-kakashi-creator 전체 점검해
 ```
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[sample-security-review-hello-pyramid|📑 Security Review 샘플]]
+- [[agents-and-evaluation|👥 전문가 및 평가 체계]]
+- [[v1.4.0|📝 v1.4.0]] — 최신 버전
+- [[v1.3.0|📝 v1.3.0]]
+- [[v1.2.0|📝 v1.2.0]]
+- [[v1.1.0|📝 v1.1.0]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[hoshimori|🌟 호시모리 (별지기)]]
+- [[naruto-worldview|🥷 세계관 매핑]]

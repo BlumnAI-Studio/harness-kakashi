@@ -103,3 +103,15 @@ version_bump: 1.3.0 → 1.4.0
 - [데밍 현자 에이전트](../../agents/sage-deming.md)
 - [두꺼비 소환술 엔진](../../engine/toad-summoning.md)
 - [v1.4.0 버전 히스토리](../../docs/v1.4.0.md)
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[v1.4.0|📝 v1.4.0 영입 기록]]
+- [[sage-deming|🐸 데밍 현자]]
+- [[toad-summoning|🐸 두꺼비 소환술 엔진]]
+- [[pdsa-deming.en|📘 PDSA — Deming's Doctrine (English canon)]]
+- [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
+- [[naruto-worldview|🥷 세계관 매핑]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]

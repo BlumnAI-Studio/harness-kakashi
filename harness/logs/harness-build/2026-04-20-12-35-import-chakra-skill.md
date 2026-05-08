@@ -84,3 +84,11 @@ mode: 1
 1. (선택) 수행부 엔진 정의에 차크라 감사 위임 라인 추가: 엔진 종료 직전에 `/harness-chakra-kakashi 차크라 점검해` 호출
 2. (선택) `harness/agents/chakra-auditor.md` 템플릿을 references에 두고 사용자가 필요 시 복사하도록 안내
 3. (배포 준비 시) `.claude-plugin/marketplace.json`의 keywords에 "token-audit" 추가 검토
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[v1.3.0|📝 v1.3.0 영입 기록]]
+- [[naruto-worldview|🥷 세계관 매핑]] — 차크라 카카시 등록
+- [[tamer|🧑‍🌾 정원지기 카카시]]

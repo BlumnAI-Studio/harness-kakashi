@@ -136,3 +136,16 @@ These are the canonical references the harness cites. Do not replace them with s
 - **Maintained by**: tamer (정원지기 카카시) on behalf of sage-deming
 - **Status**: canonical — changes require re-verification against deming.org primary sources
 - **Cross-references**: `harness/knowledge/lore/naruto-worldview.md` (worldview), `harness/knowledge/methodology/evaluation-base-pdsa.md` (operational rules), `harness/agents/sage-deming.md` (agent definition)
+
+---
+
+## 🌟 Constellation
+
+- [[sage-deming|🐸 Sage Deming]] — Agent embodying this doctrine
+- [[evaluation-base-pdsa|⚙️ Base Evaluation Operating Rules]]
+- [[naruto-worldview|🥷 Worldview Mapping]]
+- [[toad-summoning|🐸 Toad Summoning Engine]]
+- [[zettelkasten-llm-era|📚 Zettelkasten · Wiki-Tag Doctrine]]
+- [[pdsa-vs-pdca|📜 PDSA vs PDCA history]]
+- [[tamer|🧑‍🌾 Gardener Kakashi]]
+- [[hoshimori|🌟 Hoshimori (Star Keeper)]]

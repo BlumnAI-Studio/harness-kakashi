@@ -87,3 +87,16 @@ dotnet/skills의 `agentic-workflows/dotnet-msbuild` — Coordinator-Worker 패�
 
 - **하는 것**: 빌드 로그 분석, 설정 파일 점검, 최적화 권고
 - **하지 않는 것**: CI/CD 파이프라인 구축, 빌드 직접 실행, 인프라 프로비저닝
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[test-sentinel|🛡️ Test Sentinel]]
+- [[performance-scout|🏃 Performance Scout]]
+- [[code-modernizer|🔧 Code Modernizer]]
+- [[docfx-specialist|📚 DocFX Specialist]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[sage-deming|🐸 데밍 현자]]
+- [[hoshimori|🌟 호시모리 (별지기)]]
+- [[agents-and-evaluation|👥 전문가 및 평가 체계]]

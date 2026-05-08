@@ -142,6 +142,36 @@ clone 후 Codex 측 임포트 절차에 따라 `plugins/harness-kakashi/skills/h
 
 ---
 
+## 🌟 별지기 호시모리 (星守, Hoshimori) — 별자리를 잇는 자
+
+> 카카시(정원지기)가 꽃을, 현자가 사상을 다룬다면,
+> **호시모리는 별자리(지식 그래프)를 잇는다.**
+
+[[hoshimori|호시모리(별지기)]]는 나루토 세계관의 **Hoshigakure(星隠れの里, 별의 마을)** 출신 별 수호자다.
+원작에서 마을의 신물 "별(星)"이 차크라 원천이라면, 이 하네스에서 **별은 문서**고 **별자리는 위키링크 그래프**다.
+
+### 사상 — 링크 밀도 ∝ 가치
+
+> 노트 1000개 + 링크 50개 < 노트 100개 + 링크 500개
+
+[Karpathy의 LLM Wiki 패턴](https://aimaker.substack.com/p/llm-wiki-obsidian-knowledge-base-andrej-karphaty), [Anthropic의 컨텍스트 엔지니어링](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), [A-Mem (NeurIPS 2025)](https://arxiv.org/abs/2502.12110) 모두 동의한다 — 지식베이스의 가치는 **링크 밀도**가 결정한다.
+
+### 옵시디언으로 vault 열기
+
+이 저장소를 [Obsidian](https://obsidian.md/) vault로 열면, 모든 `.md` 파일이 `[[wikilink]]`로 잇혀 있어 **그래프 뷰가 별자리처럼 점등**된다. 호시모리가 모든 별을 잇는다.
+
+### 자동 발동 — 새 문서가 추가될 때마다
+
+호시모리는 다음 시점에 **호출 없이도** 작동한다:
+- 새 `.md`가 README / `harness/` / `docs/` 에 추가될 때
+- 기존 문서에 다른 문서 참조가 추가될 때
+- `harness.config.json` 의 agents/engine 배열이 변경될 때
+- 새 버전 히스토리(`harness/docs/vX.Y.Z.md`)가 작성될 때
+
+별자리 keeper 상세: [별지기 에이전트 정의](harness/agents/hoshimori.md), [학문적 정전](harness/knowledge/methodology/zettelkasten-llm-era.md)
+
+---
+
 ## 온보딩 — 정원이 열리기까지
 
 ### Step 1: 정원을 연다 (init)
@@ -423,3 +453,22 @@ ccusage 오늘자 보여줘      ← 일일 토큰 사용량
 ## 라이선스
 
 MIT
+
+---
+
+## 🌟 별자리 (Constellation)
+
+> Obsidian으로 이 저장소를 vault로 열면 아래 별들이 그래프 뷰에서 점등된다. 별지기 [[hoshimori]]가 별자리를 잇는다.
+
+- [[README-EN|🌐 English README]] — 영문 진입 별
+- [[naruto-worldview|🥷 세계관 매핑]] — 카카시·현자·호시모리·나루토의 1:1 매핑
+- [[hoshimori|🌟 호시모리 (별지기)]] — 옵시디언 vault 별자리 keeper
+- [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]] — 별지기 사상의 학문적 근거
+- [[tamer|🧑‍🌾 정원지기 카카시]] — 메타 에이전트
+- [[sage-deming|🐸 데밍 현자]] — PDSA 기본 평가
+- [[toad-summoning|🐸 두꺼비 소환술]] — 현자 소환 엔진
+- [[pdsa-deming.en|📘 PDSA Doctrine (English canon)]]
+- [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
+- [[agents-and-evaluation|👥 전문가 및 평가 체계]]
+- [[naruto-harness-story-tutorial|📖 나루토 하네스 스토리 튜토리얼]]
+- [[pdsa-vs-pdca|📜 PDSA vs PDCA 역사]]

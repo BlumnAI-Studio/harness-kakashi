@@ -182,3 +182,16 @@ PDSA 평가는 모든 로그에 다음 블록으로 부착된다:
 - 소환술 엔진: [`harness/engine/toad-summoning.md`](../../engine/toad-summoning.md)
 - 세계관 매핑: [`harness/knowledge/lore/naruto-worldview.md`](../lore/naruto-worldview.md)
 - 기존 tamer 3축 평가: [`.claude/skills/harness-kakashi-creator/references/evaluation.md`](../../../.claude/skills/harness-kakashi-creator/references/evaluation.md)
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[pdsa-deming.en|📘 PDSA — Deming's Doctrine (English canon)]] — 정전
+- [[sage-deming|🐸 데밍 현자]]
+- [[toad-summoning|🐸 두꺼비 소환술 엔진]]
+- [[naruto-worldview|🥷 세계관 매핑]]
+- [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[hoshimori|🌟 호시모리 (별지기)]]
+- [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]

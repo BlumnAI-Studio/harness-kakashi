@@ -60,3 +60,18 @@ trigger: "하네스에 Agent에 전문가 영입 그리고 문서추가 이 전�
 3. **기존 performance-scout와 dotnet-performance-analyst 역할 재정비** — docs/v1.2.0.md 경계 섹션에 정리했지만, 실제 사용 중 혼선이 생기면 scout를 analyst로 위임하는 라우팅 규칙을 agents/performance-scout.md에 명시
 4. **업스트림 추적** — `tmp/github/dotnet-skills`를 주기적으로 `git pull`하고 skill 목록 변경 시 `aaronontheweb-dotnet-skills-index.md` 자동 갱신 스크립트 고려
 5. **라이선스 고지** — 업스트림이 MIT이므로 영감 출처를 에이전트 frontmatter/본문에 명시했다. 향후 스킬 내용을 직접 복제한다면 LICENSE 동봉 필요.
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[v1.2.0|📝 v1.2.0 영입 기록]]
+- [[aaronontheweb-dotnet-skills-index|📚 Aaronontheweb/dotnet-skills 인덱스]]
+- [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]
+- [[akka-net-specialist|🎭 Akka.NET Specialist]]
+- [[dotnet-concurrency-specialist|🔀 .NET Concurrency Specialist]]
+- [[dotnet-performance-analyst|⚙️ .NET Performance Analyst]]
+- [[dotnet-benchmark-designer|📊 .NET Benchmark Designer]]
+- [[docfx-specialist|📚 DocFX Specialist]]
+- [[roslyn-incremental-generator-specialist|🛠️ Roslyn Incremental Generator]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]

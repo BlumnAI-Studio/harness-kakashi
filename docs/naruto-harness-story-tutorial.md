@@ -159,3 +159,17 @@ source: harness/knowledge/lore/naruto-worldview.md
 이 튜토리얼은 설명을 위한 이야기다. 새 인물이나 새 술법을 추가하는 근거가 되지 않는다.
 
 운영 규칙을 바꾸려면 반드시 정전 문서인 `harness/knowledge/lore/naruto-worldview.md`에 먼저 반영해야 한다. 이 문서는 그 규칙을 처음 읽는 사람이 더 쉽게 이해하도록 돕는 안내판이다.
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[naruto-worldview|🥷 세계관 매핑]] — 정전 문서
+- [[naruto-harness-story-tutorial.en|📖 English Story Tutorial]]
+- [[naruto-harness-story-tutorial.ja|📖 日本語 ストーリー チュートリアル]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[sage-deming|🐸 데밍 현자]]
+- [[hoshimori|🌟 호시모리 (별지기)]]
+- [[toad-summoning|🐸 두꺼비 소환술 엔진]]
+- [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]]
+- [[pdsa-vs-pdca|📜 PDSA vs PDCA 역사]]

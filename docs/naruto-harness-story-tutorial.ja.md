@@ -159,3 +159,17 @@ source: harness/knowledge/lore/naruto-worldview.md
 このチュートリアルは説明のための物語である。新しい人物や新しい術を追加する根拠にはならない。
 
 運用ルールを変更するには、必ず正典文書である `harness/knowledge/lore/naruto-worldview.md` に先に反映しなければならない。この文書はそのルールを初めて読む人がより容易に理解できるようにする案内板である。
+
+---
+
+## 🌟 星座 (Constellation)
+
+- [[naruto-worldview|🥷 世界観マッピング]] — 正典文書
+- [[naruto-harness-story-tutorial|📖 한국어 스토리 튜토리얼]]
+- [[naruto-harness-story-tutorial.en|📖 English Story Tutorial]]
+- [[tamer|🧑‍🌾 庭師カカシ]]
+- [[sage-deming|🐸 デミング賢者]]
+- [[hoshimori|🌟 ホシモリ (星守)]]
+- [[toad-summoning|🐸 蝦蟇口寄せの術エンジン]]
+- [[zettelkasten-llm-era|📚 Zettelkasten · Wiki-Tag 正典]]
+- [[pdsa-vs-pdca|📜 PDSA vs PDCA 歴史]]

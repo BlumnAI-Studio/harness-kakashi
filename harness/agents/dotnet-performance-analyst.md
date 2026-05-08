@@ -89,3 +89,15 @@ dotTrace/dotMemory/PerfView 결과와 BenchmarkDotNet 리포트를 해석해 CPU
 
 - **하는 것**: 성능 데이터 해석, 병목 지목, 회귀 판정
 - **하지 않는 것**: 벤치마크 코드 직접 작성(→ dotnet-benchmark-designer), 액터/Akka 전용 튜닝(→ akka-net-specialist)
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[dotnet-benchmark-designer|📊 .NET Benchmark Designer]] — 입력 페어
+- [[performance-scout|🏃 Performance Scout]] — 코드 레벨 동료
+- [[dotnet-concurrency-specialist|🔀 .NET Concurrency Specialist]]
+- [[akka-net-specialist|🎭 Akka.NET Specialist]]
+- [[aaronontheweb-dotnet-skills-index|📚 Aaronontheweb/dotnet-skills 인덱스]]
+- [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]
+- [[hoshimori|🌟 호시모리 (별지기)]]

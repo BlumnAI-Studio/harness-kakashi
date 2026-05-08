@@ -174,3 +174,14 @@
 
 이 에이전트는 코드 레벨 보안 취약점을 탐지하고 수정안을 제시합니다.
 침투 테스트 실행이나 인프라 보안 점검은 수행하지 않습니다.
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[security-guard|🛡️ Security Guard]] — 평가 주체
+- [[agents-and-evaluation|👥 전문가 및 평가 체계]]
+- [[2026-04-19-hello-pyramid-full-evaluation|📝 HelloPyramid 전체 평가 로그]]
+- [[2026-04-19-hello-pyramid-security-doc|📝 HelloPyramid 보안 평가 로그]]
+- [[2026-04-19-hello-pyramid-dotnet-console|📝 HelloPyramid 실행 로그]]
+- [[hoshimori|🌟 호시모리 (별지기)]]

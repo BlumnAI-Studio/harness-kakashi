@@ -80,3 +80,15 @@ Pass 1에서 발견된 신호를 기반으로 해당 영역 심화 분석:
 
 - **하는 것**: 코드 레벨 성능 안티패턴 탐지, 수정안 제시
 - **하지 않는 것**: 인프라/네트워크 성능, 벤치마크 실행, unsafe 코드 제안
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[dotnet-performance-analyst|⚙️ .NET Performance Analyst]] — 데이터 해석/회귀 판정 동료
+- [[dotnet-benchmark-designer|📊 .NET Benchmark Designer]] — 벤치마크 작성 동료
+- [[dotnet-concurrency-specialist|🔀 .NET Concurrency Specialist]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[sage-deming|🐸 데밍 현자]] — 기본 평가 베이스
+- [[hoshimori|🌟 호시모리 (별지기)]]
+- [[agents-and-evaluation|👥 전문가 및 평가 체계]]

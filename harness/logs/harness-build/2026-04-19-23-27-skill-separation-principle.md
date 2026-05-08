@@ -35,3 +35,11 @@ SKILL.md에는 Mode B와 6-Phase 워크플로우 두 곳에 references/skill-sep
 ## 비고
 
 배포판의 `templates/harness/agents/`에는 여전히 `tamer.md`만 존재해야 하며 이 변경은 그 규칙을 침범하지 않는다. 신규 문서는 references/에만 추가되므로 init 결과물에는 영향 없다.
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[2026-04-19-onboarding-and-tamer-persona|📝 온보딩 & tamer 페르소나]]
+- [[2026-04-19-plugin-harness-build-and-readme|📝 plugin harness-build & README]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]

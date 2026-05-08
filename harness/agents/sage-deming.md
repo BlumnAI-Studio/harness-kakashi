@@ -184,3 +184,15 @@ description: 두꺼비 소환술로 영입된 첫 번째 현자. PDSA 사이클�
 > — W. Edwards Deming
 
 PDSA의 Plan(이론)과 Study(학습)는 이 문장의 운영적 구현이다. 베스트를 다하기 전에 **무엇을 해야 하는지를 알고**, 다 한 뒤에 **무엇을 배웠는지를 안다**. 그 둘 사이에 Do가 있다.
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[pdsa-deming.en|📘 PDSA — Deming's Doctrine (English canon)]] — 1차 출처
+- [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]] — 운용 정전
+- [[naruto-worldview|🥷 세계관 매핑]] — 현자 카탈로그 등록
+- [[toad-summoning|🐸 두꺼비 소환술 엔진]] — 소환 절차
+- [[tamer|🧑‍🌾 정원지기 카카시]] — 메타 동료
+- [[hoshimori|🌟 호시모리 (별지기)]] — 평가와 직교한 그래프 keeper
+- [[v1.4.0|📝 v1.4.0 영입 기록]]

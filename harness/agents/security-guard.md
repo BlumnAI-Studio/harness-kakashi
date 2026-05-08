@@ -85,3 +85,16 @@ dotnet/skills의 `dotnet-aspnet` 플러그인 — 파일 업로드 보안 6단�
 
 - **하는 것**: 코드 레벨 보안 취약점 탐지, 수정안 제시
 - **하지 않는 것**: 침투 테스트 실행, 인프라 보안 점검, 보안 도구 설치
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[test-sentinel|🛡️ Test Sentinel]] — 동료 sentinel
+- [[code-modernizer|🔧 Code Modernizer]]
+- [[performance-scout|🏃 Performance Scout]]
+- [[sample-security-review-hello-pyramid|📑 Security Review Sample]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[sage-deming|🐸 데밍 현자]]
+- [[hoshimori|🌟 호시모리 (별지기)]]
+- [[agents-and-evaluation|👥 전문가 및 평가 체계]]

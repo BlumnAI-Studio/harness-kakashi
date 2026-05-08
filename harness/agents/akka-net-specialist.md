@@ -77,3 +77,15 @@ nuance: "blocking in actor", "shared state", "supervision strategy 오용" 같�
 
 - **하는 것**: Akka.NET 구성/패턴 레벨 리뷰, 안티패턴 탐지, 수정안 제시
 - **하지 않는 것**: 런타임 튜닝 벤치마크 실행(→ dotnet-benchmark-designer), 일반 .NET 동시성 전반(→ dotnet-concurrency-specialist)
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[dotnet-concurrency-specialist|🔀 .NET Concurrency Specialist]] — 동시성 전반
+- [[dotnet-performance-analyst|⚙️ .NET Performance Analyst]]
+- [[dotnet-benchmark-designer|📊 .NET Benchmark Designer]]
+- [[aaronontheweb-dotnet-skills-index|📚 Aaronontheweb/dotnet-skills 인덱스]] — 영입 출처
+- [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]
+- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[hoshimori|🌟 호시모리 (별지기)]]

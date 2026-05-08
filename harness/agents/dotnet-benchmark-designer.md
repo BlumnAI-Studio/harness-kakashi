@@ -85,3 +85,15 @@ triggers:
 
 - **하는 것**: 벤치마크 코드 작성, 도구 선택, 계측 설계
 - **하지 않는 것**: 결과 해석/회귀 판정(→ dotnet-performance-analyst), 운영 부하 테스트(→ 별도)
+
+---
+
+## 🌟 별자리 (Constellation)
+
+- [[dotnet-performance-analyst|⚙️ .NET Performance Analyst]] — 결과 해석 페어
+- [[performance-scout|🏃 Performance Scout]]
+- [[dotnet-concurrency-specialist|🔀 .NET Concurrency Specialist]]
+- [[akka-net-specialist|🎭 Akka.NET Specialist]]
+- [[aaronontheweb-dotnet-skills-index|📚 Aaronontheweb/dotnet-skills 인덱스]]
+- [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]
+- [[hoshimori|🌟 호시모리 (별지기)]]
