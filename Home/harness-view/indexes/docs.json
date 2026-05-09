@@ -150,14 +150,29 @@
       "triggers": [],
       "size": 3881,
       "modified": "2026-05-08T07:57:28"
+    },
+    {
+      "id": "v1.7.0",
+      "file": "harness/docs/v1.7.0.md",
+      "name": "v1.7.0",
+      "title": "v1.7.0 — 사이(Sai) 영입 + design-first 원칙 도입",
+      "heading": "v1.7.0 — 사이(Sai) 영입 + design-first 원칙 도입",
+      "description": "**날짜**: 2026-05-09 **유형**: Minor (새 에이전트 + 새 엔진 + 새 운영 원칙)",
+      "type": null,
+      "domain": null,
+      "village": null,
+      "status": null,
+      "triggers": [],
+      "size": 6918,
+      "modified": "2026-05-09T06:12:10"
     }
   ],
   "contributors": [
     {
       "name": "psmon",
-      "commits": 10,
+      "commits": 11,
       "percent": 100
     }
   ],
-  "commitCount": 10
+  "commitCount": 11
 }

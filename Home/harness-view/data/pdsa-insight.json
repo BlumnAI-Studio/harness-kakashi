@@ -1,5 +1,5 @@
 {
-  "analyzedAt": "2026-05-08",
+  "analyzedAt": "2026-05-09",
   "windowDays": 14,
   "sources": [
     {
@@ -18,6 +18,15 @@
       "title": {
         "ko": "별지기 호시모리 영입 & 위키링크 일괄 적용",
         "en": "별지기 호시모리 영입 & 위키링크 일괄 적용"
+      }
+    },
+    {
+      "date": "2026-05-09T00:00:00Z",
+      "category": "tamer",
+      "file": "harness/logs/tamer/2026-05-09-recruit-sai-and-introduce-design-first.md",
+      "title": {
+        "ko": "사이 영입 + design-first 원칙 도입 (v1.7.0)",
+        "en": "사이 영입 + design-first 원칙 도입 (v1.7.0)"
       }
     }
   ],

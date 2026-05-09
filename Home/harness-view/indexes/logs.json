@@ -2,6 +2,23 @@
   "base": "harness/logs",
   "items": [
     {
+      "id": "2026-05-09-recruit-sai-and-introduce-design-first",
+      "file": "harness/logs/tamer/2026-05-09-recruit-sai-and-introduce-design-first.md",
+      "name": "2026-05-09-recruit-sai-and-introduce-design-first",
+      "title": "사이 영입 + design-first 원칙 도입 (v1.7.0)",
+      "heading": "사이 영입 + design-first 원칙 도입 (v1.7.0)",
+      "description": "사용자 요청 분석: 1. **하네스뷰 펜슬디자인 위치를 담당자 지식 저장** → 펜슬 디자인의 단일 정전 위치(`Home/design/harness-view.pen`)를 담당자 지식 문서로 정전화 2. **design-first 원칙 명문화** → harness-view 개선이 펜슬뷰를 통해 흐르는 운영 원칙 수립 3. **나루토 세계관 Agent + Flow 추가** → 디자인 담당 닌자와 워크플로우 영입",
+      "type": "improvement",
+      "domain": null,
+      "village": null,
+      "status": null,
+      "triggers": [],
+      "size": 6014,
+      "modified": "2026-05-09T06:13:39",
+      "category": "tamer",
+      "date": "2026-05-09"
+    },
+    {
       "id": "2026-05-08-recruit-chizumori-and-build-harness-view",
       "file": "harness/logs/tamer/2026-05-08-recruit-chizumori-and-build-harness-view.md",
       "name": "2026-05-08-recruit-chizumori-and-build-harness-view",
@@ -335,6 +352,23 @@
       }
     ],
     "tamer": [
+      {
+        "id": "2026-05-09-recruit-sai-and-introduce-design-first",
+        "file": "harness/logs/tamer/2026-05-09-recruit-sai-and-introduce-design-first.md",
+        "name": "2026-05-09-recruit-sai-and-introduce-design-first",
+        "title": "사이 영입 + design-first 원칙 도입 (v1.7.0)",
+        "heading": "사이 영입 + design-first 원칙 도입 (v1.7.0)",
+        "description": "사용자 요청 분석: 1. **하네스뷰 펜슬디자인 위치를 담당자 지식 저장** → 펜슬 디자인의 단일 정전 위치(`Home/design/harness-view.pen`)를 담당자 지식 문서로 정전화 2. **design-first 원칙 명문화** → harness-view 개선이 펜슬뷰를 통해 흐르는 운영 원칙 수립 3. **나루토 세계관 Agent + Flow 추가** → 디자인 담당 닌자와 워크플로우 영입",
+        "type": "improvement",
+        "domain": null,
+        "village": null,
+        "status": null,
+        "triggers": [],
+        "size": 6014,
+        "modified": "2026-05-09T06:13:39",
+        "category": "tamer",
+        "date": "2026-05-09"
+      },
       {
         "id": "2026-05-08-recruit-chizumori-and-build-harness-view",
         "file": "harness/logs/tamer/2026-05-08-recruit-chizumori-and-build-harness-view.md",

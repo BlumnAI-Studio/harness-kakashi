@@ -18,6 +18,22 @@
       "category": "general"
     },
     {
+      "id": "pencil-design-locations",
+      "file": "harness/knowledge/design/pencil-design-locations.md",
+      "name": "pencil-design-locations",
+      "title": "🖌️ 펜슬 디자인 위치 정전",
+      "heading": "🖌️ 펜슬 디자인 위치 정전",
+      "description": "이 문서는 **사이(Sai)** 의 단일 정전이며, **치즈모리(Chizumori)** 가 참조하는 부속 지식이다. 펜슬 디자인 파일(.pen)의 위치·구조·운용 규칙을 정의한다.",
+      "type": null,
+      "domain": "design",
+      "village": null,
+      "status": "canonical",
+      "triggers": [],
+      "size": 8128,
+      "modified": "2026-05-09T05:58:02",
+      "category": "design"
+    },
+    {
       "id": "dotnet-expert-evaluation",
       "file": "harness/knowledge/dotnet-expert-evaluation.md",
       "name": "dotnet-expert-evaluation",
@@ -61,9 +77,25 @@
       "village": null,
       "status": "canonical",
       "triggers": [],
-      "size": 7398,
-      "modified": "2026-05-08T07:26:17",
+      "size": 8361,
+      "modified": "2026-05-09T06:00:43",
       "category": "lore"
+    },
+    {
+      "id": "design-first",
+      "file": "harness/knowledge/methodology/design-first.md",
+      "name": "design-first",
+      "title": "⚖️ design-first 원칙 정전",
+      "heading": "⚖️ design-first 원칙 정전",
+      "description": "이 문서는 카카시 하네스의 **design-first 운용 원칙**을 정의한다. 사상의 보유자는 [[sai|사이 (묵화 닌자)]] 이며, 모든 디자인 변경 워크플로우는 이 정전을 따른다.",
+      "type": null,
+      "domain": "methodology",
+      "village": null,
+      "status": "canonical",
+      "triggers": [],
+      "size": 6568,
+      "modified": "2026-05-09T05:59:14",
+      "category": "methodology"
     },
     {
       "id": "evaluation-base-pdsa",

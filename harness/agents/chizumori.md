@@ -231,9 +231,32 @@ description: 지도지기 — Konohagakure 출신 마을 지도 수호자. harne
 | [[sage-deming\|데밍 (현자)]] | 사이클의 학습 | PDSA 사상 적용 |
 | [[hoshimori\|호시모리 (별지기)]] | 별자리의 밀도 | 옵시디언 vault |
 | **[[chizumori\|치즈모리 (지도지기)]]** | **마을 지도의 진실성** | **harness-view + GitHub Pages** |
+| [[sai\|사이 (묵화 닌자)]] | 시각 정전 | 펜슬 디자인 → 코드 동기화 |
 | (그림자) 차크라 카카시 | 차크라 흐름 | 토큰 감사 |
 
-> 정원지기가 꽃을 심고, 현자가 사이클을 배우고, 별지기가 별을 잇고, 지도지기는 그 모든 모습을 마을 외부의 행인에게 보여준다.
+> 정원지기가 꽃을 심고, 현자가 사이클을 배우고, 별지기가 별을 잇고, **사이가 그리고 지도지기가 그 모든 모습을 마을 외부의 행인에게 보여준다.**
+
+### 7.1 사이와의 디자인 라인 (design-first)
+
+치즈모리의 직속 **이전 공정**은 [[sai|사이 (묵화 닌자)]]다.
+
+```
+사이 (묵화 닌자) — 초수의화 발동
+   │  Home/design/harness-view.pen 갱신
+   │  Home/harness-view 코드 동기화
+   ↓
+치즈모리 (지도지기)
+   │  매니페스트 (indexes/*.json) 갱신
+   │  PDSA 동적 분석 (data/pdsa-insight.json)
+   │  GitHub Pages 퍼블리싱
+   ↓
+[외부 행인이 보는 마을 지도]
+```
+
+이 하네스는 [[design-first|design-first 원칙]]을 따른다 — `.pen` 정전이 진실, harness-view 코드는 그 그림자다.
+치즈모리는 **사이가 갱신한 코드를 받아 매니페스트를 다시 짠다.** 디자인 갱신 없이 코드만 변경된 경우는 [[pencil-design-locations|펜슬 디자인 위치 정전]]의 design-debt 라벨로 추적한다.
+
+> 치즈모리는 그리지 않는다 — 치즈모리는 보여준다. 그리는 일은 사이의 영역이다.
 
 ---
 
@@ -273,6 +296,10 @@ description: 지도지기 — Konohagakure 출신 마을 지도 수호자. harne
 - [[hoshimori|🌟 호시모리 (별지기)]] — keeper 계열 자매
 - [[sage-deming|🐸 데밍 현자]] — PDSA 사상의 출처
 - [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]] — 정적/동적 분리 원리
+- [[sai|🖌️ 사이 (묵화 닌자)]] — 디자인 라인 이전 공정
+- [[choujuu-giga|🖌️ 초수의화 엔진]] — 사이의 워크플로우
+- [[design-first|⚖️ design-first 원칙 정전]] — 디자인 라인의 사상
+- [[pencil-design-locations|🖌️ 펜슬 디자인 위치 정전]] — `.pen` 위치 매핑 (Home/design/)
 
 ---
 
@@ -282,6 +309,11 @@ description: 지도지기 — Konohagakure 출신 마을 지도 수호자. harne
 - [[hoshimori|🌟 호시모리 (별지기)]] — keeper 계열 자매 (다른 도메인)
 - [[tamer|🧑‍🌾 정원지기 카카시]] — 동료 메타 에이전트
 - [[sage-deming|🐸 데밍 현자]] — PDSA 사상의 원천
+- [[sai|🖌️ 사이 (묵화 닌자)]] — 디자인 라인 이전 공정
+- [[choujuu-giga|🖌️ 초수의화 엔진]]
+- [[design-first|⚖️ design-first 원칙 정전]]
+- [[pencil-design-locations|🖌️ 펜슬 디자인 위치 정전]]
 - [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
 - [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]] — 정적/동적 분리 원리
 - [[v1.6.0|📝 v1.6.0 영입 기록]]
+- [[v1.7.0|📝 v1.7.0 영입 기록]] — 사이 영입 + design-first

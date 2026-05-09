@@ -3,7 +3,7 @@
   "$schemaVersion": "1.0.0",
   "name": "Kakashi's Harness",
   "description": "카카시 하네스 이용기록기(테스트겸)",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "agents": [
     "tamer",
     "performance-scout",
@@ -19,10 +19,12 @@
     "roslyn-incremental-generator-specialist",
     "sage-deming",
     "hoshimori",
-    "chizumori"
+    "chizumori",
+    "sai"
   ],
   "engine": [
-    "toad-summoning"
+    "toad-summoning",
+    "choujuu-giga"
   ],
   "evaluation": {
     "base": {
@@ -56,8 +58,24 @@
       "principles": "static-as-reference, dynamic-in-sync"
     }
   },
+  "design": {
+    "principle": "design-first",
+    "owner": "sai",
+    "coOwner": "chizumori",
+    "canonRoot": "Home/design",
+    "files": ["Home/design/harness-view.pen"],
+    "viewMirror": "Home/harness-view",
+    "engine": "choujuu-giga",
+    "doctrineDoc": "harness/knowledge/methodology/design-first.md",
+    "locationsDoc": "harness/knowledge/design/pencil-design-locations.md",
+    "debtPolicy": {
+      "label": "design-debt",
+      "warnAfterDays": 7,
+      "blockReleaseAfterDays": 30
+    }
+  },
   "created": "2026-04-19",
-  "lastUpdated": "2026-05-08",
+  "lastUpdated": "2026-05-09",
   "plugins": {
     "harness-kakashi": {
       "skills": ["harness-kakashi-creator", "harness-chakra-kakashi"]

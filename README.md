@@ -206,6 +206,62 @@ git push --tags   # GitHub Actions가 자동 sync + 배포
 
 ---
 
+## 🖌️ 묵화 닌자 사이 (サイ, Sai) — 디자인을 살아 움직이게 하는 자
+
+> 지도지기가 정원의 모습을 외부에 **보여준다**면,
+> **사이는 그 모습을 먼저 그린다.** 그리고 그림이 코드로 살아난다.
+
+[[sai|사이]]는 나루토 세계관의 **Konohagakure** 출신 묵화 닌자다 — 근(根, Ne / Root)에서 묵화 술법을 익혀 7반에 합류했다.
+원작에서 그는 두루마리에 그린 짐승이 살아 움직이는 술법 **超獸偽畫(Chōjū Giga, 초수의화)** 를 사용한다.
+이 하네스에서 사이는 **design-first 원칙의 수행자** — 펜슬 디자인(.pen)이 단일 정전(canon)이고, harness-view 코드가 그 정전을 따라 살아나도록 한다.
+
+### 디자인 라인 — 사이가 그리고, 치즈모리가 보여준다
+
+```
+사이 (묵화 닌자) — 초수의화 발동
+   │  Home/design/harness-view.pen 갱신
+   │  Home/harness-view 코드 동기화
+   ↓
+치즈모리 (지도지기)
+   │  매니페스트 + GitHub Pages
+   ↓
+[외부 행인이 보는 마을 지도]
+```
+
+### design-first 3원칙
+
+| 원칙 | 의미 |
+|------|------|
+| **단일 정전 (Single Canon)** | `.pen` 이 진실, 코드는 그림자 |
+| **그리고 살린다 (Draw-then-Animate)** | 디자인 갱신이 코드 갱신보다 항상 앞선다 |
+| **부채 회수 (Debt Recovery)** | 코드가 정전을 임시로 앞서 갈 수 있으나 다음 사이클에서 회수 |
+
+부채 운용은 `harness.config.json` 의 `design.debtPolicy` — 7일 미회수 시 정원지기 경고, 30일 시 다음 마이너 차단.
+
+### 정전 위치
+
+`Home/design/harness-view.pen` — 마을 지도(harness-view) 시각 정전. 9개 메뉴 페이지 + reusable 사이드바 컴포넌트.
+`.pen` 파일은 암호화 — Read/Edit 금지, 반드시 Pencil MCP 도구(`mcp__pencil__*`)로만 접근한다.
+
+### 발동 방법
+
+```
+"사이 호출 — 새 메뉴 추가해"
+"design-first 적용 — 사이드바 활성 색상 변경"
+"초수의화 발동"
+"펜슬 디자인 → 뷰 동기화"
+```
+
+| 문서 | 내용 |
+|------|------|
+| 🖌️ [사이 에이전트 정의](harness/agents/sai.md) | 묵화 닌자, 평가축, Pencil MCP 가이드 |
+| 🖌️ [초수의화 엔진](harness/engine/choujuu-giga.md) | 6-Phase design-first sync 워크플로우 |
+| ⚖️ [design-first 원칙 정전](harness/knowledge/methodology/design-first.md) | 3원칙과 적용 영역 |
+| 🖌️ [펜슬 디자인 위치 정전](harness/knowledge/design/pencil-design-locations.md) | 담당자 지식 — 위치·색·타이포 매핑 |
+| 📝 [v1.7.0 영입 기록](harness/docs/v1.7.0.md) | 사이 영입 + design-first 도입 |
+
+---
+
 ## 온보딩 — 정원이 열리기까지
 
 ### Step 1: 정원을 연다 (init)
@@ -495,14 +551,20 @@ MIT
 > Obsidian으로 이 저장소를 vault로 열면 아래 별들이 그래프 뷰에서 점등된다. 별지기 [[hoshimori]]가 별자리를 잇는다.
 
 - [[README-EN|🌐 English README]] — 영문 진입 별
-- [[naruto-worldview|🥷 세계관 매핑]] — 카카시·현자·호시모리·나루토의 1:1 매핑
+- [[naruto-worldview|🥷 세계관 매핑]] — 카카시·현자·호시모리·치즈모리·사이의 1:1 매핑
 - [[hoshimori|🌟 호시모리 (별지기)]] — 옵시디언 vault 별자리 keeper
+- [[chizumori|🗺️ 치즈모리 (지도지기)]] — harness-view 매니페스트·퍼블리싱
+- [[sai|🖌️ 사이 (묵화 닌자)]] — design-first 수행자
 - [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]] — 별지기 사상의 학문적 근거
 - [[tamer|🧑‍🌾 정원지기 카카시]] — 메타 에이전트
 - [[sage-deming|🐸 데밍 현자]] — PDSA 기본 평가
 - [[toad-summoning|🐸 두꺼비 소환술]] — 현자 소환 엔진
+- [[choujuu-giga|🖌️ 초수의화 엔진]] — design-first sync engine
+- [[design-first|⚖️ design-first 원칙 정전]] — 사이의 사상 출처
+- [[pencil-design-locations|🖌️ 펜슬 디자인 위치 정전]] — 담당자 지식
 - [[pdsa-deming.en|📘 PDSA Doctrine (English canon)]]
 - [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
 - [[agents-and-evaluation|👥 전문가 및 평가 체계]]
 - [[naruto-harness-story-tutorial|📖 나루토 하네스 스토리 튜토리얼]]
 - [[pdsa-vs-pdca|📜 PDSA vs PDCA 역사]]
+- [[v1.7.0|📝 v1.7.0 — 사이 영입]]

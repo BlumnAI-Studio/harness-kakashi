@@ -206,6 +206,62 @@ Map keeper details: [agent definition](harness/agents/chizumori.md), [v1.6.0 rec
 
 ---
 
+## 🖌️ Sai (サイ) — The Ink Shinobi Who Brings Designs to Life
+
+> Where Chizumori **shows** the village to outsiders,
+> **Sai draws it first.** And the drawing comes alive as code.
+
+[[sai|Sai]] is the canonical Naruto character from **Konohagakure**, an ink-painting shinobi trained in **Root (根, Ne)** before joining Team 7.
+In the original, his signature jutsu **超獸偽畫 (Chōjū Giga, Super Beast Imitating Drawing)** lets beasts painted in his scroll leap out and move on their own.
+In this harness, Sai is the **executor of the design-first principle** — the pencil design (`.pen`) is the single canon, and `Home/harness-view` code follows it into life.
+
+### The design line — Sai paints, Chizumori shows
+
+```
+Sai (ink shinobi) — Chōjū Giga
+   │  Updates Home/design/harness-view.pen
+   │  Syncs Home/harness-view code
+   ↓
+Chizumori (map keeper)
+   │  Manifests + GitHub Pages
+   ↓
+[The map outsiders walk past and read]
+```
+
+### Three principles of design-first
+
+| Principle | Meaning |
+|-----------|---------|
+| **Single Canon** | `.pen` is the truth; code is its shadow |
+| **Draw-then-Animate** | Design updates always precede code updates |
+| **Debt Recovery** | Code may temporarily lead the canon, but every excursion must be reclaimed in the next cycle |
+
+Debt policy lives in `harness.config.json` `design.debtPolicy` — 7 days unrecovered triggers a gardener warning, 30 days blocks the next minor release.
+
+### Canon location
+
+`Home/design/harness-view.pen` — visual canon of the village map (harness-view). 9 menu pages + a reusable sidebar component.
+The `.pen` file is encrypted — Read/Edit are forbidden. All access goes through Pencil MCP tools (`mcp__pencil__*`).
+
+### How to invoke
+
+```
+"sai — add a new menu"
+"design-first sync — change sidebar active color"
+"choujuu-giga"
+"pencil-to-view"
+```
+
+| Document | Content |
+|----------|---------|
+| 🖌️ [Sai agent](harness/agents/sai.md) | Ink shinobi, evaluation axes, Pencil MCP guide |
+| 🖌️ [Chōjū Giga engine](harness/engine/choujuu-giga.md) | 6-Phase design-first sync workflow |
+| ⚖️ [design-first doctrine](harness/knowledge/methodology/design-first.md) | Three principles and where they apply |
+| 🖌️ [Pencil design locations canon](harness/knowledge/design/pencil-design-locations.md) | The owner's knowledge — paths, color & typography mapping |
+| 📝 [v1.7.0 recruitment log](harness/docs/v1.7.0.md) | Sai recruited + design-first introduced |
+
+---
+
 ## Onboarding — until the garden opens
 
 ### Step 1: Open the garden (init)
@@ -433,13 +489,19 @@ MIT
 > Open this repository as an Obsidian vault — the graph view lights up. The Star Keeper [[hoshimori]] tends the constellation.
 
 - [[README|🌐 한국어 README]] — Korean entry star
-- [[naruto-worldview|🥷 Worldview Mapping]] — Kakashi / Sage / Hoshimori / Naruto 1:1 mapping
+- [[naruto-worldview|🥷 Worldview Mapping]] — Kakashi / Sage / Hoshimori / Chizumori / Sai 1:1 mapping
 - [[hoshimori|🌟 Hoshimori (Star Keeper)]] — Obsidian vault constellation keeper
+- [[chizumori|🗺️ Chizumori (Map Keeper)]] — harness-view manifests & publishing
+- [[sai|🖌️ Sai (Ink Shinobi)]] — design-first executor
 - [[zettelkasten-llm-era|📚 Zettelkasten · Wiki-Tag Doctrine]] — Academic basis of the Star Keeper's doctrine
 - [[tamer|🧑‍🌾 Gardener Kakashi]] — Meta agent
 - [[sage-deming|🐸 Sage Deming]] — PDSA base evaluation
 - [[toad-summoning|🐸 Toad Summoning Engine]] — Sage invocation
+- [[choujuu-giga|🖌️ Chōjū Giga Engine]] — design-first sync engine
+- [[design-first|⚖️ design-first Doctrine]] — Sai's doctrine
+- [[pencil-design-locations|🖌️ Pencil Design Locations Canon]] — Owner's knowledge
 - [[pdsa-deming.en|📘 PDSA Doctrine (English canon)]]
 - [[evaluation-base-pdsa|⚙️ Base Evaluation Operating Rules]]
 - [[naruto-harness-story-tutorial.en|📖 Naruto Harness Story Tutorial (EN)]]
 - [[pdsa-vs-pdca|📜 PDSA vs PDCA history]]
+- [[v1.7.0|📝 v1.7.0 — Sai recruited]]

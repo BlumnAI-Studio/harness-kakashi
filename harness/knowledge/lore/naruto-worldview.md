@@ -21,6 +21,7 @@ status: canonical
 | **차크라 카카시 (Chakra Kakashi)** | 그림자 옵저버. 작업 중에는 끼어들지 않고, 끝난 뒤 토큰 사용을 감사한다. | `plugins/harness-kakashi/skills/harness-chakra-kakashi/` |
 | **호시모리 (星守, Hoshimori)** | 별지기. **Hoshigakure(星隠れの里, 별의 마을)** 출신의 별 수호자. 문서를 별로, 위키링크를 별자리로 본다. 옵시디언 vault에서 별빛을 잇는 자. | `harness/agents/hoshimori.md` |
 | **치즈모리 (地図守, Chizumori)** | 지도지기. **Konohagakure(木ノ葉隠れの里, 나뭇잎 마을)** 호카게 타워의 기록실 출신. 마을이 자라는 모습을 지도(harness-view)로 그려 외부 행인에게 보여준다. 뷰 동기화·뷰 퍼블리싱 두 역을 가진다. | `harness/agents/chizumori.md` |
+| **사이 (サイ, Sai)** | 묵화 닌자. **Konohagakure** 출신, 근(根, Ne / Root)에서 묵화 술법을 익혀 7반에 합류. 이 하네스에서는 **design-first 원칙의 수행자** — 펜슬 디자인(.pen)을 단일 정전으로 두고, 그린 그림이 harness-view 코드로 살아나게 한다. 사이가 그리면 치즈모리가 마을 외부에 보여준다. | `harness/agents/sai.md` |
 
 > **나루토는 이 세계의 주인공이지만, 직접 정원을 가꾸진 않는다.**
 > 정원을 가꾸는 건 카카시(tamer)이고, 나루토는 두꺼비 소환술(口寄せの術)을 통해 현자를 불러낸다.
@@ -37,6 +38,7 @@ status: canonical
 | **차크라** | チャクラ | 토큰 (input/output/cache) | 모든 행위의 자원 |
 | **별 수련** | 星修行 (Hoshi Shugyō) | 위키링크 별자리화 (Obsidian 그래프 점등) | 호시모리 (별지기) |
 | **지도술** | 地図術 (Chizu Jutsu) | 정원의 현재 모습을 정적 사이트로 시각화·퍼블리싱 (harness-view + GitHub Pages) | 치즈모리 (지도지기) |
+| **초수의화** | 超獸偽畫 (Chōjū Giga) | 펜슬 디자인(.pen) → harness-view 코드 동기화. 두루마리의 그림이 살아나는 술법으로 design-first 흐름의 핵심 (`harness/engine/choujuu-giga.md`) | 사이 (묵화 닌자) |
 
 ### 두꺼비 소환술의 의미
 
@@ -107,7 +109,11 @@ status: canonical
 - [[sage-deming|🐸 데밍 현자]] — 첫 영입 현자
 - [[hoshimori|🌟 호시모리 (별지기)]] — Hoshigakure 출신 별 수호자
 - [[chizumori|🗺️ 치즈모리 (지도지기)]] — Konohagakure 출신 마을 지도 수호자
+- [[sai|🖌️ 사이 (묵화 닌자)]] — design-first 수행자, 치즈모리의 직속 전 공정
 - [[toad-summoning|🐸 두꺼비 소환술 엔진]]
+- [[choujuu-giga|🖌️ 초수의화 엔진]] — design-first sync engine
+- [[design-first|⚖️ design-first 원칙 정전]]
+- [[pencil-design-locations|🖌️ 펜슬 디자인 위치 정전]]
 - [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]] — 별 수련의 학문적 기반
 - [[pdsa-deming.en|📘 PDSA — Deming's Doctrine (English canon)]]
 - [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]

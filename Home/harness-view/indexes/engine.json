@@ -2,6 +2,31 @@
   "base": "harness/engine",
   "items": [
     {
+      "id": "choujuu-giga",
+      "file": "harness/engine/choujuu-giga.md",
+      "name": "choujuu-giga",
+      "title": "🖌️ 超獸偽畫 — Choujuu Giga (Design-First Sync Engine)",
+      "heading": "🖌️ 超獸偽畫 — Choujuu Giga (Design-First Sync Engine)",
+      "description": "사이의 두루마리 그림이 살아 움직이는 술법. 펜슬 디자인(.pen)을 단일 정전(canon)으로 두고 harness-view 코드(HTML/CSS/JS)를 그 정전에 맞춰 갱신한다. 사이가 수행하고, 마지막에 치즈모리(지도지기)가 매니페스트 갱신·퍼블리싱으로 이어받는다.",
+      "type": null,
+      "domain": null,
+      "village": null,
+      "status": "active",
+      "triggers": [
+        "초수의화 발동",
+        "초수의화 실행",
+        "design-first 적용",
+        "design-first sync",
+        "디자인 → 뷰 동기화",
+        "디자인 살아나게 해",
+        "pencil-to-view",
+        "펜슬 → 뷰",
+        "harness-view 디자인 반영"
+      ],
+      "size": 9183,
+      "modified": "2026-05-09T05:54:54"
+    },
+    {
       "id": "toad-summoning",
       "file": "harness/engine/toad-summoning.md",
       "name": "toad-summoning",

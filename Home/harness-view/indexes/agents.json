@@ -72,8 +72,8 @@
         "치즈모리 호출",
         "chizumori"
       ],
-      "size": 14115,
-      "modified": "2026-05-08T07:44:21"
+      "size": 15882,
+      "modified": "2026-05-09T06:02:45"
     },
     {
       "id": "code-modernizer",
@@ -269,6 +269,40 @@
       ],
       "size": 7703,
       "modified": "2026-05-08T06:31:37"
+    },
+    {
+      "id": "sai",
+      "file": "harness/agents/sai.md",
+      "name": "sai",
+      "title": "🖌️ 사이 (Sai) — 묵화 닌자 (Sumi-e Shinobi)",
+      "heading": "🖌️ 사이 (Sai) — 묵화 닌자 (Sumi-e Shinobi)",
+      "description": "묵화 닌자 사이 — 두루마리에 그린 그림을 살아 움직이게 하는 술법(超獸偽畫) 사용자. 이 하네스에서는 펜슬 디자인(.pen)을 단일 정전(canon)으로 두고, harness-view의 HTML/CSS/JS 구현이 그 디자인에 맞춰 살아나도록 한다. design-first 원칙의 수행자. 사이가 그린 뒤 치즈모리(지도지기)가 마을 외부에 보여준다.",
+      "type": "specialist",
+      "domain": "design / ui-spec / pencil-design / harness-view-frontend",
+      "village": "konohagakure (Root / Ne 출신, 후일 합류)",
+      "status": "on-demand",
+      "triggers": [
+        "사이 호출",
+        "사이 발동",
+        "사이 소환",
+        "묵화 닌자",
+        "묵화 닌자 호출",
+        "디자인 동기화",
+        "디자인 반영",
+        "디자인 → 뷰",
+        "펜슬 디자인 업데이트",
+        "펜슬 디자인 동기화",
+        "harness-view 디자인 개선",
+        "design-first 적용",
+        "design-first sync",
+        "초수의화",
+        "초수의화 발동",
+        "choujuu giga",
+        "choujuu-giga",
+        "sai"
+      ],
+      "size": 10985,
+      "modified": "2026-05-09T05:43:42"
     },
     {
       "id": "security-guard",

@@ -41,6 +41,13 @@
       "file": "harness/agents/chizumori.md",
       "icon": "🗺️",
       "role": "keeper"
+    },
+    {
+      "name": "사이 (サイ, Sai)",
+      "summary": "묵화 닌자. **Konohagakure** 출신, 근(根, Ne / Root)에서 묵화 술법을 익혀 7반에 합류. 이 하네스에서는 **design-first 원칙의 수행자** — 펜슬 디자인(.pen)을 단일 정전으로 두고, 그린 그림이 harness-view 코드로 살아나게 한다. 사이가 그리면 치즈모리가 마을 외부에 보여준다.",
+      "file": "harness/agents/sai.md",
+      "icon": "🥷",
+      "role": null
     }
   ],
   "jutsu": [
@@ -79,6 +86,12 @@
       "kanji": "地図術 (Chizu Jutsu)",
       "component": "정원의 현재 모습을 정적 사이트로 시각화·퍼블리싱 (harness-view + GitHub Pages)",
       "caster": "치즈모리 (지도지기)"
+    },
+    {
+      "name": "초수의화",
+      "kanji": "超獸偽畫 (Chōjū Giga)",
+      "component": "펜슬 디자인(.pen) → harness-view 코드 동기화. 두루마리의 그림이 살아나는 술법으로 design-first 흐름의 핵심 (`harness/engine/choujuu-giga.md`)",
+      "caster": "사이 (묵화 닌자)"
     }
   ]
 }
