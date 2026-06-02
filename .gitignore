@@ -10,6 +10,10 @@ tmp/
 # .NET 빌드 산출물
 **/bin/
 **/obj/
+
+# Python 캐시
+__pycache__/
+*.pyc
 /.idea
 /.obsidian
 /.playwright-mcp
