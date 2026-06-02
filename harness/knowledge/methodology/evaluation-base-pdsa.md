@@ -31,6 +31,7 @@ language: ko
                     · 테스트 → test-sentinel
                     · 빌드 → build-doctor
                     · 코드 현대화 → code-modernizer
+                    · 기획 / 도메인 모델링 / 전략 설계 → sage-evans
                     · 아키텍처 → (영입 시) sage-fowler
                     · 데이터베이스 → (영입 시) sage-codd
 ```
@@ -126,6 +127,7 @@ PDSA 평가는 모든 로그에 다음 블록으로 부착된다:
 | 테스트 추가/수정 | test-sentinel | tests/ 디렉토리 변경 |
 | 빌드/CI 변경 | build-doctor | csproj/yml/Dockerfile 수정 |
 | 레거시 코드 현대화 | code-modernizer | API/패턴 마이그레이션 |
+| 기획·PRD·도메인 모델링·전략 설계 | sage-evans | 기획서/PRD 작성, 글로서리·컨텍스트·도메인 어휘 변경, 신규 도메인 진입 |
 | .NET 동시성 / 액카 | dotnet-concurrency-specialist, akka-net-specialist | 동시성 코드 변경 |
 | 벤치마크 설계 | dotnet-benchmark-designer | BenchmarkDotNet 변경 |
 | 컴파일러/제너레이터 | roslyn-incremental-generator-specialist | Source Generator 변경 |
@@ -177,8 +179,11 @@ PDSA 평가는 모든 로그에 다음 블록으로 부착된다:
 
 ## 7. 참조
 
-- 영문 정전: [`pdsa-deming.en.md`](./pdsa-deming.en.md)
+- 영문 정전 (PDSA): [`pdsa-deming.en.md`](./pdsa-deming.en.md)
+- 영문 정전 (DDD): [`ddd-evans.en.md`](./ddd-evans.en.md)
+- DDD 기획 운용: [`ddd-planning-playbook.ko.md`](./ddd-planning-playbook.ko.md)
 - 데밍 현자 에이전트: [`harness/agents/sage-deming.md`](../../agents/sage-deming.md)
+- 에반스 현자 에이전트: [`harness/agents/sage-evans.md`](../../agents/sage-evans.md)
 - 소환술 엔진: [`harness/engine/toad-summoning.md`](../../engine/toad-summoning.md)
 - 세계관 매핑: [`harness/knowledge/lore/naruto-worldview.md`](../lore/naruto-worldview.md)
 - 기존 tamer 3축 평가: [`.claude/skills/harness-kakashi-creator/references/evaluation.md`](../../../.claude/skills/harness-kakashi-creator/references/evaluation.md)
@@ -188,7 +193,10 @@ PDSA 평가는 모든 로그에 다음 블록으로 부착된다:
 ## 🌟 별자리 (Constellation)
 
 - [[pdsa-deming.en|📘 PDSA — Deming's Doctrine (English canon)]] — 정전
+- [[ddd-evans.en|📘 DDD — Evans's Doctrine (English canon)]] — 후속 평가 정전
+- [[ddd-planning-playbook.ko|📋 DDD 기획 단계 운용 플레이북]] — 기획자용 운용
 - [[sage-deming|🐸 데밍 현자]]
+- [[sage-evans|🐉 에반스 현자]]
 - [[toad-summoning|🐸 두꺼비 소환술 엔진]]
 - [[naruto-worldview|🥷 세계관 매핑]]
 - [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]]

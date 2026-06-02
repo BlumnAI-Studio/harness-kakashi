@@ -3,7 +3,7 @@
   "$schemaVersion": "1.0.0",
   "name": "Kakashi's Harness",
   "description": "카카시 하네스 이용기록기(테스트겸)",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "agents": [
     "tamer",
     "performance-scout",
@@ -18,6 +18,7 @@
     "docfx-specialist",
     "roslyn-incremental-generator-specialist",
     "sage-deming",
+    "sage-evans",
     "hoshimori",
     "chizumori",
     "sai"
@@ -75,7 +76,7 @@
     }
   },
   "created": "2026-04-19",
-  "lastUpdated": "2026-05-09",
+  "lastUpdated": "2026-06-03",
   "plugins": {
     "harness-kakashi": {
       "skills": ["harness-kakashi-creator", "harness-chakra-kakashi"]

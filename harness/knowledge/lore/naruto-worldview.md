@@ -59,8 +59,9 @@ status: canonical
 | 현자 | 도메인 | 사상 | 상태 |
 |------|--------|------|------|
 | **데밍 (W. Edwards Deming)** | 품질 (QA의 아버지) | PDSA 사이클 — 학습 기반 지속 개선 | ✅ 영입 (v1.4.0) |
+| **에반스 (Eric Evans)** | 도메인 모델링 / 기획 단계 전략 설계 | DDD — 유비쿼터스 언어 · 경계된 컨텍스트 · 핵심 도메인 | ✅ 영입 (v1.8.0) |
 | (예정) 마틴 파울러 | 아키텍처 / 리팩터링 | 진화적 설계 | 미영입 |
-| (예정) 코드 코드 (E.F. Codd) | 데이터베이스 | 관계형 정규화 | 미영입 |
+| (예정) 코드 (E.F. Codd) | 데이터베이스 | 관계형 정규화 | 미영입 |
 | (예정) 데이비드 파나스 (D.L. Parnas) | 모듈 설계 | 정보 은닉 | 미영입 |
 | (예정) 도널드 크누스 (D.E. Knuth) | 알고리즘 / 문해적 프로그래밍 | 정확성과 가독성 | 미영입 |
 
@@ -107,6 +108,7 @@ status: canonical
 
 - [[tamer|🧑‍🌾 정원지기 카카시]] — 카카시 캐릭터의 운영 정의
 - [[sage-deming|🐸 데밍 현자]] — 첫 영입 현자
+- [[sage-evans|🐉 에반스 현자]] — 두 번째 영입 현자, DDD 창시자
 - [[hoshimori|🌟 호시모리 (별지기)]] — Hoshigakure 출신 별 수호자
 - [[chizumori|🗺️ 치즈모리 (지도지기)]] — Konohagakure 출신 마을 지도 수호자
 - [[sai|🖌️ 사이 (묵화 닌자)]] — design-first 수행자, 치즈모리의 직속 전 공정
@@ -116,7 +118,10 @@ status: canonical
 - [[pencil-design-locations|🖌️ 펜슬 디자인 위치 정전]]
 - [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]] — 별 수련의 학문적 기반
 - [[pdsa-deming.en|📘 PDSA — Deming's Doctrine (English canon)]]
+- [[ddd-evans.en|📘 DDD — Evans's Doctrine (English canon)]]
+- [[ddd-planning-playbook.ko|📋 DDD 기획 단계 운용 플레이북]]
 - [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
 - [[v1.4.0|📝 v1.4.0 영입 기록]]
 - [[v1.5.0|📝 v1.5.0 영입 기록]]
 - [[v1.6.0|📝 v1.6.0 영입 기록]]
+- [[v1.8.0|📝 v1.8.0 영입 기록]]

@@ -3,7 +3,7 @@ name: toad-summoning
 display: 🐸 두꺼비 소환술 (口寄せの術)
 caster: 나루토 (사용자/호출자)
 status: active
-sage_count: 1
+sage_count: 2
 triggers:
   - "현자 소환"
   - "현자 호출"
@@ -39,6 +39,7 @@ description: 과거의 거장(현자)을 도메인별로 소환해 그들의 사
 | 현자 ID | 이름 | 도메인 | 사상 | 영입 버전 | 상태 |
 |---------|------|--------|------|----------|------|
 | `sage-deming` | W. Edwards Deming | 품질 / 지속 개선 | PDSA 사이클 | v1.4.0 | ✅ Always-on |
+| `sage-evans` | Eric Evans | 도메인 모델링 / 기획 단계 전략 설계 | DDD (유비쿼터스 언어·경계된 컨텍스트·핵심 도메인) | v1.8.0 | ✅ On-demand (기획·도메인 매칭 시 자동) |
 
 미영입 현자 후보: [`harness/knowledge/lore/naruto-worldview.md` §현자 카탈로그](../knowledge/lore/naruto-worldview.md) 참조.
 
@@ -92,6 +93,7 @@ description: 과거의 거장(현자)을 도메인별로 소환해 그들의 사
 
 현자의 doctrine에 따라 작업을 평가/실행한다.
 - sage-deming → PDSA 사이클로 작업 회고
+- sage-evans → DDD 전략 설계 관점으로 기획 산출물 점검 (유비쿼터스 언어·경계된 컨텍스트·핵심 도메인)
 - (영입 시) sage-fowler → 진화적 설계 관점으로 아키텍처 점검
 - (영입 시) sage-codd → 정규화 관점으로 스키마 점검
 
@@ -145,8 +147,11 @@ description: 과거의 거장(현자)을 도메인별로 소환해 그들의 사
 
 - 세계관: [`harness/knowledge/lore/naruto-worldview.md`](../knowledge/lore/naruto-worldview.md)
 - 영문 PDSA 정전: [`harness/knowledge/methodology/pdsa-deming.en.md`](../knowledge/methodology/pdsa-deming.en.md)
+- 영문 DDD 정전: [`harness/knowledge/methodology/ddd-evans.en.md`](../knowledge/methodology/ddd-evans.en.md)
+- DDD 기획 운용: [`harness/knowledge/methodology/ddd-planning-playbook.ko.md`](../knowledge/methodology/ddd-planning-playbook.ko.md)
 - 기본 평가 운용: [`harness/knowledge/methodology/evaluation-base-pdsa.md`](../knowledge/methodology/evaluation-base-pdsa.md)
 - 첫 현자: [`harness/agents/sage-deming.md`](../agents/sage-deming.md)
+- 두 번째 현자: [`harness/agents/sage-evans.md`](../agents/sage-evans.md)
 
 ---
 
@@ -154,8 +159,12 @@ description: 과거의 거장(현자)을 도메인별로 소환해 그들의 사
 
 - [[naruto-worldview|🥷 세계관 매핑]] — 술법 카탈로그 등록
 - [[sage-deming|🐸 첫 현자 데밍]] — 영입된 첫 거장
+- [[sage-evans|🐉 두 번째 현자 에반스]] — DDD 창시자
 - [[pdsa-deming.en|📘 PDSA — Deming's Doctrine (English canon)]]
+- [[ddd-evans.en|📘 DDD — Evans's Doctrine (English canon)]]
+- [[ddd-planning-playbook.ko|📋 DDD 기획 단계 운용 플레이북]]
 - [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]
 - [[tamer|🧑‍🌾 정원지기 카카시]] — 사륜안과 두꺼비 소환술의 관계
 - [[hoshimori|🌟 호시모리 (별지기)]] — 별 수련은 소환술과 다른 비기
 - [[v1.4.0|📝 v1.4.0 영입 기록]]
+- [[v1.8.0|📝 v1.8.0 영입 기록]]
