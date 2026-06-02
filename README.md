@@ -62,6 +62,9 @@ Claude Code 안에서 두 줄을 순서대로 실행합니다.
 
 ```
 /plugin marketplace add psmon/harness-kakashi
+```
+
+```
 /plugin install harness-kakashi@harness-kakashi-skills
 ```
 

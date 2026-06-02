@@ -1,6 +1,9 @@
 # 로컬 설정
 .claude/settings.local.json
 
+# 비밀 정보
+.secret/*.json
+
 # 임시 파일
 tmp/
 
