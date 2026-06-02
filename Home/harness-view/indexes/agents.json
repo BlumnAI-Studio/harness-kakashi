@@ -19,8 +19,8 @@
         "액터 시스템 분석",
         "클러스터 점검해"
       ],
-      "size": 3635,
-      "modified": "2026-05-08T06:33:23"
+      "size": 3726,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "build-doctor",
@@ -39,8 +39,8 @@
         "빌드 성능 점검해",
         "build analysis"
       ],
-      "size": 3269,
-      "modified": "2026-05-08T06:32:55"
+      "size": 3371,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "chizumori",
@@ -72,8 +72,8 @@
         "치즈모리 호출",
         "chizumori"
       ],
-      "size": 15882,
-      "modified": "2026-05-09T06:02:45"
+      "size": 16201,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "code-modernizer",
@@ -92,8 +92,8 @@
         "업그레이드 가이드해",
         "modernize code"
       ],
-      "size": 3446,
-      "modified": "2026-05-08T06:33:08"
+      "size": 3543,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "docfx-specialist",
@@ -113,8 +113,8 @@
         "docfx review",
         "문서 품질 점검"
       ],
-      "size": 3301,
-      "modified": "2026-05-08T06:34:18"
+      "size": 3395,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "dotnet-benchmark-designer",
@@ -134,8 +134,8 @@
         "benchmark design",
         "계측 설계"
       ],
-      "size": 3782,
-      "modified": "2026-05-08T06:34:05"
+      "size": 3881,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "dotnet-concurrency-specialist",
@@ -155,8 +155,8 @@
         "데드락 분석",
         "concurrency review"
       ],
-      "size": 3819,
-      "modified": "2026-05-08T06:33:37"
+      "size": 3917,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "dotnet-performance-analyst",
@@ -176,8 +176,8 @@
         "performance analysis",
         "GC 분석해"
       ],
-      "size": 4193,
-      "modified": "2026-05-08T06:33:55"
+      "size": 4296,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "hoshimori",
@@ -205,8 +205,8 @@
         "wikilinks update",
         "starmap rebuild"
       ],
-      "size": 10771,
-      "modified": "2026-05-08T06:46:31"
+      "size": 11048,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "performance-scout",
@@ -225,8 +225,8 @@
         "병목 찾아줘",
         "performance review"
       ],
-      "size": 3540,
-      "modified": "2026-05-08T06:32:17"
+      "size": 3634,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "roslyn-incremental-generator-specialist",
@@ -246,8 +246,8 @@
         "source generator 점검",
         "생성기 설계 리뷰"
       ],
-      "size": 4148,
-      "modified": "2026-05-08T06:34:28"
+      "size": 4246,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "sage-deming",
@@ -267,8 +267,44 @@
         "기본 평가 실행",
         "summon deming"
       ],
-      "size": 7703,
-      "modified": "2026-05-08T06:31:37"
+      "size": 7901,
+      "modified": "2026-06-02T14:57:56"
+    },
+    {
+      "id": "sage-evans",
+      "file": "harness/agents/sage-evans.md",
+      "name": "sage-evans",
+      "title": "🐉 Sage Evans — 에반스 현자",
+      "heading": "🐉 Sage Evans — 에반스 현자",
+      "description": "두꺼비 소환술로 영입된 두 번째 현자. Domain-Driven Design의 창시자로서 기획 단계의 언어와 경계를 점검한다. 한국 기획자(PM/PO/BA)의 PRD·기획서를 받아 유비쿼터스 언어·경계된 컨텍스트·핵심 도메인이 명시되었는지 평가하는 전략 설계의 아버지.",
+      "type": "sage",
+      "domain": "planning / domain-modeling / strategic-design",
+      "village": null,
+      "status": "on-demand",
+      "triggers": [
+        "에반스 소환",
+        "에반스 호출",
+        "에릭 에반스 호출",
+        "에릭 에반스 소환",
+        "DDD 평가",
+        "DDD 점검",
+        "도메인 주도 점검",
+        "도메인 주도 평가",
+        "도메인주도 점검",
+        "도메인주도 평가",
+        "도메인 모델링 점검",
+        "전략 설계 점검",
+        "기획 단계 평가",
+        "기획 검토",
+        "유비쿼터스 언어 점검",
+        "바운디드 컨텍스트 점검",
+        "경계된 컨텍스트 점검",
+        "컨텍스트 맵 점검",
+        "summon evans",
+        "ddd review"
+      ],
+      "size": 13913,
+      "modified": "2026-06-02T16:01:57"
     },
     {
       "id": "sai",
@@ -301,8 +337,8 @@
         "choujuu-giga",
         "sai"
       ],
-      "size": 10985,
-      "modified": "2026-05-09T05:43:42"
+      "size": 11237,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "security-guard",
@@ -321,8 +357,8 @@
         "보안 리뷰해",
         "security review"
       ],
-      "size": 3759,
-      "modified": "2026-05-08T06:32:45"
+      "size": 3859,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "tamer",
@@ -341,8 +377,8 @@
         "하네스를 설명해",
         "평가로그를 점검해"
       ],
-      "size": 2190,
-      "modified": "2026-05-08T06:31:25"
+      "size": 2260,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "test-sentinel",
@@ -361,8 +397,8 @@
         "테스트 냄새 찾아줘",
         "test quality review"
       ],
-      "size": 3848,
-      "modified": "2026-05-08T06:32:28"
+      "size": 3954,
+      "modified": "2026-06-02T14:57:56"
     }
   ]
 }

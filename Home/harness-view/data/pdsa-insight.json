@@ -1,51 +1,29 @@
 {
-  "analyzedAt": "2026-05-09",
+  "analyzedAt": "2026-06-02",
   "windowDays": 14,
   "sources": [
     {
-      "date": "2026-05-08",
+      "date": "2026-06-03",
       "category": "tamer",
-      "file": "harness/logs/tamer/2026-05-08-recruit-chizumori-and-build-harness-view.md",
+      "file": "harness/logs/tamer/2026-06-03-recruit-sage-evans-and-introduce-ddd-planning.md",
       "title": {
-        "ko": "지도지기 치즈모리 영입 & harness-view + GitHub Pages 신설",
-        "en": "지도지기 치즈모리 영입 & harness-view + GitHub Pages 신설"
-      }
-    },
-    {
-      "date": "2026-05-08",
-      "category": "tamer",
-      "file": "harness/logs/tamer/2026-05-08-recruit-hoshimori-and-apply-wikilinks.md",
-      "title": {
-        "ko": "별지기 호시모리 영입 & 위키링크 일괄 적용",
-        "en": "별지기 호시모리 영입 & 위키링크 일괄 적용"
-      }
-    },
-    {
-      "date": "2026-05-09T00:00:00Z",
-      "category": "tamer",
-      "file": "harness/logs/tamer/2026-05-09-recruit-sai-and-introduce-design-first.md",
-      "title": {
-        "ko": "사이 영입 + design-first 원칙 도입 (v1.7.0)",
-        "en": "사이 영입 + design-first 원칙 도입 (v1.7.0)"
+        "ko": "🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입",
+        "en": "🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입"
       }
     }
   ],
   "tried": [],
   "solved": [
     {
-      "ko": "[지도지기 치즈모리 영입 & harness-view + GitHub Pages 신설] 채택",
-      "en": "[지도지기 치즈모리 영입 & harness-view + GitHub Pages 신설] 채택"
-    },
-    {
-      "ko": "[별지기 호시모리 영입 & 위키링크 일괄 적용] 채택",
-      "en": "[별지기 호시모리 영입 & 위키링크 일괄 적용] 채택"
+      "ko": "[🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입] 채택",
+      "en": "[🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입] 채택"
     }
   ],
   "remaining": [],
   "learned": {
     "lead": {
-      "ko": "학습된 가설이 아직 모이지 않음.",
-      "en": "No learned hypothesis yet."
+      "ko": "- **후속 평가가 처음으로 코드 외부(기획 산출물)를 본다** — v1.4 이후 모든 후속은 \"코드 변경 → 코드 검토\"였지만, sage-evans는 \"PRD 변경 → 언어/경계 검토\"로 도메인 외삽. 향후 디자인/문서/계약 등 다른 비-코드 산출물에도 동일 패턴 확장 가능",
+      "en": "- **후속 평가가 처음으로 코드 외부(기획 산출물)를 본다** — v1.4 이후 모든 후속은 \"코드 변경 → 코드 검토\"였지만, sage-evans는 \"PRD 변경 → 언어/경계 검토\"로 도메인 외삽. 향후 디자인/문서/계약 등 다른 비-코드 산출물에도 동일 패턴 확장 가능"
     },
     "body": {
       "ko": "",

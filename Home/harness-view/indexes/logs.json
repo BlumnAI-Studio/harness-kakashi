@@ -2,6 +2,23 @@
   "base": "harness/logs",
   "items": [
     {
+      "id": "2026-06-03-recruit-sage-evans-and-introduce-ddd-planning",
+      "file": "harness/logs/tamer/2026-06-03-recruit-sage-evans-and-introduce-ddd-planning.md",
+      "name": "2026-06-03-recruit-sage-evans-and-introduce-ddd-planning",
+      "title": "🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입",
+      "heading": "🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입",
+      "description": "두꺼비 소환술의 **두 번째 현자**로 Eric Evans를 영입했다. 한국 기획자(PM/PO/BA)가 PRD·기획서·도메인 모델 작업 시 자동 호출되는 후속 평가자로 등록.",
+      "type": "creation",
+      "domain": null,
+      "village": null,
+      "status": null,
+      "triggers": [],
+      "size": 9189,
+      "modified": "2026-06-02T16:07:53",
+      "category": "tamer",
+      "date": "2026-06-03"
+    },
+    {
       "id": "2026-05-09-recruit-sai-and-introduce-design-first",
       "file": "harness/logs/tamer/2026-05-09-recruit-sai-and-introduce-design-first.md",
       "name": "2026-05-09-recruit-sai-and-introduce-design-first",
@@ -13,8 +30,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 6014,
-      "modified": "2026-05-09T06:13:39",
+      "size": 6104,
+      "modified": "2026-06-02T14:57:56",
       "category": "tamer",
       "date": "2026-05-09"
     },
@@ -30,8 +47,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 11830,
-      "modified": "2026-05-08T07:48:45",
+      "size": 12028,
+      "modified": "2026-06-02T14:57:56",
       "category": "tamer",
       "date": "2026-05-08"
     },
@@ -47,8 +64,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 8241,
-      "modified": "2026-05-08T06:47:44",
+      "size": 8380,
+      "modified": "2026-06-02T14:57:56",
       "category": "tamer",
       "date": "2026-05-08"
     },
@@ -64,8 +81,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 7367,
-      "modified": "2026-05-08T06:43:45",
+      "size": 7484,
+      "modified": "2026-06-02T14:57:56",
       "category": "tamer",
       "date": "2026-04-24"
     },
@@ -81,8 +98,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 4484,
-      "modified": "2026-05-08T06:42:46",
+      "size": 4578,
+      "modified": "2026-06-02T14:57:56",
       "category": "harness-build",
       "date": "2026-04-20"
     },
@@ -98,8 +115,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 3960,
-      "modified": "2026-05-08T06:43:27",
+      "size": 4037,
+      "modified": "2026-06-02T14:57:56",
       "category": "tamer",
       "date": "2026-04-20"
     },
@@ -115,8 +132,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 1664,
-      "modified": "2026-05-08T06:40:49",
+      "size": 1715,
+      "modified": "2026-06-02T14:57:56",
       "category": "execution",
       "date": "2026-04-19"
     },
@@ -132,8 +149,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 2981,
-      "modified": "2026-05-08T06:41:06",
+      "size": 3056,
+      "modified": "2026-06-02T14:57:56",
       "category": "full-review",
       "date": "2026-04-19"
     },
@@ -149,8 +166,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 2187,
-      "modified": "2026-05-08T06:41:24",
+      "size": 2232,
+      "modified": "2026-06-02T14:57:56",
       "category": "harness-build",
       "date": "2026-04-19"
     },
@@ -166,8 +183,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 2788,
-      "modified": "2026-05-08T06:41:50",
+      "size": 2852,
+      "modified": "2026-06-02T14:57:56",
       "category": "harness-build",
       "date": "2026-04-19"
     },
@@ -183,8 +200,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 1606,
-      "modified": "2026-05-08T06:42:19",
+      "size": 1649,
+      "modified": "2026-06-02T14:57:56",
       "category": "harness-build",
       "date": "2026-04-19"
     },
@@ -200,8 +217,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 1409,
-      "modified": "2026-05-08T06:42:58",
+      "size": 1446,
+      "modified": "2026-06-02T14:57:56",
       "category": "security-guard",
       "date": "2026-04-19"
     },
@@ -217,8 +234,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 2495,
-      "modified": "2026-05-08T06:43:12",
+      "size": 2561,
+      "modified": "2026-06-02T14:57:56",
       "category": "tamer",
       "date": "2026-04-19"
     }
@@ -237,8 +254,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 1664,
-        "modified": "2026-05-08T06:40:49",
+        "size": 1715,
+        "modified": "2026-06-02T14:57:56",
         "category": "execution",
         "date": "2026-04-19"
       }
@@ -256,8 +273,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 2981,
-        "modified": "2026-05-08T06:41:06",
+        "size": 3056,
+        "modified": "2026-06-02T14:57:56",
         "category": "full-review",
         "date": "2026-04-19"
       }
@@ -275,8 +292,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 4484,
-        "modified": "2026-05-08T06:42:46",
+        "size": 4578,
+        "modified": "2026-06-02T14:57:56",
         "category": "harness-build",
         "date": "2026-04-20"
       },
@@ -292,8 +309,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 2187,
-        "modified": "2026-05-08T06:41:24",
+        "size": 2232,
+        "modified": "2026-06-02T14:57:56",
         "category": "harness-build",
         "date": "2026-04-19"
       },
@@ -309,8 +326,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 2788,
-        "modified": "2026-05-08T06:41:50",
+        "size": 2852,
+        "modified": "2026-06-02T14:57:56",
         "category": "harness-build",
         "date": "2026-04-19"
       },
@@ -326,8 +343,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 1606,
-        "modified": "2026-05-08T06:42:19",
+        "size": 1649,
+        "modified": "2026-06-02T14:57:56",
         "category": "harness-build",
         "date": "2026-04-19"
       }
@@ -345,13 +362,30 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 1409,
-        "modified": "2026-05-08T06:42:58",
+        "size": 1446,
+        "modified": "2026-06-02T14:57:56",
         "category": "security-guard",
         "date": "2026-04-19"
       }
     ],
     "tamer": [
+      {
+        "id": "2026-06-03-recruit-sage-evans-and-introduce-ddd-planning",
+        "file": "harness/logs/tamer/2026-06-03-recruit-sage-evans-and-introduce-ddd-planning.md",
+        "name": "2026-06-03-recruit-sage-evans-and-introduce-ddd-planning",
+        "title": "🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입",
+        "heading": "🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입",
+        "description": "두꺼비 소환술의 **두 번째 현자**로 Eric Evans를 영입했다. 한국 기획자(PM/PO/BA)가 PRD·기획서·도메인 모델 작업 시 자동 호출되는 후속 평가자로 등록.",
+        "type": "creation",
+        "domain": null,
+        "village": null,
+        "status": null,
+        "triggers": [],
+        "size": 9189,
+        "modified": "2026-06-02T16:07:53",
+        "category": "tamer",
+        "date": "2026-06-03"
+      },
       {
         "id": "2026-05-09-recruit-sai-and-introduce-design-first",
         "file": "harness/logs/tamer/2026-05-09-recruit-sai-and-introduce-design-first.md",
@@ -364,8 +398,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 6014,
-        "modified": "2026-05-09T06:13:39",
+        "size": 6104,
+        "modified": "2026-06-02T14:57:56",
         "category": "tamer",
         "date": "2026-05-09"
       },
@@ -381,8 +415,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 11830,
-        "modified": "2026-05-08T07:48:45",
+        "size": 12028,
+        "modified": "2026-06-02T14:57:56",
         "category": "tamer",
         "date": "2026-05-08"
       },
@@ -398,8 +432,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 8241,
-        "modified": "2026-05-08T06:47:44",
+        "size": 8380,
+        "modified": "2026-06-02T14:57:56",
         "category": "tamer",
         "date": "2026-05-08"
       },
@@ -415,8 +449,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 7367,
-        "modified": "2026-05-08T06:43:45",
+        "size": 7484,
+        "modified": "2026-06-02T14:57:56",
         "category": "tamer",
         "date": "2026-04-24"
       },
@@ -432,8 +466,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 3960,
-        "modified": "2026-05-08T06:43:27",
+        "size": 4037,
+        "modified": "2026-06-02T14:57:56",
         "category": "tamer",
         "date": "2026-04-20"
       },
@@ -449,8 +483,8 @@
         "village": null,
         "status": null,
         "triggers": [],
-        "size": 2495,
-        "modified": "2026-05-08T06:43:12",
+        "size": 2561,
+        "modified": "2026-06-02T14:57:56",
         "category": "tamer",
         "date": "2026-04-19"
       }

@@ -13,8 +13,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 2301,
-      "modified": "2026-05-08T06:38:26"
+      "size": 2366,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "agents-and-evaluation",
@@ -28,8 +28,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 13138,
-      "modified": "2026-05-08T06:38:44"
+      "size": 13478,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "sample-security-review-hello-pyramid",
@@ -43,8 +43,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 7388,
-      "modified": "2026-05-08T06:38:59"
+      "size": 7575,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "v1.1.0",
@@ -58,8 +58,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 1607,
-      "modified": "2026-05-08T06:36:29"
+      "size": 1652,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "v1.2.0",
@@ -73,8 +73,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 3803,
-      "modified": "2026-05-08T06:36:51"
+      "size": 3881,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "v1.3.0",
@@ -88,8 +88,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 4155,
-      "modified": "2026-05-08T06:37:08"
+      "size": 4252,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "v1.4.0",
@@ -103,8 +103,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 7206,
-      "modified": "2026-05-08T06:37:30"
+      "size": 7365,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "v1.5.0",
@@ -118,8 +118,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 5678,
-      "modified": "2026-05-08T07:26:05"
+      "size": 5814,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "v1.6.0",
@@ -133,8 +133,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 7482,
-      "modified": "2026-05-08T07:44:34"
+      "size": 7656,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "v1.6.1",
@@ -148,8 +148,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 3881,
-      "modified": "2026-05-08T07:57:28"
+      "size": 3967,
+      "modified": "2026-06-02T14:57:56"
     },
     {
       "id": "v1.7.0",
@@ -163,16 +163,36 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 6918,
-      "modified": "2026-05-09T06:12:10"
+      "size": 7079,
+      "modified": "2026-06-02T14:57:56"
+    },
+    {
+      "id": "v1.8.0",
+      "file": "harness/docs/v1.8.0.md",
+      "name": "v1.8.0",
+      "title": "v1.8.0 — 에반스(Eric Evans) 영입 + DDD 기획 단계 후속 평가 도입",
+      "heading": "v1.8.0 — 에반스(Eric Evans) 영입 + DDD 기획 단계 후속 평가 도입",
+      "description": "**날짜**: 2026-06-03 **유형**: Minor (새 현자 + 새 후속 평가 트리거 + 새 운영 플레이북)",
+      "type": null,
+      "domain": null,
+      "village": null,
+      "status": null,
+      "triggers": [],
+      "size": 9006,
+      "modified": "2026-06-02T16:06:24"
     }
   ],
   "contributors": [
     {
       "name": "psmon",
-      "commits": 11,
-      "percent": 100
+      "commits": 12,
+      "percent": 92
+    },
+    {
+      "name": "smpark-luna",
+      "commits": 1,
+      "percent": 8
     }
   ],
-  "commitCount": 11
+  "commitCount": 13
 }

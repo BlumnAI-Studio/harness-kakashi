@@ -13,8 +13,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 6746,
-      "modified": "2026-05-08T06:35:08",
+      "size": 6876,
+      "modified": "2026-06-02T14:57:56",
       "category": "general"
     },
     {
@@ -29,8 +29,8 @@
       "village": null,
       "status": "canonical",
       "triggers": [],
-      "size": 8128,
-      "modified": "2026-05-09T05:58:02",
+      "size": 8354,
+      "modified": "2026-06-02T14:57:56",
       "category": "design"
     },
     {
@@ -45,8 +45,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 5566,
-      "modified": "2026-05-08T06:35:23",
+      "size": 5686,
+      "modified": "2026-06-02T14:57:56",
       "category": "general"
     },
     {
@@ -61,8 +61,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 3012,
-      "modified": "2026-05-08T06:34:55",
+      "size": 3090,
+      "modified": "2026-06-02T14:57:56",
       "category": "general"
     },
     {
@@ -77,9 +77,41 @@
       "village": null,
       "status": "canonical",
       "triggers": [],
-      "size": 8361,
-      "modified": "2026-05-09T06:00:43",
+      "size": 8926,
+      "modified": "2026-06-02T16:02:40",
       "category": "lore"
+    },
+    {
+      "id": "ddd-evans.en",
+      "file": "harness/knowledge/methodology/ddd-evans.en.md",
+      "name": "ddd-evans.en",
+      "title": "Domain-Driven Design — Evans's Doctrine",
+      "heading": "Domain-Driven Design — Evans's Doctrine",
+      "description": "**Domain-Driven Design (DDD)** is — in the words of Eric Evans's own consultancy, Domain Language, Inc., and the DDD Community —",
+      "type": null,
+      "domain": "methodology",
+      "village": null,
+      "status": "canonical",
+      "triggers": [],
+      "size": 22630,
+      "modified": "2026-06-02T15:58:14",
+      "category": "methodology"
+    },
+    {
+      "id": "ddd-planning-playbook.ko",
+      "file": "harness/knowledge/methodology/ddd-planning-playbook.ko.md",
+      "name": "ddd-planning-playbook.ko",
+      "title": "DDD 기획 단계 운용 플레이북",
+      "heading": "DDD 기획 단계 운용 플레이북",
+      "description": "| 역할 | 이 문서에서 얻는 것 | |------|-------------------| | **기획자 / PM / PO** | 기획서·PRD를 쓸 때 **무엇을 명시해야** sage-evans의 평가를 통과하는가 | | **도메인 전문가 / 현업** | 개발자와의 대화에서 어떤 단어 작업이 산출물이 되는가 |",
+      "type": null,
+      "domain": "methodology",
+      "village": null,
+      "status": "canonical",
+      "triggers": [],
+      "size": 13566,
+      "modified": "2026-06-02T16:00:06",
+      "category": "methodology"
     },
     {
       "id": "design-first",
@@ -93,8 +125,8 @@
       "village": null,
       "status": "canonical",
       "triggers": [],
-      "size": 6568,
-      "modified": "2026-05-09T05:59:14",
+      "size": 6734,
+      "modified": "2026-06-02T14:57:56",
       "category": "methodology"
     },
     {
@@ -109,8 +141,8 @@
       "village": null,
       "status": "canonical",
       "triggers": [],
-      "size": 8676,
-      "modified": "2026-05-08T06:36:09",
+      "size": 9604,
+      "modified": "2026-06-02T16:04:12",
       "category": "methodology"
     },
     {
@@ -125,8 +157,8 @@
       "village": null,
       "status": "canonical",
       "triggers": [],
-      "size": 9609,
-      "modified": "2026-05-08T06:35:51",
+      "size": 9760,
+      "modified": "2026-06-02T14:57:56",
       "category": "methodology"
     },
     {
@@ -141,8 +173,8 @@
       "village": null,
       "status": "canonical",
       "triggers": [],
-      "size": 8237,
-      "modified": "2026-05-08T06:46:19",
+      "size": 8409,
+      "modified": "2026-06-02T14:57:56",
       "category": "methodology"
     }
   ]

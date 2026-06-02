@@ -14,6 +14,9 @@ tmp/
 # Python 캐시
 __pycache__/
 *.pyc
+
+# 이미지 생성 산출물 (Notion 등 외부 저장소에 게시)
+image/
 /.idea
 /.obsidian
 /.playwright-mcp

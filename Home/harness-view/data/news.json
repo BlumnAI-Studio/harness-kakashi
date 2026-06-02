@@ -1,19 +1,35 @@
 {
-  "updatedAt": "2026-05-08",
+  "updatedAt": "2026-06-03",
   "headline": {
-    "ko": "🗺️ 마을 지도가 열렸다 — 치즈모리 영입 (v1.6.0)",
-    "en": "The village map opened — Chizumori joined (v1.6.0)"
+    "ko": "🐉 두 번째 현자 영입 — 에릭 에반스 (v1.8.0)",
+    "en": "Second sage recruited — Eric Evans (v1.8.0)"
   },
   "narrative": {
-    "ko": "Konohagakure 출신 지도지기 치즈모리가 영입되었습니다. 정원이 자랄수록 이 지도(harness-view)도 갱신됩니다. PDSA는 sage-deming의 사상이고, 이 지도에서는 집계만 합니다.",
-    "en": "Chizumori, the map keeper from Konohagakure, has joined. As the garden grows, this map updates. PDSA is sage-deming's doctrine; the map only aggregates."
+    "ko": "DDD 창시자 에릭 에반스가 두 번째 현자로 영입되었습니다. 데밍이 작업 종료 후 학습 루프(PDSA)를 본다면, 에반스는 기획 단계 시작 전 언어와 경계를 본다. 후속 평가가 처음으로 코드 외부 — PRD·기획서 — 까지 확장됐다.",
+    "en": "Eric Evans, the creator of DDD, joined as the second sage. Where Deming inspects the post-work learning loop (PDSA), Evans inspects the language and boundaries before planning begins. The follow-up evaluation has reached beyond code — into PRDs and planning artifacts."
   },
   "highlights": [
+    {
+      "label": "v1.8.0",
+      "tone": "sage",
+      "text": {
+        "ko": "🐉 에반스 현자 영입 — DDD 6축 평가(유비쿼터스 언어·바운디드 컨텍스트·Core)를 기획 단계 후속 평가로 부착",
+        "en": "Sage Evans recruited — DDD 6-axis evaluation (Ubiquitous Language, Bounded Context, Core) attached as planning-phase follow-up"
+      }
+    },
+    {
+      "label": "v1.7.0",
+      "tone": "leaf",
+      "text": {
+        "ko": "🖌️ 사이(묵화 닌자) 영입 + design-first 원칙 도입 (펜슬 디자인 정전)",
+        "en": "Sai (sumi-e ninja) recruited + design-first principle introduced (pencil design canon)"
+      }
+    },
     {
       "label": "v1.6.0",
       "tone": "leaf",
       "text": {
-        "ko": "지도지기 치즈모리 영입 + Home/harness-view 신설 + GitHub Pages 배포",
+        "ko": "🗺️ 지도지기 치즈모리 영입 + Home/harness-view 신설 + GitHub Pages 배포",
         "en": "Chizumori recruited + Home/harness-view built + GitHub Pages deploy"
       }
     },
@@ -21,7 +37,7 @@
       "label": "v1.5.0",
       "tone": "star",
       "text": {
-        "ko": "별지기 호시모리 영입 + 위키링크 별자리 일괄 적용",
+        "ko": "🌟 별지기 호시모리 영입 + 위키링크 별자리 일괄 적용",
         "en": "Hoshimori recruited + wiki-link constellation applied"
       }
     },
@@ -29,12 +45,33 @@
       "label": "v1.4.0",
       "tone": "sage",
       "text": {
-        "ko": "두꺼비 소환술 + 데밍 현자 영입 (PDSA 기본 평가)",
+        "ko": "🐸 두꺼비 소환술 + 데밍 현자 영입 (PDSA 기본 평가)",
         "en": "Toad summoning + Sage Deming recruited (PDSA base evaluation)"
       }
     }
   ],
   "prompts": [
+    {
+      "tag": "에반스",
+      "text": {
+        "ko": "에반스 호출 — 이 PRD 6축으로 점검",
+        "en": "Summon Evans — review this PRD on 6 axes"
+      }
+    },
+    {
+      "tag": "도메인 점검",
+      "text": {
+        "ko": "도메인 주도 점검 — 우리 글로서리·컨텍스트·Core 봐줘",
+        "en": "DDD review — check our glossary, contexts, and Core"
+      }
+    },
+    {
+      "tag": "데밍",
+      "text": {
+        "ko": "데밍 소환 — 이 작업 PDSA로 회고",
+        "en": "Summon Deming — retrospect this work via PDSA"
+      }
+    },
     {
       "tag": "지도지기",
       "text": {
@@ -45,8 +82,8 @@
     {
       "tag": "퍼블리싱",
       "text": {
-        "ko": "doc-v1.6.0 태그로 퍼블리싱",
-        "en": "Publish with doc-v1.6.0 tag"
+        "ko": "doc-v1.8.0 태그로 퍼블리싱",
+        "en": "Publish with doc-v1.8.0 tag"
       }
     }
   ]
