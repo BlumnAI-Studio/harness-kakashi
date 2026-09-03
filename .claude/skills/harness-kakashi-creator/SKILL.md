@@ -196,6 +196,7 @@ Tip: 카카시 하네스를 한 번 부른 뒤에는 /harness-kakashi-creator �
 1. harness.config.json의 `name`과 `description`을 읽는다
 2. 위 템플릿으로 현재 상태를 출력한다
 3. name/description을 분석하여 프로젝트 성격에 맞는 초기 에이전트 2~3명을 **구체적으로** 제안한다
+   — 실전 검증된 전문가 명부([references/recruit-catalog.md](references/recruit-catalog.md))에서 골라 제안하되, 명부 밖 제안도 가능
 4. **베스트 케이스 사례 인용** — [references/onboarding-best-case.md](references/onboarding-best-case.md)에서 실제 사용 사례를 요약하여 보여준다:
 
 ```
