@@ -456,9 +456,11 @@ trigger: "{매칭된 트리거 문구}"
 
 `/harness-kakashi-creator init` 명령으로 실행한다.
 
-이 스킬은 초기화 템플릿을 내장하고 있다:
+이 스킬은 초기화 템플릿을 내장하고 있다. 템플릿 경로는 **이 스킬의 베이스 디렉토리 기준**이다
+(스킬 로드 시 "Base directory for this skill:"로 안내되는 경로 — 이하 `{SKILL_DIR}`.
+로컬 `.claude/skills/` 설치든 마켓플레이스 플러그인 설치든 이 경로를 그대로 쓰면 된다):
 ```
-.claude/skills/harness-kakashi-creator/templates/harness/
+{SKILL_DIR}/templates/harness/
 ├── harness.config.json
 ├── agents/
 │   └── tamer.md
@@ -504,8 +506,13 @@ ls -d harness/ 2>/dev/null
 #### Step 3: 템플릿 복사
 
 ```bash
-cp -r .claude/skills/harness-kakashi-creator/templates/harness ./harness
+# {SKILL_DIR} = 스킬 로드 시 안내된 "Base directory for this skill" 경로
+cp -r "{SKILL_DIR}/templates/harness" ./harness
 ```
+
+> **주의**: `.claude/skills/harness-kakashi-creator/...` 같은 고정 경로를 가정하지 말 것.
+> 마켓플레이스 플러그인으로 설치되면 스킬은 플러그인 설치 경로에 위치하므로,
+> 반드시 실제 로드된 베이스 디렉토리(`{SKILL_DIR}`)에서 복사한다.
 
 #### Step 4: harness.config.json 설정
 

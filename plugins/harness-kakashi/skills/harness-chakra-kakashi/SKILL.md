@@ -102,7 +102,8 @@ description: |
    🥷 차크라 감사: 총량 E3 / 순환 B / 술법 ✓ / 인술 4 / 분신술 Pass — {핵심 1줄}
    ```
 5. **로그 기록**: 하네스가 있으면 `harness/logs/chakra-auditor/{yyyy-MM-dd-HH-mm}-{title}.md`,
-   없으면 `.claude/skills/harness-chakra-kakashi/logs/{date}-{title}.md`.
+   없으면 프로젝트의 `.claude/logs/harness-chakra-kakashi/{date}-{title}.md`.
+   (스킬 설치 디렉토리 안에 쓰지 않는다 — 플러그인 설치 경로는 작업 공간이 아니다.)
 
 ### Mode M: 수동 감사
 
@@ -194,7 +195,7 @@ description: |
 하네스가 없으면:
 
 - 본 스킬 단독으로 작동한다.
-- 로그는 `.claude/skills/harness-chakra-kakashi/logs/` 하위에 저장한다.
+- 로그는 프로젝트의 `.claude/logs/harness-chakra-kakashi/` 하위에 저장한다 (스킬 설치 디렉토리에는 쓰지 않는다).
 - `references/` 내부의 규칙 문서만 참조한다.
 
 ---
