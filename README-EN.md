@@ -31,6 +31,38 @@ The essence of a harness is not to **check** code but to **study** it — and th
 
 Anthropic's Skill 2.0 learning loop (Define → Execute → Evaluate & Reflect → Improve) is also structurally very close to PDSA, and that alignment is the starting point of this research.
 
+### Companion tool (optional): PDSA CLI — graph loop engineering
+
+If you want to run PDSA as **graph engineering**, you can optionally pair the harness with a separate PDSA CLI.
+It is a **separate loop-engineering tool that collaborates with this harness** — the harness owns the garden
+(agents · evaluation), while the PDSA CLI owns the cycle graph (expectation → verdict → learning).
+
+**Benefits**:
+- **It enforces PDSA** — do/study/act cannot proceed without a plan (plan + expected evaluation).
+  Most of us plan without a hypothesis; the CLI coaches you from expectation-setting onward
+- **It stores each cycle as a graph** — learning accumulates in a per-project embedded graph DB (Kùzu),
+  becoming an 'advanced memory' for AI agents (expectation-hit rate and cycle timelines are queryable)
+
+**Install** (npm global):
+
+```bash
+npm install -g @webnori/pdsa
+pdsa config key <LLM-key>      # LLM setup (for coaching)
+pdsa check                     # verify connection
+```
+
+**One cycle**:
+
+```bash
+pdsa plan "plan" --expect "expected evaluation"   # start a cycle — coached up to the hypothesis
+# ... do the work ...
+pdsa do "what was done"                            # organize the Plan→Do graph
+pdsa study "results"                               # verdict vs. expectation — Study, not Check
+pdsa act                                           # consolidate learning → next plan
+```
+
+Details: [psmon/akka-graph-loop](https://github.com/psmon/akka-graph-loop) — Akka.Streams-based PDSA feedback cycle + Kùzu graph DB.
+
 ---
 
 ## What is this?
@@ -479,6 +511,10 @@ The distributed plugin and the mother harness use **decoupled, independent semve
 
 Plugin release checklist: ① finish `plugins/` changes → ② bump all three manifest versions together →
 ③ record in `CHANGELOG.md` → ④ sync `plugins/` → `.claude/skills/` (verify diff 0).
+
+> **`plugins/` is the source of truth** — edit distributed skills (SKILL.md, references/, templates/)
+> under `plugins/harness-kakashi/skills/` first, then copy to `.claude/skills/` (the local test copy).
+> Keep only `tamer.md` under the distributed `templates/harness/agents/` — other agents are for users to recruit.
 
 ## License
 

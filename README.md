@@ -31,6 +31,38 @@ AI 전문가 에이전트 팀을 구성하고, 코드 품질 관리를 자동화
 
 Anthropic Skill 2.0의 학습 루프(Define → Execute → Evaluate & Reflect → Improve) 또한 구조적으로 PDSA와 매우 유사하며, 이 정합성이 연구의 출발점이다.
 
+### 보조 도구 (선택): PDSA CLI — 그래프 루프 엔지니어링
+
+PDSA를 **그래프 엔지니어링**으로 운용하고 싶다면, 별도의 PDSA CLI를 선택해서 함께 쓸 수 있다.
+하네스와 협업 가능한 **별도의 루프 엔지니어링 도구**다 — 하네스가 정원(에이전트·평가)을 맡고,
+PDSA CLI가 사이클 그래프(기대 → 판정 → 학습)를 맡는다.
+
+**장점**:
+- **PDSA를 강제화한다** — plan(계획+기대 평가) 없이는 do/study/act가 이어지지 않는 사이클 구조.
+  대개 계획만 하고 가설을 빠뜨리는데, CLI가 기대 평가 수립부터 코칭한다
+- **사이클을 별도 그래프로 저장한다** — 프로젝트별 임베디드 그래프 DB(Kùzu)에 학습이 누적되어,
+  AI 에이전트를 위한 '진보된 메모리'가 된다 (기대 충족률·사이클 타임라인 조회 가능)
+
+**설치** (npm 전역):
+
+```bash
+npm install -g @webnori/pdsa
+pdsa config key <LLM-키>      # LLM 설정 (코칭용)
+pdsa check                     # 연결 확인
+```
+
+**한 사이클**:
+
+```bash
+pdsa plan "계획" --expect "기대 평가"   # 사이클 시작 — 가설까지 코칭받는다
+# ... 작업 수행 ...
+pdsa do "수행한 것"                     # Plan→Do 그래프 정리
+pdsa study "결과"                       # 기대 대비 판정·학습 (Check가 아니라 Study)
+pdsa act                                # 학습 정리 + 보강 판단 → 다음 plan으로
+```
+
+상세: [psmon/akka-graph-loop](https://github.com/psmon/akka-graph-loop) — Akka.Streams 기반 PDSA 피드백 사이클 + Kùzu 그래프 DB.
+
 ---
 
 ## 이게 뭔가요?
@@ -480,6 +512,10 @@ harness-kakashi/
 
 배포판 릴리스 체크리스트: ① `plugins/` 변경 완료 → ② 매니페스트 3곳 버전 동시 bump →
 ③ `CHANGELOG.md` 기록 → ④ `plugins/` → `.claude/skills/` 동기화 (diff 0 확인).
+
+> **plugins/가 source of truth** — 배포 스킬(SKILL.md, references/, templates/)의 수정은
+> 반드시 `plugins/harness-kakashi/skills/` 에서 먼저 하고, `.claude/skills/`(로컬 테스트 사본)에 복사한다.
+> 배포판 templates/harness/agents/ 에는 tamer.md만 둔다 — 다른 에이전트는 사용자가 영입하는 것.
 
 ---
 
