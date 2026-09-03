@@ -469,12 +469,17 @@ harness-kakashi/
 
 또는 `/harness-kakashi-creator 새 에이전트 추가해`로 가이드를 받으며 생성할 수 있습니다.
 
-### 버전 업데이트
+### 버전 정책 — 배포판과 마더는 따로 센다
 
-| 파일 | 필드 |
-|------|------|
-| `.claude-plugin/marketplace.json` | `metadata.version`, `plugins[0].version` |
-| `plugins/harness-kakashi/.claude-plugin/plugin.json` | `version` |
+배포 플러그인과 마더 하네스는 **디커플링된 별도 semver**를 쓴다:
+
+| 대상 | 버전 파일 | 추적하는 것 |
+|------|----------|-----------|
+| **배포 플러그인** | `.claude-plugin/marketplace.json` (`metadata.version` + `plugins[0].version`) 및 `plugins/harness-kakashi/.claude-plugin/plugin.json` (`version`) — **세 곳 항상 동시 갱신** | 배포물(`plugins/`) 변경. 히스토리: `plugins/harness-kakashi/CHANGELOG.md` |
+| **마더 하네스** | `harness/harness.config.json` (`version`) | 이 저장소 하네스의 성장(에이전트 영입 등). 히스토리: `harness/docs/v*.md` |
+
+배포판 릴리스 체크리스트: ① `plugins/` 변경 완료 → ② 매니페스트 3곳 버전 동시 bump →
+③ `CHANGELOG.md` 기록 → ④ `plugins/` → `.claude/skills/` 동기화 (diff 0 확인).
 
 ---
 

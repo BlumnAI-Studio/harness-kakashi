@@ -116,16 +116,20 @@ harness-kakashi-creator를 이 저장소에서 실행하여 동작을 검증한�
 
 ### Mode 5: 버전 관리 & 배포 준비
 
-**절차**:
-1. 변경 사항 요약 확인
-2. 버전 넘버 결정 (Patch/Minor/Major)
-3. 다음 파일들의 버전 동기화:
+> **버전 디커플링 정책 (2026-09-04)**: 배포 플러그인 버전과 마더 하네스 버전은 별도 semver다.
+> - 배포판(`plugins/` 변경) 릴리스 → 매니페스트 3곳 + `plugins/harness-kakashi/CHANGELOG.md`
+> - 마더 하네스 성장(에이전트 영입 등) → `harness/harness.config.json` + `harness/docs/vX.Y.Z.md`
+> 두 버전을 서로 맞추려 하지 말 것 — 각자의 변경만 추적한다.
+
+**배포판 릴리스 절차**:
+1. `plugins/` 변경 사항 요약 확인
+2. 버전 넘버 결정 (Patch/Minor/Major — 스킬 제거·구조 변경은 Major)
+3. 매니페스트 **3곳 동시** 버전 동기화:
    - `.claude-plugin/marketplace.json` → `metadata.version` + `plugins[0].version`
    - `plugins/harness-kakashi/.claude-plugin/plugin.json` → `version`
-   - `harness/harness.config.json` → `version`
-4. `harness/docs/vX.Y.Z.md` 변경 히스토리 작성
-5. plugins/ → .claude/skills/ 최종 동기화
-6. 배포판 templates/ 점검: tamer.md만 포함되어 있는지 확인
+4. `plugins/harness-kakashi/CHANGELOG.md` 변경 히스토리 작성
+5. plugins/ → .claude/skills/ 최종 동기화 (`diff -rq`로 diff 0 확인)
+6. 배포판 templates/ 점검: agents/에 tamer.md만 포함되어 있는지 확인
 7. 로그 기록
 
 ### Mode 6: 빌드 상태 확인

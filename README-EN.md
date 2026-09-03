@@ -468,12 +468,17 @@ harness-kakashi/
 
 Or run `/harness-kakashi-creator add new agent` for a guided flow.
 
-### Version update
+### Version policy — the plugin and the mother count separately
 
-| File | Field |
-|------|-------|
-| `.claude-plugin/marketplace.json` | `metadata.version`, `plugins[0].version` |
-| `plugins/harness-kakashi/.claude-plugin/plugin.json` | `version` |
+The distributed plugin and the mother harness use **decoupled, independent semver**:
+
+| Target | Version files | What it tracks |
+|--------|--------------|----------------|
+| **Distributed plugin** | `.claude-plugin/marketplace.json` (`metadata.version` + `plugins[0].version`) and `plugins/harness-kakashi/.claude-plugin/plugin.json` (`version`) — **always bump all three together** | Changes to the distribution (`plugins/`). History: `plugins/harness-kakashi/CHANGELOG.md` |
+| **Mother harness** | `harness/harness.config.json` (`version`) | Growth of this repo's own harness (agent recruits etc.). History: `harness/docs/v*.md` |
+
+Plugin release checklist: ① finish `plugins/` changes → ② bump all three manifest versions together →
+③ record in `CHANGELOG.md` → ④ sync `plugins/` → `.claude/skills/` (verify diff 0).
 
 ## License
 
