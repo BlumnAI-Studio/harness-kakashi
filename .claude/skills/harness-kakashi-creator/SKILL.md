@@ -454,35 +454,34 @@ Mode A(Log & Eval) 및 수행부 동작 시 자동으로 로그를 기록한다.
 
 `harness/logs/{part}/{yyyy-MM-dd-HH-mm-title}.md`
 
-- `{part}`: 에이전트명 또는 워크플로우명 (예: `tamer`, `kakashi-copy`)
+- `{part}`: 에이전트명 또는 엔진명 (예: `tamer`, `kakashi-copy`). 둘 다 아니면 `meta` — 디렉토리 즉흥 신설 금지
 - `{title}`: 영문 kebab-case 활동 요약
 
 ### 로그 형식
 
+**표준 템플릿을 따른다**: `harness/templates/log-template.md` (init 시 함께 설치됨).
+frontmatter 스키마 요약:
+
 ```markdown
 ---
 date: {ISO 8601}
-agent: {agent-name}
-type: {evaluation | improvement | explanation | review | creation | copy}
-mode: {log-eval | suggestion-tip | kakashi-copy}
-trigger: "{매칭된 트리거 문구}"
+agent: {agent-name}   # 엔진이면 "engine:{name}", 메타 작업이면 "meta:{name}"
+type: {evaluation | improvement | explanation | review | creation | copy | recruit | release}
+mode: {log-eval | suggestion-tip | kakashi-copy | recruit | execution | full-review | targeted-review | build-verify | version | init}
+trigger: "{매칭된 트리거 문구}"   # 또는 command: "{실행한 명령}" — 둘 중 정확히 하나
 ---
 
 # {활동 제목}
 
 ## 실행 요약
-{수행한 작업 내용}
-
 ## 결과
-{산출물, 변경사항}
-
-## 평가
-{해당 에이전트의 평가축에 따른 평가 결과}
-
-## 다음 단계 제안
-- {개선 제안 1}
-- {개선 제안 2}
+## 평가        ← 생략 금지. 합성 등급(예: "종합 B+") 금지
+## 다음 단계 제안  ← 실행할 제안은 harness/todo/ 로 승격
 ```
+
+> **스키마 강제 규칙**: frontmatter 필드를 즉흥 추가하지 않는다. `mode` 값을 조합하지 않는다.
+> PDSA 블록은 frontmatter가 아니라 **본문 H3**(`### Plan` 등)로 쓴다 — 자동 집계 도구 호환.
+> 상세 규칙: `harness/templates/log-template.md`
 
 ---
 
@@ -502,7 +501,9 @@ trigger: "{매칭된 트리거 문구}"
 │   └── README.md
 ├── engine/.gitkeep
 ├── knowledge/.gitkeep
-└── logs/.gitkeep
+├── logs/.gitkeep
+└── templates/
+    └── log-template.md
 ```
 
 ### init 절차
