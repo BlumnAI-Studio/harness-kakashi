@@ -87,7 +87,7 @@ Rather than maintaining a separate compatibility wrapper, the simplest and most 
 git clone https://github.com/psmon/harness-kakashi.git
 ```
 
-After cloning, follow your Codex version's import procedure to import `plugins/harness-kakashi/skills/harness-kakashi-creator/SKILL.md` (and `harness-build/SKILL.md` if you need it). See your Codex version's official docs for the exact steps.
+After cloning, follow your Codex version's import procedure to import `plugins/harness-kakashi/skills/harness-kakashi-creator/SKILL.md` (and `harness-chakra-kakashi/SKILL.md` if you need it). See your Codex version's official docs for the exact steps.
 
 > The `.agents/skills/` compatibility wrapper shipped in earlier versions has been removed. Codex's import feature is more robust and removes the cost of maintaining the same skill in two places.
 
@@ -95,11 +95,14 @@ After cloning, follow your Codex version's import procedure to import `plugins/h
 
 | Skill | Command | Role | Install |
 |-------|---------|------|---------|
-| **harness-kakashi-creator** | `/harness-kakashi-creator` | Use the garden — manage agents, review code, evaluate | Default |
-| **harness-build** | `/harness-build` | Design the garden — directly design agents / engines / knowledge | Optional |
+| **harness-kakashi-creator** | `/harness-kakashi-creator` | Use & design the garden — recruit/manage agents, review code, verify structure, manage versions | Default |
+| **harness-chakra-kakashi** 🥷 | `/harness-chakra-kakashi` | Chakra audit — evaluate token efficiency as a third-person observer | Default |
 
-- **harness-kakashi-creator**: needed by every user. From harness init to adding experts to code review.
-- **harness-build**: for users who want to customize the harness directly. Design agent specs, define engine workflows, validate structure.
+- **harness-kakashi-creator**: needed by every user. From harness init to recruiting experts, code review, structure verification and version management — all in one.
+- **harness-chakra-kakashi**: the shadow that quietly audits token spend after work ends. Never touches code; only hands you the next session's strategy.
+
+> The former `harness-build` (garden design) skill has been merged into creator.
+> "design an agent", "verify structure", "bump version" are all handled by `/harness-kakashi-creator`.
 
 ---
 
@@ -370,21 +373,15 @@ In the process, the user learned naturally:
 | `/harness-kakashi-creator review changes` | git-diff-based change review |
 | `/harness-kakashi-creator run the harness` | Same as full review |
 
-### `/harness-build` — design the garden (optional install)
+### Garden design — structure verification & version management (built into creator)
 
-An advanced tool for designing and customizing the harness internals.
+Commands for shaping the harness internals. All built into `/harness-kakashi-creator`.
 
 | Command | Description |
 |---------|-------------|
-| `/harness-build design an agent` | Design agent spec directly (triggers, eval axes, procedures) |
-| `/harness-build write knowledge doc` | Build domain knowledge under `knowledge/` |
-| `/harness-build design an engine` | Define a workflow pipeline |
-| `/harness-build verify structure` | Check config ↔ file consistency, 3-Layer balance |
-| `/harness-build bump version` | Version numbering + history authoring |
-
-**When to use it?**
-- If you're happy with the suggestions from `/harness-kakashi-creator add new agent` → you don't need build.
-- If you want to **directly define** agent eval axes, severity classification, review procedures → `/harness-build`.
+| `/harness-kakashi-creator add new agent` | Agent suggestion → approval → creation (recruit workflow) |
+| `/harness-kakashi-creator verify structure` | Check config ↔ file consistency, 3-Layer balance |
+| `/harness-kakashi-creator bump version` | Version numbering + history authoring |
 
 ---
 
@@ -428,11 +425,11 @@ harness-kakashi/
 ├── plugins/harness-kakashi/                  # Plugin distribution package
 │   ├── .claude-plugin/plugin.json            #   Manifest
 │   └── skills/
-│       ├── harness-kakashi-creator/          #   Garden-use skill (default)
+│       ├── harness-kakashi-creator/          #   Garden use & design skill (default)
 │       │   ├── SKILL.md
 │       │   ├── references/                   #   Reference docs
 │       │   └── templates/harness/            #   init templates
-│       └── harness-build/                    #   Garden-design skill (optional)
+│       └── harness-chakra-kakashi/           #   Chakra-audit skill (default)
 │           └── SKILL.md
 │
 ├── harness/                                  # This repo's own harness (dev)
@@ -469,7 +466,7 @@ harness-kakashi/
 2. Register it in the `agents` array in `harness/harness.config.json`
 3. If needed, add a workflow under `harness/engine/`
 
-Or run `/harness-build design an agent` for a guided flow.
+Or run `/harness-kakashi-creator add new agent` for a guided flow.
 
 ### Version update
 

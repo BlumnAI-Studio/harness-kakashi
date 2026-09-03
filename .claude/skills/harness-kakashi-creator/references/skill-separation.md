@@ -73,5 +73,5 @@ Mode B(Suggestion Tip)에서 새 에이전트/엔진을 제안한 뒤, 다음을
 의존한다 — 이 경로는 표준 SKILL.md를 건드리지 않는다.
 
 **모두 아니오** → 범용이므로 표준 스킬 SKILL.md에 추가할 수 있다.
-단 이 경우에도 `plugins/harness-kakashi/` 에서 먼저 수정 후
-`.claude/skills/`로 동기화하는 `/harness-build` 절차를 따른다.
+단 표준 SKILL.md의 수정은 배포 저장소(harness-kakashi)의 마더 생성기 절차를 통해서만 이루어진다 —
+설치된 스킬을 로컬에서 직접 고치면 업데이트 시 유실된다. 개선 제안은 업스트림에 하는 것을 권장한다.

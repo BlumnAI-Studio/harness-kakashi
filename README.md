@@ -90,7 +90,7 @@ Codex의 **스킬 임포트(skill import)** 기능을 사용하는 것을 권장
 git clone https://github.com/psmon/harness-kakashi.git
 ```
 
-clone 후 Codex 측 임포트 절차에 따라 `plugins/harness-kakashi/skills/harness-kakashi-creator/SKILL.md`(필요 시 `harness-build/SKILL.md`도)를 임포트한다. 자세한 절차는 사용 중인 Codex 버전의 공식 문서를 참고할 것.
+clone 후 Codex 측 임포트 절차에 따라 `plugins/harness-kakashi/skills/harness-kakashi-creator/SKILL.md`(필요 시 `harness-chakra-kakashi/SKILL.md`도)를 임포트한다. 자세한 절차는 사용 중인 Codex 버전의 공식 문서를 참고할 것.
 
 > 이전 버전에서 제공하던 `.agents/skills/` 호환 래퍼는 제거됐다. Codex의 임포트 기능이 더 안정적이고, 동일 스킬을 두 벌로 관리하는 비용이 사라지기 때문이다.
 
@@ -98,13 +98,14 @@ clone 후 Codex 측 임포트 절차에 따라 `plugins/harness-kakashi/skills/h
 
 | 스킬 | 명령 | 역할 | 설치 |
 |------|------|------|------|
-| **harness-kakashi-creator** | `/harness-kakashi-creator` | 정원 사용 — 에이전트 관리, 코드 점검, 평가 | 기본 |
-| **harness-build** | `/harness-build` | 정원 설계 — 에이전트/엔진/지식 직접 설계 | 선택 |
+| **harness-kakashi-creator** | `/harness-kakashi-creator` | 정원 사용·설계 — 에이전트 영입/관리, 코드 점검, 구조 검증, 버전 관리 | 기본 |
 | **harness-chakra-kakashi** 🥷 | `/harness-chakra-kakashi` | 차크라 감사 — 토큰 효율을 3인칭 관찰자 시점에서 평가 | 기본 |
 
-- **harness-kakashi-creator**: 모든 사용자에게 필요. 하네스 초기화부터 전문가 추가, 코드 리뷰까지.
-- **harness-build**: 하네스를 직접 커스터마이징하고 싶은 사용자용. 에이전트 스펙 설계, 엔진 워크플로우 정의, 구조 검증.
+- **harness-kakashi-creator**: 모든 사용자에게 필요. 하네스 초기화부터 전문가 영입, 코드 리뷰, 구조 검증/버전 관리까지 하나로.
 - **harness-chakra-kakashi**: 작업이 끝난 뒤 조용히 나타나 토큰 소모를 감사하는 그림자. 코드에 손대지 않고 다음 세션 전략만 건넨다. 부록(👇) 참조.
+
+> 이전 버전의 `harness-build`(정원 설계) 스킬은 creator에 통합됐다.
+> "에이전트 설계해", "구조 검증해", "버전 올려" 모두 `/harness-kakashi-creator`가 처리한다.
 
 ---
 
@@ -373,21 +374,15 @@ init이 끝나면 정원지기 카카시가 나타납니다.
 | `/harness-kakashi-creator 변경 점검해` | git diff 기반 변경분만 리뷰 |
 | `/harness-kakashi-creator 하네스 수행해` | 전체 점검과 동일 |
 
-### `/harness-build` — 정원 설계 (선택 설치)
+### 정원 설계 — 구조 검증 & 버전 관리 (creator 내장)
 
-하네스의 내부 구조를 직접 설계하고 커스터마이징하는 고급 도구.
+하네스의 내부 구조를 직접 다듬는 명령들. 모두 `/harness-kakashi-creator`에 내장되어 있다.
 
 | 명령 | 설명 |
 |------|------|
-| `/harness-build 에이전트 설계해` | 에이전트 스펙을 직접 설계 (트리거, 평가축, 절차) |
-| `/harness-build 지식 문서 만들어` | knowledge/ 도메인 지식 체계적 구축 |
-| `/harness-build 엔진 설계해` | 워크플로우 파이프라인 정의 |
-| `/harness-build 구조 검증해` | config ↔ 실제 파일 정합성 확인, 3-Layer 균형 점검 |
-| `/harness-build 버전 올려` | 버전 넘버링 + 히스토리 작성 |
-
-**언제 쓰나?**
-- `/harness-kakashi-creator 새 에이전트 추가해`로 제안받는 것으로 충분하다면 → build 불필요
-- 에이전트의 평가축, 심각도 분류, 점검 절차를 **직접 정의**하고 싶다면 → `/harness-build`
+| `/harness-kakashi-creator 새 에이전트 추가해` | 에이전트 제안 → 승인 → 생성 (영입 워크플로우) |
+| `/harness-kakashi-creator 구조 검증해` | config ↔ 실제 파일 정합성 확인, 3-Layer 균형 점검 |
+| `/harness-kakashi-creator 버전 올려` | 버전 넘버링 + 히스토리 작성 |
 
 ---
 
@@ -431,11 +426,11 @@ harness-kakashi/
 ├── plugins/harness-kakashi/                  # 플러그인 배포 패키지
 │   ├── .claude-plugin/plugin.json            #   매니페스트
 │   └── skills/
-│       ├── harness-kakashi-creator/          #   정원 사용 스킬 (기본)
+│       ├── harness-kakashi-creator/          #   정원 사용·설계 스킬 (기본)
 │       │   ├── SKILL.md
 │       │   ├── references/                   #   참조 문서
 │       │   └── templates/harness/            #   init 템플릿
-│       └── harness-build/                    #   정원 설계 스킬 (선택)
+│       └── harness-chakra-kakashi/           #   차크라 감사 스킬 (기본)
 │           └── SKILL.md
 │
 ├── harness/                                  # 이 저장소의 하네스 (개발용)
@@ -472,7 +467,7 @@ harness-kakashi/
 2. `harness/harness.config.json`의 `agents` 배열에 등록
 3. 필요시 `harness/engine/`에 워크플로우 추가
 
-또는 `/harness-build 에이전트 설계해`로 가이드를 받으며 생성할 수 있습니다.
+또는 `/harness-kakashi-creator 새 에이전트 추가해`로 가이드를 받으며 생성할 수 있습니다.
 
 ### 버전 업데이트
 
