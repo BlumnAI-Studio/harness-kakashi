@@ -307,20 +307,25 @@ $ARGUMENTS를 분석하여 **개선부** 또는 **수행부**를 먼저 판별�
 
 > **CRITICAL**: 4~5단계는 생략 불가. 작업 완료 후 사용자에게 결과를 보고하기 **직전에** 반드시 로그 파일을 생성하고 평가를 수행할 것. 로그 없는 Mode A 실행은 불완전한 실행이다.
 
-#### Mode B: Suggestion Tip (제안 모드)
+#### Mode B: Suggestion Tip (제안·영입 모드)
 
-**조건**: 매칭되는 에이전트/워크플로우가 없음
+**조건**: 매칭되는 에이전트/워크플로우가 없음, 또는 "전문가 영입해"/"새 에이전트 추가해" 요청
+
+**핵심 원칙 — 라이트웨이 영입**: 전문가는 미리 담아 배포되지 않는다.
+사용자의 프로젝트에 맞는 전문가를 **필요할 때 하나씩** 영입한다. 영입은 언제나 사용자의 선택이다.
 
 **동작**:
 1. 사용자 요청을 분석하여 필요한 역할/워크플로우를 식별
 2. 구조화된 제안 생성:
-   - 제안 에이전트명, 역할 설명
+   - 제안 에이전트명, 타입(specialist/sage/keeper), 역할 설명
    - 트리거 문구
    - 배치할 하네스 레이어
    - **트리거 등록 위치** — 표준 스킬 SKILL.md인지, 프로젝트 전용 스킬인지, 아니면 `harness/` 내부 frontmatter 자동 발견에 맡길지 판정
    - 예상 효과
 3. **사용자 확인 후에만** 생성 진행
-4. 승인 시 해당 레이어에 파일 생성 + 로그 기록
+4. 승인 시 [references/recruit-workflow.md](references/recruit-workflow.md)의 5-파일 패턴에 따라 파일 생성 + 로그 기록
+
+> 영입 절차·에이전트/엔진 스켈레톤·타입 판정 기준: [references/recruit-workflow.md](references/recruit-workflow.md)
 
 > **표준 스킬 오염 금지**: 특정 MCP 서버 의존, 프로젝트 고유 문구, 또는 프로젝트 파일 구조 전제가 있는 트리거는 절대 표준 `harness-kakashi-creator` SKILL.md에 추가하지 않는다. 판정 기준과 배치 규칙: [references/skill-separation.md](references/skill-separation.md)
 
@@ -554,7 +559,7 @@ cp -r "{SKILL_DIR}/templates/harness" ./harness
 ```json
 {
   "$schema": "kakashi-harness",
-  "$schemaVersion": "1.0.0",
+  "$schemaVersion": "1.1.0",
   "name": "사용자가 입력한 이름",
   "description": "사용자가 입력한 설명",
   "version": "1.0.0",
@@ -567,7 +572,20 @@ cp -r "{SKILL_DIR}/templates/harness" ./harness
 
 `$schema`와 `$schemaVersion`은 고정값이다:
 - `$schema`: `"kakashi-harness"` — 이 JSON이 카카시 하네스 설정임을 식별
-- `$schemaVersion`: `"1.0.0"` — config 스키마의 버전
+- `$schemaVersion`: `"1.1.0"` — config 스키마의 버전
+
+#### config 확장 필드 (선택 — 스키마 1.1.0)
+
+하네스가 성숙하면 다음 최상위 필드를 **선택적으로** 추가할 수 있다.
+init 시점에는 넣지 않는다 — 해당 타입의 에이전트를 영입할 때 함께 추가한다:
+
+| 필드 | 언제 추가하나 | 형태 (예) |
+|------|-------------|----------|
+| `evaluation` | sage를 기본 평가자로 상시 부착할 때 | `{"base": {"agent": "sage-xxx", "doctrine": "PDSA", "alwaysOn": true, "appliesTo": ["mode-a", "execution"]}}` |
+| `keepers` | keeper 영입 시 감시 범위/트리거 선언 | `{"{name}": {"alwaysOn": true, "scope": ["**/*.md"], "exclude": ["tmp/**"], "trigger": "doc-change"}}` |
+| `design` | 디자인 정전(design-first)을 운용할 때 | `{"principle": "design-first", "owner": "{agent}", "files": ["..."]}` |
+
+에이전트 타입(specialist/sage/keeper)과 각 필드의 용도: [references/recruit-workflow.md](references/recruit-workflow.md)
 
 #### Step 5: 초기화 완료 → 온보딩 자동 진입
 
