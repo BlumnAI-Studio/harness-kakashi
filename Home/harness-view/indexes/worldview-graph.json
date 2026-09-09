@@ -9,9 +9,9 @@
     },
     {
       "name": "카카시 (Hatake Kakashi)",
-      "summary": "정원지기(tamer). 직접 싸우지 않고, 누구를 어디에 배치할지 안다. 사륜안으로 스킬을 복사한다.",
+      "summary": "정원지기(tamer)의 원형. 직접 싸우지 않고, 누구를 어디에 배치할지 안다. 사륜안(→ 접목)으로 스킬을 옮겨 심는다. 사용자 노출 명칭은 \"정원지기\".",
       "file": "harness/agents/tamer.md",
-      "icon": "🥷",
+      "icon": "🧑‍🌾",
       "role": "tamer"
     },
     {
@@ -23,9 +23,9 @@
     },
     {
       "name": "차크라 카카시 (Chakra Kakashi)",
-      "summary": "그림자 옵저버. 작업 중에는 끼어들지 않고, 끝난 뒤 토큰 사용을 감사한다.",
+      "summary": "그림자 옵저버 — 사용자 노출 명칭은 \"차크라 감사관\". 작업 중에는 끼어들지 않고, 끝난 뒤 토큰 사용을 감사한다.",
       "file": null,
-      "icon": "🥷",
+      "icon": "👤",
       "role": "shadow"
     },
     {
@@ -60,8 +60,8 @@
     {
       "name": "사륜안",
       "kanji": "写輪眼 (Sharingan)",
-      "component": "스킬 복사 (Mode C: Kakashi Copy)",
-      "caster": "카카시 (tamer)"
+      "component": "스킬 복사 (Mode C: Skill Copy — 사용자 노출 명칭 \"접목(接木)\")",
+      "caster": "카카시 → 정원지기 (tamer)"
     },
     {
       "name": "분신술",

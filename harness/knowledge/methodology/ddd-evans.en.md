@@ -301,7 +301,7 @@ These are the canonical references the harness cites. Do not replace them with s
 ## 12. Document Provenance
 
 - **Sources verified:** 2026-06-03
-- **Maintained by:** tamer (정원지기 카카시) on behalf of sage-evans
+- **Maintained by:** tamer (정원지기) on behalf of sage-evans
 - **Status:** canonical — changes require re-verification against domainlanguage.com and the Blue Book
 - **Cross-references:**
   - `harness/knowledge/lore/naruto-worldview.md` (worldview registration)
@@ -320,4 +320,4 @@ These are the canonical references the harness cites. Do not replace them with s
 - [[sage-deming|🐸 Sage Deming]] — DDD's base-evaluation partner
 - [[naruto-worldview|🥷 Worldview Mapping]]
 - [[toad-summoning|🐸 Toad Summoning Engine]]
-- [[tamer|🧑‍🌾 Gardener Kakashi]]
+- [[tamer|🧑‍🌾 The Gardener]]

@@ -19,8 +19,8 @@
         "액터 시스템 분석",
         "클러스터 점검해"
       ],
-      "size": 3726,
-      "modified": "2026-06-02T14:57:56"
+      "size": 3625,
+      "modified": "2026-09-09T03:29:59"
     },
     {
       "id": "build-doctor",
@@ -39,8 +39,8 @@
         "빌드 성능 점검해",
         "build analysis"
       ],
-      "size": 3371,
-      "modified": "2026-06-02T14:57:56"
+      "size": 3259,
+      "modified": "2026-09-09T03:29:59"
     },
     {
       "id": "chizumori",
@@ -72,8 +72,8 @@
         "치즈모리 호출",
         "chizumori"
       ],
-      "size": 16201,
-      "modified": "2026-06-02T14:57:56"
+      "size": 15863,
+      "modified": "2026-09-09T03:29:59"
     },
     {
       "id": "code-modernizer",
@@ -92,8 +92,8 @@
         "업그레이드 가이드해",
         "modernize code"
       ],
-      "size": 3543,
-      "modified": "2026-06-02T14:57:56"
+      "size": 3436,
+      "modified": "2026-09-09T03:29:59"
     },
     {
       "id": "docfx-specialist",
@@ -113,8 +113,8 @@
         "docfx review",
         "문서 품질 점검"
       ],
-      "size": 3395,
-      "modified": "2026-06-02T14:57:56"
+      "size": 3291,
+      "modified": "2026-09-09T03:29:59"
     },
     {
       "id": "dotnet-benchmark-designer",
@@ -205,8 +205,8 @@
         "wikilinks update",
         "starmap rebuild"
       ],
-      "size": 11048,
-      "modified": "2026-06-02T14:57:56"
+      "size": 10731,
+      "modified": "2026-09-09T03:29:59"
     },
     {
       "id": "performance-scout",
@@ -225,8 +225,8 @@
         "병목 찾아줘",
         "performance review"
       ],
-      "size": 3634,
-      "modified": "2026-06-02T14:57:56"
+      "size": 3530,
+      "modified": "2026-09-09T03:29:59"
     },
     {
       "id": "roslyn-incremental-generator-specialist",
@@ -267,8 +267,8 @@
         "기본 평가 실행",
         "summon deming"
       ],
-      "size": 7901,
-      "modified": "2026-06-02T14:57:56"
+      "size": 7693,
+      "modified": "2026-09-09T03:29:59"
     },
     {
       "id": "sage-evans",
@@ -303,8 +303,8 @@
         "summon evans",
         "ddd review"
       ],
-      "size": 13913,
-      "modified": "2026-06-02T16:01:57"
+      "size": 13891,
+      "modified": "2026-09-09T03:29:59"
     },
     {
       "id": "sai",
@@ -337,8 +337,8 @@
         "choujuu-giga",
         "sai"
       ],
-      "size": 11237,
-      "modified": "2026-06-02T14:57:56"
+      "size": 10963,
+      "modified": "2026-09-09T03:29:59"
     },
     {
       "id": "security-guard",
@@ -357,16 +357,16 @@
         "보안 리뷰해",
         "security review"
       ],
-      "size": 3859,
-      "modified": "2026-06-02T14:57:56"
+      "size": 3749,
+      "modified": "2026-09-09T03:29:59"
     },
     {
       "id": "tamer",
       "file": "harness/agents/tamer.md",
       "name": "tamer",
-      "title": "조련사 (Tamer)",
-      "heading": "조련사 (Tamer)",
-      "description": "하네스의 에이전트, 스킬, 엔진을 설명/개선/평가하는 메타 에이전트 (조련사)",
+      "title": "정원지기 (Tamer)",
+      "heading": "정원지기 (Tamer)",
+      "description": "하네스라는 정원을 돌보는 정원지기. 꽃(에이전트)을 심고, 토양(지식)을 가꾸고, 물길(엔진)을 내는 메타 에이전트. (구 명칭: 조련사 / 정원지기 카카시)",
       "type": null,
       "domain": null,
       "village": null,
@@ -377,8 +377,8 @@
         "하네스를 설명해",
         "평가로그를 점검해"
       ],
-      "size": 2260,
-      "modified": "2026-06-02T14:57:56"
+      "size": 3242,
+      "modified": "2026-09-09T03:25:44"
     },
     {
       "id": "test-sentinel",
@@ -397,8 +397,8 @@
         "테스트 냄새 찾아줘",
         "test quality review"
       ],
-      "size": 3954,
-      "modified": "2026-06-02T14:57:56"
+      "size": 3838,
+      "modified": "2026-09-09T03:29:59"
     }
   ]
 }

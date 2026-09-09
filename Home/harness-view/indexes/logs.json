@@ -2,6 +2,40 @@
   "base": "harness/logs",
   "items": [
     {
+      "id": "2026-09-09-12-24-migrate-gardener-naming-plugin-2.1.0",
+      "file": "harness/logs/tamer/2026-09-09-12-24-migrate-gardener-naming-plugin-2.1.0.md",
+      "name": "2026-09-09-12-24-migrate-gardener-naming-plugin-2.1.0",
+      "title": "정원지기 네이밍 전환 — 카카시 → 정원지기, 플러그인 2.1.0",
+      "heading": "정원지기 네이밍 전환 — 카카시 → 정원지기, 플러그인 2.1.0",
+      "description": "사용자 요청: 하네스의 메타(카카시)를 **정원지기**로 바꾸고 \"정원의 하네스\"로 개편. 플러그인 명령은 `/harness-creator`로 단축. 동작은 동일. 설치명·프로젝트명(`harness-kakashi`)은 유지. 기존 버전에서 업그레이드 시 리네이밍이 되도록 마이그레이션 지원. 지침에 카카시 규칙이 남아 있을 수 있으므로 정원지기 = 카카시 하위 호환. 노출되는 도움말은 정원지기로 통일.",
+      "type": "migration",
+      "domain": null,
+      "village": null,
+      "status": null,
+      "triggers": [],
+      "size": 4404,
+      "modified": "2026-09-09T03:27:25",
+      "category": "tamer",
+      "date": "2026-09-09"
+    },
+    {
+      "id": "2026-09-04-08-40-lightweight-plugin-refactor-v2",
+      "file": "harness/logs/harness-build/2026-09-04-08-40-lightweight-plugin-refactor-v2.md",
+      "name": "2026-09-04-08-40-lightweight-plugin-refactor-v2",
+      "title": "배포판 라이트웨이 재정비 — 플러그인 v2.0.0",
+      "heading": "배포판 라이트웨이 재정비 — 플러그인 v2.0.0",
+      "description": "- `plugins/harness-kakashi/skills/harness-build/` — **삭제** (creator로 통합) - `plugins/harness-kakashi/skills/harness-kakashi-creator/SKILL.md` — 경로 수정, Mode E 신설, Mode B 영입 확장, 로그 스키마 강화, config 스키마 1.1.0 - `plugins/harness-kakashi/skills/harness-kakashi-creator/references/recruit-workflow.md` — 신설 - `plugins/harness-kakashi/skills/harness-kakashi-creator/references/recruit-catalog.md` — 신설",
+      "type": "release-prep",
+      "domain": null,
+      "village": null,
+      "status": null,
+      "triggers": [],
+      "size": 3629,
+      "modified": "2026-09-03T23:39:15",
+      "category": "harness-build",
+      "date": "2026-09-04"
+    },
+    {
       "id": "2026-06-03-recruit-sage-evans-and-introduce-ddd-planning",
       "file": "harness/logs/tamer/2026-06-03-recruit-sage-evans-and-introduce-ddd-planning.md",
       "name": "2026-06-03-recruit-sage-evans-and-introduce-ddd-planning",
@@ -281,6 +315,23 @@
     ],
     "harness-build": [
       {
+        "id": "2026-09-04-08-40-lightweight-plugin-refactor-v2",
+        "file": "harness/logs/harness-build/2026-09-04-08-40-lightweight-plugin-refactor-v2.md",
+        "name": "2026-09-04-08-40-lightweight-plugin-refactor-v2",
+        "title": "배포판 라이트웨이 재정비 — 플러그인 v2.0.0",
+        "heading": "배포판 라이트웨이 재정비 — 플러그인 v2.0.0",
+        "description": "- `plugins/harness-kakashi/skills/harness-build/` — **삭제** (creator로 통합) - `plugins/harness-kakashi/skills/harness-kakashi-creator/SKILL.md` — 경로 수정, Mode E 신설, Mode B 영입 확장, 로그 스키마 강화, config 스키마 1.1.0 - `plugins/harness-kakashi/skills/harness-kakashi-creator/references/recruit-workflow.md` — 신설 - `plugins/harness-kakashi/skills/harness-kakashi-creator/references/recruit-catalog.md` — 신설",
+        "type": "release-prep",
+        "domain": null,
+        "village": null,
+        "status": null,
+        "triggers": [],
+        "size": 3629,
+        "modified": "2026-09-03T23:39:15",
+        "category": "harness-build",
+        "date": "2026-09-04"
+      },
+      {
         "id": "2026-04-20-12-35-import-chakra-skill",
         "file": "harness/logs/harness-build/2026-04-20-12-35-import-chakra-skill.md",
         "name": "2026-04-20-12-35-import-chakra-skill",
@@ -369,6 +420,23 @@
       }
     ],
     "tamer": [
+      {
+        "id": "2026-09-09-12-24-migrate-gardener-naming-plugin-2.1.0",
+        "file": "harness/logs/tamer/2026-09-09-12-24-migrate-gardener-naming-plugin-2.1.0.md",
+        "name": "2026-09-09-12-24-migrate-gardener-naming-plugin-2.1.0",
+        "title": "정원지기 네이밍 전환 — 카카시 → 정원지기, 플러그인 2.1.0",
+        "heading": "정원지기 네이밍 전환 — 카카시 → 정원지기, 플러그인 2.1.0",
+        "description": "사용자 요청: 하네스의 메타(카카시)를 **정원지기**로 바꾸고 \"정원의 하네스\"로 개편. 플러그인 명령은 `/harness-creator`로 단축. 동작은 동일. 설치명·프로젝트명(`harness-kakashi`)은 유지. 기존 버전에서 업그레이드 시 리네이밍이 되도록 마이그레이션 지원. 지침에 카카시 규칙이 남아 있을 수 있으므로 정원지기 = 카카시 하위 호환. 노출되는 도움말은 정원지기로 통일.",
+        "type": "migration",
+        "domain": null,
+        "village": null,
+        "status": null,
+        "triggers": [],
+        "size": 4404,
+        "modified": "2026-09-09T03:27:25",
+        "category": "tamer",
+        "date": "2026-09-09"
+      },
       {
         "id": "2026-06-03-recruit-sage-evans-and-introduce-ddd-planning",
         "file": "harness/logs/tamer/2026-06-03-recruit-sage-evans-and-introduce-ddd-planning.md",

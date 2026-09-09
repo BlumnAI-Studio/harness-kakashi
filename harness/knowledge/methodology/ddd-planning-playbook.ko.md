@@ -8,7 +8,7 @@ audience: planner / product-manager / business-analyst
 
 # DDD 기획 단계 운용 플레이북
 
-> 이 문서는 카카시 하네스가 **기획 단계(planning phase)에서 DDD를 어떻게 운용하는가**에 관한 운용 규칙이다.
+> 이 문서는 정원의 하네스가 **기획 단계(planning phase)에서 DDD를 어떻게 운용하는가**에 관한 운용 규칙이다.
 > 학문적 정의·인용·1차 출처는 영문 정전 [`ddd-evans.en.md`](./ddd-evans.en.md)를 따른다.
 > 이 문서는 한국의 기획자(PM/PO/BA)가 도메인 전문가와 함께 무엇을 산출해야 하는가에 관한 것이다.
 
@@ -21,7 +21,7 @@ audience: planner / product-manager / business-analyst
 | **기획자 / PM / PO** | 기획서·PRD를 쓸 때 **무엇을 명시해야** sage-evans의 평가를 통과하는가 |
 | **도메인 전문가 / 현업** | 개발자와의 대화에서 어떤 단어 작업이 산출물이 되는가 |
 | **개발자** | 기획 단계 산출물이 어떤 형식으로 들어오는지, 무엇을 되돌려 물어야 하는지 |
-| **카카시 (tamer)** | 기획 단계 작업에 sage-evans를 언제 자동 부착하는가 |
+| **정원지기 (tamer)** | 기획 단계 작업에 sage-evans를 언제 자동 부착하는가 |
 
 > **핵심**: DDD의 가장 큰 레버리지는 기획 단계의 **언어 작업**에 있다. 코드는 리팩토링할 수 있지만, 잘못 그은 경계는 수년간 조직을 잠식한다 (Evans, [InfoQ 2015](https://www.infoq.com/articles/eric-evans-ddd-matters-today/)).
 
@@ -257,4 +257,4 @@ sage-evans가 §3 체크리스트로 평가하고 로그를 남긴다.
 - [[sage-deming|🐸 데밍 현자]] — 기본 평가자
 - [[naruto-worldview|🥷 세계관 매핑]]
 - [[toad-summoning|🐸 두꺼비 소환술 엔진]]
-- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[tamer|🧑‍🌾 정원지기]]

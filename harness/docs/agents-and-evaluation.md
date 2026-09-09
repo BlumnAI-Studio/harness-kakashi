@@ -315,13 +315,13 @@
 ## 트리거 빠른 참조
 
 ```
-/harness-kakashi-creator 성능 점검해        → performance-scout
-/harness-kakashi-creator 테스트 품질 점검해  → test-sentinel
-/harness-kakashi-creator 보안 점검해        → security-guard
-/harness-kakashi-creator 빌드 분석해        → build-doctor
-/harness-kakashi-creator 코드 현대화해      → code-modernizer
-/harness-kakashi-creator 하네스를 설명해    → tamer
-/harness-kakashi-creator 하네스를 개선해    → tamer
+/harness-creator 성능 점검해        → performance-scout
+/harness-creator 테스트 품질 점검해  → test-sentinel
+/harness-creator 보안 점검해        → security-guard
+/harness-creator 빌드 분석해        → build-doctor
+/harness-creator 코드 현대화해      → code-modernizer
+/harness-creator 하네스를 설명해    → tamer
+/harness-creator 하네스를 개선해    → tamer
 ```
 
 ---
@@ -333,7 +333,7 @@
 - [[test-sentinel|🛡️ Test Sentinel]]
 - [[build-doctor|🩺 Build Doctor]]
 - [[code-modernizer|🔧 Code Modernizer]]
-- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[tamer|🧑‍🌾 정원지기]]
 - [[sage-deming|🐸 데밍 현자]]
 - [[hoshimori|🌟 호시모리 (별지기)]]
 - [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]]

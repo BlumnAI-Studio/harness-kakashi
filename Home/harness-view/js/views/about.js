@@ -8,7 +8,7 @@ export async function renderAbout({ view }) {
 
   view.appendChild(h('div', { class: 'banner' }, [
     h('h2', {}, '🗺️ 이 지도에 대해'),
-    h('p', {}, '이 페이지는 카카시 하네스의 마을 지도(harness-view)입니다.'),
+    h('p', {}, '이 페이지는 정원의 하네스(harness-kakashi)의 마을 지도(harness-view)입니다.'),
     h('p', { class: 'muted' },
       '지도지기 치즈모리(地図守, Konohagakure)가 정원의 현재 모습을 외부 행인에게 보여주기 위해 그린 것입니다.'),
   ]));

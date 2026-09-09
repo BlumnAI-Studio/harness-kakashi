@@ -18,8 +18,8 @@ export async function renderDashboard({ view }) {
   const stamp = builtAt ? builtAt.toLocaleString() : '미동기화';
 
   const banner = h('div', { class: 'banner' }, [
-    h('h2', {}, news?.headline?.ko || '카카시 하네스 — 마을 지도'),
-    h('p', {}, news?.narrative?.ko || '나루토 세계관의 정원에 핀 꽃들. 정원지기 카카시·현자·별지기·지도지기가 일한다.'),
+    h('h2', {}, news?.headline?.ko || '정원의 하네스 — 마을 지도'),
+    h('p', {}, news?.narrative?.ko || '나루토 세계관의 정원에 핀 꽃들. 정원지기·현자·별지기·지도지기가 일한다.'),
     h('p', { class: 'muted' }, `🗺️ 지도 빌드: ${stamp}`),
   ]);
 

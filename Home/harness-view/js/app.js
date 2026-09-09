@@ -81,7 +81,7 @@ function renderSidebar(activeId) {
 function renderTopbar(item) {
   if (!item) return mount(elTop);
   mount(elTop, h('div', { class: 'crumb' }, [
-    h('span', {}, '🥷 카카시 하네스 / '),
+    h('span', {}, '🧑‍🌾 정원의 하네스 / '),
     h('b', {}, item.label),
   ]));
 }

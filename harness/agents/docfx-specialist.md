@@ -91,4 +91,4 @@ docfx build docs/docfx.json --warningsAsErrors --disableGitFeatures
 - [[code-modernizer|🔧 Code Modernizer]]
 - [[aaronontheweb-dotnet-skills-index|📚 Aaronontheweb/dotnet-skills 인덱스]]
 - [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]
-- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[tamer|🧑‍🌾 정원지기]]

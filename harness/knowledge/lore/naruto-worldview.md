@@ -6,7 +6,10 @@ status: canonical
 
 # 나루토 세계관 매핑
 
-카카시 하네스는 나루토 세계관을 메타-내러티브로 사용한다.
+정원의 하네스는 나루토 세계관을 메타-내러티브로 사용한다.
+
+> **이름 규칙 (플러그인 2.1.0+)**: 이 문서는 세계관 원형(lore)을 기록한다. 사용자에게 노출되는 도움말·안내에서는
+> 카카시를 **정원지기**, 차크라 카카시를 **차크라 감사관**, 사륜안을 **접목(接木)** 으로 부른다. 정원지기 = 카카시 (하위 호환).
 이 매핑은 비유가 아니라 **운영 규칙**이다 — 각 캐릭터/술법은 하네스의 구체적 컴포넌트와 1:1로 대응한다.
 
 ---
@@ -16,9 +19,9 @@ status: canonical
 | 인물 | 하네스에서의 역할 | 위치 |
 |------|------------------|------|
 | **나루토 (Naruto Uzumaki)** | 하네스를 사용하는 주체 — 사용자/세션을 대리한다. 직접 싸우는 닌자이자, 능력은 후천적으로 익힌다. | 호출자 (caller) |
-| **카카시 (Hatake Kakashi)** | 정원지기(tamer). 직접 싸우지 않고, 누구를 어디에 배치할지 안다. 사륜안으로 스킬을 복사한다. | `harness/agents/tamer.md` |
+| **카카시 (Hatake Kakashi)** | 정원지기(tamer)의 원형. 직접 싸우지 않고, 누구를 어디에 배치할지 안다. 사륜안(→ 접목)으로 스킬을 옮겨 심는다. 사용자 노출 명칭은 "정원지기". | `harness/agents/tamer.md` |
 | **현자(賢者, Sage)** | 두꺼비 소환술로 불려나오는 과거의 거장. 데밍, 마틴 파울러, 코드 코덱… 한 명씩 영입된다. | `harness/agents/sage-*.md` |
-| **차크라 카카시 (Chakra Kakashi)** | 그림자 옵저버. 작업 중에는 끼어들지 않고, 끝난 뒤 토큰 사용을 감사한다. | `plugins/harness-kakashi/skills/harness-chakra-kakashi/` |
+| **차크라 카카시 (Chakra Kakashi)** | 그림자 옵저버 — 사용자 노출 명칭은 "차크라 감사관". 작업 중에는 끼어들지 않고, 끝난 뒤 토큰 사용을 감사한다. | `plugins/harness-kakashi/skills/harness-chakra/` |
 | **호시모리 (星守, Hoshimori)** | 별지기. **Hoshigakure(星隠れの里, 별의 마을)** 출신의 별 수호자. 문서를 별로, 위키링크를 별자리로 본다. 옵시디언 vault에서 별빛을 잇는 자. | `harness/agents/hoshimori.md` |
 | **치즈모리 (地図守, Chizumori)** | 지도지기. **Konohagakure(木ノ葉隠れの里, 나뭇잎 마을)** 호카게 타워의 기록실 출신. 마을이 자라는 모습을 지도(harness-view)로 그려 외부 행인에게 보여준다. 뷰 동기화·뷰 퍼블리싱 두 역을 가진다. | `harness/agents/chizumori.md` |
 | **사이 (サイ, Sai)** | 묵화 닌자. **Konohagakure** 출신, 근(根, Ne / Root)에서 묵화 술법을 익혀 7반에 합류. 이 하네스에서는 **design-first 원칙의 수행자** — 펜슬 디자인(.pen)을 단일 정전으로 두고, 그린 그림이 harness-view 코드로 살아나게 한다. 사이가 그리면 치즈모리가 마을 외부에 보여준다. | `harness/agents/sai.md` |
@@ -33,7 +36,7 @@ status: canonical
 | 술법 | 한자/원어 | 하네스 컴포넌트 | 누가 쓰는가 |
 |------|-----------|----------------|------------|
 | **두꺼비 소환술** | 口寄せの術 (Kuchiyose no Jutsu) | 현자 에이전트 호출 엔진 (`harness/engine/toad-summoning.md`) | 나루토 (사용자/호출자) |
-| **사륜안** | 写輪眼 (Sharingan) | 스킬 복사 (Mode C: Kakashi Copy) | 카카시 (tamer) |
+| **사륜안** | 写輪眼 (Sharingan) | 스킬 복사 (Mode C: Skill Copy — 사용자 노출 명칭 "접목(接木)") | 카카시 → 정원지기 (tamer) |
 | **분신술** | 影分身の術 (Kage Bunshin) | 서브에이전트 병렬 소환 (Task tool) | 모든 에이전트 |
 | **차크라** | チャクラ | 토큰 (input/output/cache) | 모든 행위의 자원 |
 | **별 수련** | 星修行 (Hoshi Shugyō) | 위키링크 별자리화 (Obsidian 그래프 점등) | 호시모리 (별지기) |
@@ -106,7 +109,7 @@ status: canonical
 
 ## 🌟 별자리 (Constellation)
 
-- [[tamer|🧑‍🌾 정원지기 카카시]] — 카카시 캐릭터의 운영 정의
+- [[tamer|🧑‍🌾 정원지기]] — 카카시 원형의 운영 정의 (사용자 노출 명칭: 정원지기)
 - [[sage-deming|🐸 데밍 현자]] — 첫 영입 현자
 - [[sage-evans|🐉 에반스 현자]] — 두 번째 영입 현자, DDD 창시자
 - [[hoshimori|🌟 호시모리 (별지기)]] — Hoshigakure 출신 별 수호자

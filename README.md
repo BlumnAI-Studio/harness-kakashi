@@ -1,10 +1,10 @@
-# 카카시하네스 (Harness-Kakashi)
+# 정원의 하네스 (harness-kakashi)
 
 ![A Harness Must Be PDSA, Not PDCA](docs/PDSA.png)
 
 <sub>📖 [PDSA 역사적 배경 살펴보기 →](docs/pdsa-vs-pdca.md)</sub>
 
-> "카카시 하네스"라고 부르면 된다. 그것이 전부다.
+> "정원지기"라고 부르면 된다. 그것이 전부다.
 
 🌐 **Languages**: **한국어** · [English](README-EN.md)
 
@@ -14,7 +14,7 @@ AI 전문가 에이전트 팀을 구성하고, 코드 품질 관리를 자동화
 
 ## 🔬 연구 방향 — 왜 하네스가 PDSA여야 하는가
 
-카카시 하네스는 지속 가능한 개선 루프를 구축하기 위한 방법론으로 **PDSA (Plan-Do-Study-Act)** 를 연구하고 있다.
+정원의 하네스는 지속 가능한 개선 루프를 구축하기 위한 방법론으로 **PDSA (Plan-Do-Study-Act)** 를 연구하고 있다.
 이 기법을 그대로 적용할 수도, 더 적합한 다른 기법을 채택할 수도 있다 — 아직 탐색 단계다.
 
 현재 탐색 중인 매핑:
@@ -69,8 +69,11 @@ pdsa act                                # 학습 정리 + 보강 판단 → 다�
 
 하네스(harness)는 정원이고, 에이전트는 그 안에 피는 꽃이다.
 
-나루토의 카카시 선생처럼 — 직접 싸우지 않고, 전문가 에이전트를 적재적소에 배치한다.
-사륜안(写輪眼)을 개안하면 — 스킬을 보기만 해도 복제할 수 있다.
+정원지기는 직접 꽃을 피우지 않는다 — 어떤 꽃이 어울리는지 알고, 전문가 에이전트를 적재적소에 심는다.
+접목(接木)을 하면 — 다른 정원의 스킬을 이 정원에 옮겨 심을 수 있다.
+
+> **이름에 대해**: 프로젝트·설치명은 `harness-kakashi`로 유지되지만, 정원을 가꾸는 메타 에이전트는 **정원지기**라고 부른다.
+> 2.0.x까지 쓰던 이름 "카카시"는 정원지기의 구 명칭이며, 그렇게 불러도 그대로 동작한다.
 
 **코드를 만드는 도구가 아니다. 코드를 더 잘 만들도록 돕는 정원이다.**
 
@@ -122,7 +125,7 @@ Codex의 **스킬 임포트(skill import)** 기능을 사용하는 것을 권장
 git clone https://github.com/psmon/harness-kakashi.git
 ```
 
-clone 후 Codex 측 임포트 절차에 따라 `plugins/harness-kakashi/skills/harness-kakashi-creator/SKILL.md`(필요 시 `harness-chakra-kakashi/SKILL.md`도)를 임포트한다. 자세한 절차는 사용 중인 Codex 버전의 공식 문서를 참고할 것.
+clone 후 Codex 측 임포트 절차에 따라 `plugins/harness-kakashi/skills/harness-creator/SKILL.md`(필요 시 `harness-chakra/SKILL.md`도)를 임포트한다. 자세한 절차는 사용 중인 Codex 버전의 공식 문서를 참고할 것.
 
 > 이전 버전에서 제공하던 `.agents/skills/` 호환 래퍼는 제거됐다. Codex의 임포트 기능이 더 안정적이고, 동일 스킬을 두 벌로 관리하는 비용이 사라지기 때문이다.
 
@@ -130,31 +133,44 @@ clone 후 Codex 측 임포트 절차에 따라 `plugins/harness-kakashi/skills/h
 
 | 스킬 | 명령 | 역할 | 설치 |
 |------|------|------|------|
-| **harness-kakashi-creator** | `/harness-kakashi-creator` | 정원 사용·설계 — 에이전트 영입/관리, 코드 점검, 구조 검증, 버전 관리 | 기본 |
-| **harness-chakra-kakashi** 🥷 | `/harness-chakra-kakashi` | 차크라 감사 — 토큰 효율을 3인칭 관찰자 시점에서 평가 | 기본 |
+| **harness-creator** 🧑‍🌾 | `/harness-creator` | 정원지기 — 에이전트 영입/관리, 코드 점검, 구조 검증, 버전 관리, 마이그레이션 | 기본 |
+| **harness-chakra** 🥷 | `/harness-chakra` | 차크라 감사관 — 토큰 효율을 3인칭 관찰자 시점에서 평가 | 기본 |
 
-- **harness-kakashi-creator**: 모든 사용자에게 필요. 하네스 초기화부터 전문가 영입, 코드 리뷰, 구조 검증/버전 관리까지 하나로.
-- **harness-chakra-kakashi**: 작업이 끝난 뒤 조용히 나타나 토큰 소모를 감사하는 그림자. 코드에 손대지 않고 다음 세션 전략만 건넨다. 부록(👇) 참조.
+- **harness-creator**: 모든 사용자에게 필요. 하네스 초기화부터 전문가 영입, 코드 리뷰, 구조 검증/버전 관리까지 하나로.
+- **harness-chakra**: 작업이 끝난 뒤 조용히 나타나 토큰 소모를 감사하는 그림자. 코드에 손대지 않고 다음 세션 전략만 건넨다. 부록(👇) 참조.
 
 > 이전 버전의 `harness-build`(정원 설계) 스킬은 creator에 통합됐다.
-> "에이전트 설계해", "구조 검증해", "버전 올려" 모두 `/harness-kakashi-creator`가 처리한다.
+> "에이전트 설계해", "구조 검증해", "버전 올려" 모두 `/harness-creator`가 처리한다.
+
+### 2.0.x → 2.1.0 업그레이드 — 이름이 바뀌었다, 동작은 같다
+
+| 구 명령 (2.0.x) | 새 명령 (2.1.0) |
+|---|---|
+| `/harness-kakashi-creator` | `/harness-creator` |
+| `/harness-chakra-kakashi` | `/harness-chakra` |
+
+1. `/plugin` 에서 `harness-kakashi` 를 업데이트한다 — 설치명은 그대로 `harness-kakashi@harness-kakashi-skills`
+2. 기존 정원이 있으면 `/harness-creator migrate` — config(`$schemaVersion` 1.2.0)·정원지기 정의·안내문을 정원지기 네이밍으로 전환한다. 로그·버전 히스토리는 건드리지 않는다
+3. CLAUDE.md 등 지침에 "카카시 하네스"로 적힌 규칙은 그대로 두어도 된다 — **정원지기 = 카카시**로 해석된다
+
+구 명령은 deprecated 별칭으로 남아 새 명령에 연결되며, 3.0.0에서 제거된다. 상세: [CHANGELOG](plugins/harness-kakashi/CHANGELOG.md)
 
 ---
 
 ## 빠른 시작: 4줄이면 된다
 
 ```
-/harness-kakashi-creator init            ← 정원을 연다
-/harness-kakashi-creator 새 에이전트 추가해  ← 꽃을 심는다
-/harness-kakashi-creator 코드 만들어줘      ← 코드를 만든다
-/harness-kakashi-creator 전체 점검해        ← 코칭을 받는다
+/harness-creator init            ← 정원을 연다
+/harness-creator 새 에이전트 추가해  ← 꽃을 심는다
+/harness-creator 코드 만들어줘      ← 코드를 만든다
+/harness-creator 전체 점검해        ← 코칭을 받는다
 ```
 
 ---
 
 ## 🐸 두꺼비 소환술 (口寄せの術) — 현자 영입
 
-> 카카시(정원지기)가 **사륜안**으로 기술(術)을 복사한다면,
+> 정원지기가 **접목(接木)**으로 기술(術)을 옮겨 심는다면,
 > 나루토(사용자)는 **두꺼비 소환술**로 과거 거장의 **사상(思想)** 을 부른다.
 
 이 하네스의 비기. 도메인의 거장(현자)을 소환해 그들의 사상을 작업에 직접 적용한다.
@@ -169,7 +185,7 @@ clone 후 Codex 측 임포트 절차에 따라 `plugins/harness-kakashi/skills/h
 
 | 문서 | 내용 |
 |------|------|
-| 📜 [세계관 매핑](harness/knowledge/lore/naruto-worldview.md) | 나루토/카카시/현자/술법이 하네스 컴포넌트와 어떻게 1:1 매핑되는가 |
+| 📜 [세계관 매핑](harness/knowledge/lore/naruto-worldview.md) | 나루토 세계관(정원지기의 원형인 카카시·현자·술법)이 하네스 컴포넌트와 어떻게 1:1 매핑되는가 |
 | 📘 [PDSA — Deming's Doctrine (English)](harness/knowledge/methodology/pdsa-deming.en.md) | PDSA의 학문적 정전. 1차 출처 인용. "Study not Check" 사상 |
 | ⚙️ [기본 평가 운용 규칙 (한국어)](harness/knowledge/methodology/evaluation-base-pdsa.md) | 기본/후속 2단계 평가 구조와 적용 방법 |
 | 🥷 [데밍 현자 에이전트](harness/agents/sage-deming.md) | sage-deming 호출/절차/안티패턴 |
@@ -180,7 +196,7 @@ clone 후 Codex 측 임포트 절차에 따라 `plugins/harness-kakashi/skills/h
 
 ## 🌟 별지기 호시모리 (星守, Hoshimori) — 별자리를 잇는 자
 
-> 카카시(정원지기)가 꽃을, 현자가 사상을 다룬다면,
+> 정원지기가 꽃을, 현자가 사상을 다룬다면,
 > **호시모리는 별자리(지식 그래프)를 잇는다.**
 
 [[hoshimori|호시모리(별지기)]]는 나루토 세계관의 **Hoshigakure(星隠れの里, 별의 마을)** 출신 별 수호자다.
@@ -303,7 +319,7 @@ git push --tags   # GitHub Actions가 자동 sync + 배포
 ### Step 1: 정원을 연다 (init)
 
 ```
-/harness-kakashi-creator init
+/harness-creator init
 ```
 
 하네스 이름과 설명을 입력하면 정원이 만들어집니다:
@@ -311,7 +327,7 @@ git push --tags   # GitHub Actions가 자동 sync + 배포
 ```
 harness/
 ├── harness.config.json   ← 정원의 이름표
-├── agents/tamer.md       ← 정원지기 카카시 (기본 내장)
+├── agents/tamer.md       ← 정원지기 (기본 내장)
 ├── knowledge/            ← 햇빛 — 도메인 지식
 ├── engine/               ← 물길 — 워크플로우
 ├── docs/                 ← 정원 일지
@@ -320,13 +336,13 @@ harness/
 
 ### Step 2: 정원지기가 안내한다
 
-init이 끝나면 정원지기 카카시가 나타납니다.
+init이 끝나면 정원지기가 나타납니다.
 현재 정원 상태를 보여주고, 프로젝트에 맞는 첫 번째 전문가를 제안합니다.
 
 ```
 정원이 열렸습니다 — MyProject (v1.0.0)
 
-정원지기 카카시가 문 앞에 서 있습니다.
+정원지기가 문 앞에 서 있습니다.
 지금 이 정원에는 정원지기 혼자뿐입니다.
 
 정원의 이름과 설명을 보고, 어울리는 전문가를 제안합니다:
@@ -342,7 +358,7 @@ init이 끝나면 정원지기 카카시가 나타납니다.
 제안을 수락하거나, 직접 추가할 수 있습니다:
 
 ```
-/harness-kakashi-creator 새 에이전트 추가해
+/harness-creator 새 에이전트 추가해
 ```
 
 ### Step 4: 코칭을 받는다
@@ -350,7 +366,7 @@ init이 끝나면 정원지기 카카시가 나타납니다.
 에이전트가 심어지면, 코드를 대상으로 전문가 리뷰를 받을 수 있습니다:
 
 ```
-/harness-kakashi-creator 전체 점검해
+/harness-creator 전체 점검해
 ```
 
 5명의 전문가가 동시에 코드를 분석하고, 구체적 개선안을 제시합니다.
@@ -359,10 +375,10 @@ init이 끝나면 정원지기 카카시가 나타납니다.
 
 ## 실제 사례: "피라미드를 만들었을 뿐인데"
 
-개발 경험이 많지 않은 사용자가 카카시 하네스를 처음 사용했습니다.
+개발 경험이 많지 않은 사용자가 정원의 하네스를 처음 사용했습니다.
 
 ```
-사용자 입력              카카시 하네스의 응답
+사용자 입력              정원의 하네스의 응답
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 "피라미드 만들어줘"    → 173줄 .NET 코드 생성 + 빌드 + 실행
 "전체평가 해줘"        → 5명 전문가 동시 투입, 종합 등급 B+
@@ -371,7 +387,7 @@ init이 끝나면 정원지기 카카시가 나타납니다.
 
 그 과정에서 사용자는 자연스럽게 배웠습니다:
 
-| 카카시가 가르쳐준 것 | 교과서에서의 이름 |
+| 정원이 가르쳐준 것 | 교과서에서의 이름 |
 |---------------------|------------------|
 | "메서드를 분리하세요" | 단일 책임 원칙 (SRP) |
 | "StringWriter로 캡처하세요" | 테스트 가능한 설계 |
@@ -384,43 +400,44 @@ init이 끝나면 정원지기 카카시가 나타납니다.
 
 ## 사용법
 
-### `/harness-kakashi-creator` — 정원 사용
+### `/harness-creator` — 정원 사용
 
 #### 꽃을 심다 (개선부)
 
 | 명령 | 설명 |
 |------|------|
-| `/harness-kakashi-creator init` | 정원 초기화 |
-| `/harness-kakashi-creator 하네스를 설명해` | 정원 상태 보고 |
-| `/harness-kakashi-creator 하네스를 개선해` | 3축 평가 후 개선안 |
-| `/harness-kakashi-creator 하네스를 업데이트해` | 프로젝트 변경에 맞춰 갱신 |
-| `/harness-kakashi-creator 평가로그를 점검해` | 로그 분석 및 트렌드 |
-| `/harness-kakashi-creator 새 에이전트 추가해` | 새 꽃 심기 |
-| `/harness-kakashi-creator 스킬 복사해` | 사륜안 발동 — 스킬 복제 |
+| `/harness-creator init` | 정원 초기화 |
+| `/harness-creator 하네스를 설명해` | 정원 상태 보고 |
+| `/harness-creator 하네스를 개선해` | 3축 평가 후 개선안 |
+| `/harness-creator 하네스를 업데이트해` | 프로젝트 변경에 맞춰 갱신 |
+| `/harness-creator 평가로그를 점검해` | 로그 분석 및 트렌드 |
+| `/harness-creator 새 에이전트 추가해` | 새 꽃 심기 |
+| `/harness-creator 스킬 복사해` | 접목(接木) — 다른 정원의 스킬을 옮겨 심기 |
 
 #### 꽃을 피우다 (수행부)
 
 | 명령 | 설명 |
 |------|------|
-| `/harness-kakashi-creator 전체 점검해` | 전체 리뷰 (전 에이전트 투입) |
-| `/harness-kakashi-creator 변경 점검해` | git diff 기반 변경분만 리뷰 |
-| `/harness-kakashi-creator 하네스 수행해` | 전체 점검과 동일 |
+| `/harness-creator 전체 점검해` | 전체 리뷰 (전 에이전트 투입) |
+| `/harness-creator 변경 점검해` | git diff 기반 변경분만 리뷰 |
+| `/harness-creator 하네스 수행해` | 전체 점검과 동일 |
 
 ### 정원 설계 — 구조 검증 & 버전 관리 (creator 내장)
 
-하네스의 내부 구조를 직접 다듬는 명령들. 모두 `/harness-kakashi-creator`에 내장되어 있다.
+하네스의 내부 구조를 직접 다듬는 명령들. 모두 `/harness-creator`에 내장되어 있다.
 
 | 명령 | 설명 |
 |------|------|
-| `/harness-kakashi-creator 새 에이전트 추가해` | 에이전트 제안 → 승인 → 생성 (영입 워크플로우) |
-| `/harness-kakashi-creator 구조 검증해` | config ↔ 실제 파일 정합성 확인, 3-Layer 균형 점검 |
-| `/harness-kakashi-creator 버전 올려` | 버전 넘버링 + 히스토리 작성 |
+| `/harness-creator 새 에이전트 추가해` | 에이전트 제안 → 승인 → 생성 (영입 워크플로우) |
+| `/harness-creator 구조 검증해` | config ↔ 실제 파일 정합성 확인, 3-Layer 균형 점검 |
+| `/harness-creator 버전 올려` | 버전 넘버링 + 히스토리 작성 |
+| `/harness-creator migrate` | 2.0.x 이전 정원을 정원지기 네이밍으로 전환 (Mode F) |
 
 ---
 
 ## 정원의 구조 — 세 겹의 토양
 
-카카시 하네스는 세 개의 층(Layer)으로 구성됩니다.
+정원의 하네스는 세 개의 층(Layer)으로 구성됩니다.
 
 | 층 | 디렉토리 | 비유 | 역할 |
 |----|----------|------|------|
@@ -437,7 +454,7 @@ init이 끝나면 정원지기 카카시가 나타납니다.
 
 ## 하네스 있을 때 vs 없을 때
 
-| | Claude만 | 카카시 하네스 |
+| | Claude만 | 정원의 하네스 |
 |---|---------|-------------|
 | 코드 생성 | O | O |
 | 전문가 리뷰 | X | 5명 동시 |
@@ -458,12 +475,14 @@ harness-kakashi/
 ├── plugins/harness-kakashi/                  # 플러그인 배포 패키지
 │   ├── .claude-plugin/plugin.json            #   매니페스트
 │   └── skills/
-│       ├── harness-kakashi-creator/          #   정원 사용·설계 스킬 (기본)
+│       ├── harness-creator/                  #   정원지기 스킬 (기본)
 │       │   ├── SKILL.md
 │       │   ├── references/                   #   참조 문서
 │       │   └── templates/harness/            #   init 템플릿
-│       └── harness-chakra-kakashi/           #   차크라 감사 스킬 (기본)
-│           └── SKILL.md
+│       ├── harness-chakra/                   #   차크라 감사관 스킬 (기본)
+│       │   └── SKILL.md
+│       ├── harness-kakashi-creator/          #   deprecated 별칭 → harness-creator
+│       └── harness-chakra-kakashi/           #   deprecated 별칭 → harness-chakra
 │
 ├── harness/                                  # 이 저장소의 하네스 (개발용)
 │   ├── harness.config.json
@@ -484,10 +503,10 @@ harness-kakashi/
 |------|------|------|
 | **하네스** | 정원 | 프로젝트의 품질 관리 프레임워크 |
 | **에이전트** | 꽃 | 특정 역할(보안, 성능, 테스트 등)을 수행하는 전문가 |
-| **정원지기(Tamer)** | 관리인 | 하네스 자체를 관리하는 메타 에이전트 |
+| **정원지기(Tamer)** | 관리인 | 하네스 자체를 관리하는 메타 에이전트 (구 명칭: 카카시) |
 | **Knowledge** | 햇빛 | 에이전트가 참조하는 도메인 지식 |
 | **Engine** | 물길 | 에이전트를 조합하여 실행하는 워크플로우 |
-| **사륜안** | 복사 능력 | 기존 스킬을 보고 복제하는 기능 |
+| **접목(接木)** | 옮겨 심기 | 다른 정원의 스킬을 이 정원에 이식하는 기능 (구 명칭: 사륜안) |
 
 ---
 
@@ -499,7 +518,7 @@ harness-kakashi/
 2. `harness/harness.config.json`의 `agents` 배열에 등록
 3. 필요시 `harness/engine/`에 워크플로우 추가
 
-또는 `/harness-kakashi-creator 새 에이전트 추가해`로 가이드를 받으며 생성할 수 있습니다.
+또는 `/harness-creator 새 에이전트 추가해`로 가이드를 받으며 생성할 수 있습니다.
 
 ### 버전 정책 — 배포판과 마더는 따로 센다
 
@@ -519,13 +538,13 @@ harness-kakashi/
 
 ---
 
-## 부록: 🥷 차크라 카카시 — 토큰은 수돗물이 아니라 차크라다
+## 부록: 🥷 차크라 감사관 — 토큰은 수돗물이 아니라 차크라다
 
 > "많이 쓴다고 강해지는 게 아니다. **잘 써야 이긴다.**"
 > — 정원 뒤편, 나무 그림자 아래에서 책을 읽고 있는 누군가
 
-정원지기(tamer)가 꽃을 심고 물을 주는 동안, 담벼락 너머에서 조용히 작업을 지켜보는 또 한 명의 카카시가 있다.
-**차크라 카카시(harness-chakra-kakashi)** — 작업에는 절대 끼어들지 않고, 세션이 끝난 뒤에만 연기처럼 나타나 회고를 남긴다.
+정원지기(tamer)가 꽃을 심고 물을 주는 동안, 담벼락 너머에서 조용히 작업을 지켜보는 또 한 명의 관찰자가 있다.
+**차크라 감사관(`/harness-chakra`)** — 작업에는 절대 끼어들지 않고, 세션이 끝난 뒤에만 연기처럼 나타나 회고를 남긴다.
 
 그가 보는 세계는 조금 다르다.
 
@@ -538,9 +557,9 @@ harness-kakashi/
 | 🥷 **분신술** | 서브에이전트 소환 | 강력하지만 차크라를 N배로 쓴다 |
 | 💀 **차크라 고갈** | 무의미한 반복 읽기 · 저품질 프롬프트 | 이기고도 쓰러지는 닌자의 최후 |
 
-### 어떻게 평가하는가 — 5축의 샤링간
+### 어떻게 평가하는가 — 5축의 눈
 
-수행부 엔진(`전체 점검해`, `변경 점검해` 등)이 끝나는 순간, 차크라 카카시가 세션 기록을 복기한다.
+수행부 엔진(`전체 점검해`, `변경 점검해` 등)이 끝나는 순간, 차크라 감사관이 세션 기록을 복기한다.
 평가는 세 줄 요약도, 점수표도 아닌 — **닌자의 실전 감각**으로 내려진다.
 
 ```
@@ -574,7 +593,7 @@ ccusage 오늘자 보여줘      ← 일일 토큰 사용량
 개선안 3개만 줘            ← 권고만 간결하게
 ```
 
-> **정원지기(tamer)가 꽃의 품질을 본다면, 차크라 카카시는 정원에 흐르는 물의 양을 본다.**
+> **정원지기(tamer)가 꽃의 품질을 본다면, 차크라 감사관은 정원에 흐르는 물의 양을 본다.**
 > 둘이 함께 있을 때 비로소 정원은 **지속 가능**해진다.
 
 ---
@@ -590,12 +609,12 @@ MIT
 > Obsidian으로 이 저장소를 vault로 열면 아래 별들이 그래프 뷰에서 점등된다. 별지기 [[hoshimori]]가 별자리를 잇는다.
 
 - [[README-EN|🌐 English README]] — 영문 진입 별
-- [[naruto-worldview|🥷 세계관 매핑]] — 카카시·현자·호시모리·치즈모리·사이의 1:1 매핑
+- [[naruto-worldview|🥷 세계관 매핑]] — 정원지기(원형: 카카시)·현자·호시모리·치즈모리·사이의 1:1 매핑
 - [[hoshimori|🌟 호시모리 (별지기)]] — 옵시디언 vault 별자리 keeper
 - [[chizumori|🗺️ 치즈모리 (지도지기)]] — harness-view 매니페스트·퍼블리싱
 - [[sai|🖌️ 사이 (묵화 닌자)]] — design-first 수행자
 - [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]] — 별지기 사상의 학문적 근거
-- [[tamer|🧑‍🌾 정원지기 카카시]] — 메타 에이전트
+- [[tamer|🧑‍🌾 정원지기]] — 메타 에이전트 (구 명칭: 카카시)
 - [[sage-deming|🐸 데밍 현자]] — PDSA 기본 평가
 - [[toad-summoning|🐸 두꺼비 소환술]] — 현자 소환 엔진
 - [[choujuu-giga|🖌️ 초수의화 엔진]] — design-first sync engine
@@ -606,4 +625,5 @@ MIT
 - [[agents-and-evaluation|👥 전문가 및 평가 체계]]
 - [[naruto-harness-story-tutorial|📖 나루토 하네스 스토리 튜토리얼]]
 - [[pdsa-vs-pdca|📜 PDSA vs PDCA 역사]]
+- [[v1.9.0|📝 v1.9.0 — 정원지기 네이밍 (플러그인 2.1.0)]]
 - [[v1.7.0|📝 v1.7.0 — 사이 영입]]

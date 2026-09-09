@@ -7,7 +7,7 @@ language: ko
 
 # 기본 평가 시스템 — PDSA 기반
 
-> 이 문서는 카카시 하네스의 **기본 평가(Base Evaluation)** 운용 규칙이다.
+> 이 문서는 정원의 하네스의 **기본 평가(Base Evaluation)** 운용 규칙이다.
 > 학문적 정의는 영문 정전 [`pdsa-deming.en.md`](./pdsa-deming.en.md)를 따른다 — 이 문서는 그 사상을 하네스가 어떻게 구현하는가에 관한 것이다.
 
 ---
@@ -186,7 +186,7 @@ PDSA 평가는 모든 로그에 다음 블록으로 부착된다:
 - 에반스 현자 에이전트: [`harness/agents/sage-evans.md`](../../agents/sage-evans.md)
 - 소환술 엔진: [`harness/engine/toad-summoning.md`](../../engine/toad-summoning.md)
 - 세계관 매핑: [`harness/knowledge/lore/naruto-worldview.md`](../lore/naruto-worldview.md)
-- 기존 tamer 3축 평가: [`.claude/skills/harness-kakashi-creator/references/evaluation.md`](../../../.claude/skills/harness-kakashi-creator/references/evaluation.md)
+- 기존 tamer 3축 평가: [`.claude/skills/harness-creator/references/evaluation.md`](../../../.claude/skills/harness-creator/references/evaluation.md)
 
 ---
 
@@ -200,6 +200,6 @@ PDSA 평가는 모든 로그에 다음 블록으로 부착된다:
 - [[toad-summoning|🐸 두꺼비 소환술 엔진]]
 - [[naruto-worldview|🥷 세계관 매핑]]
 - [[zettelkasten-llm-era|📚 Zettelkasten · 위키태그 정전]]
-- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[tamer|🧑‍🌾 정원지기]]
 - [[hoshimori|🌟 호시모리 (별지기)]]
 - [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]

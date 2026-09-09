@@ -94,7 +94,7 @@ dotnet/skills의 `dotnet-aspnet` 플러그인 — 파일 업로드 보안 6단�
 - [[code-modernizer|🔧 Code Modernizer]]
 - [[performance-scout|🏃 Performance Scout]]
 - [[sample-security-review-hello-pyramid|📑 Security Review Sample]]
-- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[tamer|🧑‍🌾 정원지기]]
 - [[sage-deming|🐸 데밍 현자]]
 - [[hoshimori|🌟 호시모리 (별지기)]]
 - [[agents-and-evaluation|👥 전문가 및 평가 체계]]

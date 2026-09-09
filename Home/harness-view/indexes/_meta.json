@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-06-02T16:50:25.962Z",
-  "durationMs": 1585,
+  "builtAt": "2026-09-09T03:30:36.274Z",
+  "durationMs": 3591,
   "trigger": "manual",
   "scannedPaths": [
     "harness/agents",
@@ -9,12 +9,12 @@
     "harness/docs",
     "harness/logs"
   ],
-  "sourceLatest": "2026-06-03T01:24:59+09:00",
+  "sourceLatest": "2026-09-04T08:45:15+09:00",
   "counts": {
     "agents": 17,
     "knowledge": 11,
     "engine": 2,
-    "docs": 12,
-    "logs": 14
+    "docs": 13,
+    "logs": 16
   }
 }

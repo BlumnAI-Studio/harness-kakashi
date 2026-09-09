@@ -1,14 +1,22 @@
 {
-  "updatedAt": "2026-06-03",
+  "updatedAt": "2026-09-09",
   "headline": {
-    "ko": "🐉 두 번째 현자 영입 — 에릭 에반스 (v1.8.0)",
-    "en": "Second sage recruited — Eric Evans (v1.8.0)"
+    "ko": "🧑‍🌾 정원지기 네이밍 — 카카시 → 정원지기 (플러그인 2.1.0 / 마더 v1.9.0)",
+    "en": "Gardener naming — Kakashi → Gardener (plugin 2.1.0 / mother v1.9.0)"
   },
   "narrative": {
-    "ko": "DDD 창시자 에릭 에반스가 두 번째 현자로 영입되었습니다. 데밍이 작업 종료 후 학습 루프(PDSA)를 본다면, 에반스는 기획 단계 시작 전 언어와 경계를 본다. 후속 평가가 처음으로 코드 외부 — PRD·기획서 — 까지 확장됐다.",
-    "en": "Eric Evans, the creator of DDD, joined as the second sage. Where Deming inspects the post-work learning loop (PDSA), Evans inspects the language and boundaries before planning begins. The follow-up evaluation has reached beyond code — into PRDs and planning artifacts."
+    "ko": "정원을 가꾸는 메타 에이전트의 이름이 정원지기로 통일됐다. 명령은 /harness-creator, /harness-chakra 로 짧아졌고, 구 정원은 /harness-creator migrate 로 전환한다. 프로젝트명 harness-kakashi 와 설치 경로는 그대로다 — 이름이 아니라 주소이기 때문에.",
+    "en": "The meta-agent tending the garden is now called the Gardener. Commands shortened to /harness-creator and /harness-chakra; existing gardens migrate with /harness-creator migrate. The project name harness-kakashi and install path stay — they are an address, not a name."
   },
   "highlights": [
+    {
+      "label": "v1.9.0",
+      "tone": "leaf",
+      "text": {
+        "ko": "🧑‍🌾 정원지기 네이밍 — 마더 정원에 Mode F(migrate) 적용, config 스키마 1.2.0, 플러그인 2.1.0 출시",
+        "en": "Gardener naming — Mode F (migrate) applied to the mother garden, config schema 1.2.0, plugin 2.1.0 released"
+      }
+    },
     {
       "label": "v1.8.0",
       "tone": "sage",

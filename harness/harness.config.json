@@ -1,9 +1,9 @@
 {
   "$schema": "kakashi-harness",
-  "$schemaVersion": "1.0.0",
-  "name": "Kakashi's Harness",
-  "description": "카카시 하네스 이용기록기(테스트겸)",
-  "version": "1.8.0",
+  "$schemaVersion": "1.2.0",
+  "name": "정원의 하네스 — 마더 정원",
+  "description": "정원의 하네스(harness-kakashi) 이용기록기 — 정원지기가 가꾸는 마더 정원(테스트겸)",
+  "version": "1.9.0",
   "agents": [
     "tamer",
     "performance-scout",
@@ -76,10 +76,10 @@
     }
   },
   "created": "2026-04-19",
-  "lastUpdated": "2026-06-03",
+  "lastUpdated": "2026-09-09",
   "plugins": {
     "harness-kakashi": {
-      "skills": ["harness-kakashi-creator", "harness-chakra-kakashi"]
+      "skills": ["harness-creator", "harness-chakra"]
     }
   }
 }

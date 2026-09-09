@@ -5,16 +5,16 @@
       "id": "README",
       "file": "harness/docs/README.md",
       "name": "README",
-      "title": "Harness",
-      "heading": "Harness",
-      "description": "이 프로젝트의 하네스 프레임워크.",
+      "title": "Harness — 마더 정원",
+      "heading": "Harness — 마더 정원",
+      "description": "이 프로젝트(harness-kakashi)의 하네스 — 정원의 하네스 플러그인을 만들고 시험하는 마더 정원.",
       "type": null,
       "domain": null,
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 2366,
-      "modified": "2026-06-02T14:57:56"
+      "size": 2920,
+      "modified": "2026-09-09T03:25:44"
     },
     {
       "id": "agents-and-evaluation",
@@ -28,8 +28,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 13478,
-      "modified": "2026-06-02T14:57:56"
+      "size": 13072,
+      "modified": "2026-09-09T03:25:44"
     },
     {
       "id": "sample-security-review-hello-pyramid",
@@ -43,8 +43,8 @@
       "village": null,
       "status": null,
       "triggers": [],
-      "size": 7575,
-      "modified": "2026-06-02T14:57:56"
+      "size": 7332,
+      "modified": "2026-09-09T03:28:27"
     },
     {
       "id": "v1.1.0",
@@ -180,6 +180,21 @@
       "triggers": [],
       "size": 9006,
       "modified": "2026-06-02T16:06:24"
+    },
+    {
+      "id": "v1.9.0",
+      "file": "harness/docs/v1.9.0.md",
+      "name": "v1.9.0",
+      "title": "v1.9.0 — 정원지기 네이밍 (카카시 → 정원지기) + 플러그인 2.1.0 출시",
+      "heading": "v1.9.0 — 정원지기 네이밍 (카카시 → 정원지기) + 플러그인 2.1.0 출시",
+      "description": "**날짜**: 2026-09-09 **유형**: Minor (메타 에이전트 페르소나 개편 + config 스키마 1.2.0 + 마더 정원에 Mode F 적용)",
+      "type": null,
+      "domain": null,
+      "village": null,
+      "status": null,
+      "triggers": [],
+      "size": 7545,
+      "modified": "2026-09-09T03:26:55"
     }
   ],
   "contributors": [

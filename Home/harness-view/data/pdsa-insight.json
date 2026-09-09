@@ -1,29 +1,33 @@
 {
-  "analyzedAt": "2026-06-02",
+  "analyzedAt": "2026-09-09",
   "windowDays": 14,
   "sources": [
     {
-      "date": "2026-06-03",
-      "category": "tamer",
-      "file": "harness/logs/tamer/2026-06-03-recruit-sage-evans-and-introduce-ddd-planning.md",
+      "date": "2026-09-04T08:40:00+09:00",
+      "category": "harness-build",
+      "file": "harness/logs/harness-build/2026-09-04-08-40-lightweight-plugin-refactor-v2.md",
       "title": {
-        "ko": "🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입",
-        "en": "🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입"
+        "ko": "배포판 라이트웨이 재정비 — 플러그인 v2.0.0",
+        "en": "배포판 라이트웨이 재정비 — 플러그인 v2.0.0"
+      }
+    },
+    {
+      "date": "2026-09-09T12:24:00+09:00",
+      "category": "tamer",
+      "file": "harness/logs/tamer/2026-09-09-12-24-migrate-gardener-naming-plugin-2.1.0.md",
+      "title": {
+        "ko": "정원지기 네이밍 전환 — 카카시 → 정원지기, 플러그인 2.1.0",
+        "en": "정원지기 네이밍 전환 — 카카시 → 정원지기, 플러그인 2.1.0"
       }
     }
   ],
   "tried": [],
-  "solved": [
-    {
-      "ko": "[🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입] 채택",
-      "en": "[🐉 에반스(Eric Evans) 영입 — DDD 기획 단계 후속 평가 도입] 채택"
-    }
-  ],
+  "solved": [],
   "remaining": [],
   "learned": {
     "lead": {
-      "ko": "- **후속 평가가 처음으로 코드 외부(기획 산출물)를 본다** — v1.4 이후 모든 후속은 \"코드 변경 → 코드 검토\"였지만, sage-evans는 \"PRD 변경 → 언어/경계 검토\"로 도메인 외삽. 향후 디자인/문서/계약 등 다른 비-코드 산출물에도 동일 패턴 확장 가능",
-      "en": "- **후속 평가가 처음으로 코드 외부(기획 산출물)를 본다** — v1.4 이후 모든 후속은 \"코드 변경 → 코드 검토\"였지만, sage-evans는 \"PRD 변경 → 언어/경계 검토\"로 도메인 외삽. 향후 디자인/문서/계약 등 다른 비-코드 산출물에도 동일 패턴 확장 가능"
+      "ko": "학습된 가설이 아직 모이지 않음.",
+      "en": "No learned hypothesis yet."
     },
     "body": {
       "ko": "",

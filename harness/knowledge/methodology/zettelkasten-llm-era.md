@@ -87,7 +87,7 @@ Anthropic은 **Knowledge Graph Memory Server**를 공식 MCP 서버로 공개했
 
 ### 2.3 하네스에서의 적용
 
-- 카카시 하네스의 `harness/` 트리는 그 자체가 작은 Knowledge Graph
+- 정원의 하네스의 `harness/` 트리는 그 자체가 작은 Knowledge Graph
 - frontmatter (`name`, `domain`, `triggers`, `type`)는 엔티티 메타데이터
 - 위키링크는 엣지(edge)
 - [[hoshimori]]는 이 그래프의 keeper
@@ -168,5 +168,5 @@ A-Mem은 새 메모리가 추가될 때 다음 4가지 전략을 **병렬로** �
 - [[naruto-worldview|🥷 세계관 매핑]] — Hoshigakure / 별 수련 등록
 - [[evaluation-base-pdsa|⚙️ 기본 평가 운용 규칙]] — 별지기 작동도 PDSA로 회고
 - [[pdsa-deming.en|📘 PDSA Doctrine (English canon)]] — 직교 사상으로서의 평가 정전
-- [[tamer|🧑‍🌾 정원지기 카카시]] — 메타 에이전트 협업 동료
+- [[tamer|🧑‍🌾 정원지기]] — 메타 에이전트 협업 동료
 - [[toad-summoning|🐸 두꺼비 소환술]] — 사상을 부르는 비기 (별지기와 직교)

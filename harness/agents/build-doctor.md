@@ -96,7 +96,7 @@ dotnet/skills의 `agentic-workflows/dotnet-msbuild` — Coordinator-Worker 패�
 - [[performance-scout|🏃 Performance Scout]]
 - [[code-modernizer|🔧 Code Modernizer]]
 - [[docfx-specialist|📚 DocFX Specialist]]
-- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[tamer|🧑‍🌾 정원지기]]
 - [[sage-deming|🐸 데밍 현자]]
 - [[hoshimori|🌟 호시모리 (별지기)]]
 - [[agents-and-evaluation|👥 전문가 및 평가 체계]]

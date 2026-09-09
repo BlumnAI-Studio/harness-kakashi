@@ -1,10 +1,10 @@
-# Harness-Kakashi
+# Garden Harness (harness-kakashi)
 
 ![A Harness Must Be PDSA, Not PDCA](docs/PDSA.png)
 
 <sub>📖 [Explore the historical background of PDSA →](docs/pdsa-vs-pdca.md)</sub>
 
-> Just call out "Kakashi Harness." That's all it takes.
+> Just call out "Gardener." That's all it takes.
 
 🌐 **Languages**: [한국어](README.md) · **English**
 
@@ -14,7 +14,7 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin for assem
 
 ## 🔬 Research direction — Why a harness should be PDSA
 
-Kakashi Harness is researching **PDSA (Plan-Do-Study-Act)** as the methodology behind a sustainable improvement loop.
+Garden Harness is researching **PDSA (Plan-Do-Study-Act)** as the methodology behind a sustainable improvement loop.
 We may adopt PDSA directly, or switch to another methodology that fits better — this is still exploratory.
 
 The mapping currently under exploration:
@@ -69,8 +69,11 @@ Details: [psmon/akka-graph-loop](https://github.com/psmon/akka-graph-loop) — A
 
 The harness is a garden, and agents are the flowers that bloom inside it.
 
-Like Kakashi-sensei from Naruto — not fighting directly, but placing the right expert agent in the right place at the right time.
-And once the Sharingan (写輪眼) awakens — you can copy any skill just by seeing it.
+The Gardener doesn't make the flowers bloom by hand — it knows which flower fits where, and plants the right expert agent in the right place at the right time.
+And with grafting (接木) — a skill from another garden can be transplanted into yours.
+
+> **On the name**: the project and install name stay `harness-kakashi`, but the meta-agent that tends the garden is called the **Gardener**.
+> "Kakashi", the name used through 2.0.x, is the Gardener's former name — calling it that still works.
 
 **It's not a tool that writes code. It's a garden that helps code get written better.**
 
@@ -119,7 +122,7 @@ Rather than maintaining a separate compatibility wrapper, the simplest and most 
 git clone https://github.com/psmon/harness-kakashi.git
 ```
 
-After cloning, follow your Codex version's import procedure to import `plugins/harness-kakashi/skills/harness-kakashi-creator/SKILL.md` (and `harness-chakra-kakashi/SKILL.md` if you need it). See your Codex version's official docs for the exact steps.
+After cloning, follow your Codex version's import procedure to import `plugins/harness-kakashi/skills/harness-creator/SKILL.md` (and `harness-chakra/SKILL.md` if you need it). See your Codex version's official docs for the exact steps.
 
 > The `.agents/skills/` compatibility wrapper shipped in earlier versions has been removed. Codex's import feature is more robust and removes the cost of maintaining the same skill in two places.
 
@@ -127,24 +130,37 @@ After cloning, follow your Codex version's import procedure to import `plugins/h
 
 | Skill | Command | Role | Install |
 |-------|---------|------|---------|
-| **harness-kakashi-creator** | `/harness-kakashi-creator` | Use & design the garden — recruit/manage agents, review code, verify structure, manage versions | Default |
-| **harness-chakra-kakashi** 🥷 | `/harness-chakra-kakashi` | Chakra audit — evaluate token efficiency as a third-person observer | Default |
+| **harness-creator** 🧑‍🌾 | `/harness-creator` | The Gardener — recruit/manage agents, review code, verify structure, manage versions, migrate | Default |
+| **harness-chakra** 🥷 | `/harness-chakra` | Chakra Auditor — evaluate token efficiency as a third-person observer | Default |
 
-- **harness-kakashi-creator**: needed by every user. From harness init to recruiting experts, code review, structure verification and version management — all in one.
-- **harness-chakra-kakashi**: the shadow that quietly audits token spend after work ends. Never touches code; only hands you the next session's strategy.
+- **harness-creator**: needed by every user. From harness init to recruiting experts, code review, structure verification and version management — all in one.
+- **harness-chakra**: the shadow that quietly audits token spend after work ends. Never touches code; only hands you the next session's strategy.
 
 > The former `harness-build` (garden design) skill has been merged into creator.
-> "design an agent", "verify structure", "bump version" are all handled by `/harness-kakashi-creator`.
+> "design an agent", "verify structure", "bump version" are all handled by `/harness-creator`.
+
+### Upgrading 2.0.x → 2.1.0 — new names, same behavior
+
+| Old command (2.0.x) | New command (2.1.0) |
+|---|---|
+| `/harness-kakashi-creator` | `/harness-creator` |
+| `/harness-chakra-kakashi` | `/harness-chakra` |
+
+1. Update `harness-kakashi` from `/plugin` — the install name is unchanged: `harness-kakashi@harness-kakashi-skills`
+2. If you already have a garden, run `/harness-creator migrate` — it moves config (`$schemaVersion` 1.2.0), the Gardener definition and the garden README to the new naming. Logs and version history are left untouched
+3. Rules in CLAUDE.md that still say "Kakashi Harness" can stay — **Gardener = Kakashi** is how they are read
+
+The old commands remain as deprecated aliases that forward to the new ones, and will be removed in 3.0.0. Details: [CHANGELOG](plugins/harness-kakashi/CHANGELOG.md)
 
 ---
 
 ## Quick start: 4 lines is all it takes
 
 ```
-/harness-kakashi-creator init            ← Open the garden
-/harness-kakashi-creator add new agent   ← Plant a flower
-/harness-kakashi-creator write code      ← Generate code
-/harness-kakashi-creator full review     ← Receive coaching
+/harness-creator init            ← Open the garden
+/harness-creator add new agent   ← Plant a flower
+/harness-creator write code      ← Generate code
+/harness-creator full review     ← Receive coaching
 ```
 
 > Note: the skill also accepts Korean triggers (`전체 점검해`, `새 에이전트 추가해`). Both work.
@@ -153,7 +169,7 @@ After cloning, follow your Codex version's import procedure to import `plugins/h
 
 ## 🐸 Toad Summoning Jutsu (口寄せの術) — Recruit a Sage
 
-> Where Kakashi (the Gardener) **copies techniques (術) with the Sharingan**,
+> Where the Gardener **transplants techniques (術) by grafting (接木)**,
 > Naruto (the user) **summons the doctrines (思想) of past masters with the Toad Summoning Jutsu**.
 
 The harness's ultimate technique. Summon a domain master (a *Sage*) and apply their doctrine to your work directly.
@@ -168,7 +184,7 @@ The harness's ultimate technique. Summon a domain master (a *Sage*) and apply th
 
 | Doc | What it covers |
 |-----|----------------|
-| 📜 [Worldview Mapping](harness/knowledge/lore/naruto-worldview.md) | How Naruto / Kakashi / Sages / Jutsu map 1:1 to harness components |
+| 📜 [Worldview Mapping](harness/knowledge/lore/naruto-worldview.md) | How the Naruto worldview (Kakashi as the Gardener's archetype, Sages, Jutsu) maps 1:1 to harness components |
 | 📘 [PDSA — Deming's Doctrine (English canon)](harness/knowledge/methodology/pdsa-deming.en.md) | Academic reference with primary sources. The "Study not Check" doctrine |
 | ⚙️ [Base Evaluation Operating Rules (Korean)](harness/knowledge/methodology/evaluation-base-pdsa.md) | Two-tier (base + follow-up) evaluation structure and how it applies |
 | 🥷 [Sage Deming Agent](harness/agents/sage-deming.md) | Invocation procedure, output format, anti-patterns |
@@ -302,7 +318,7 @@ The `.pen` file is encrypted — Read/Edit are forbidden. All access goes throug
 ### Step 1: Open the garden (init)
 
 ```
-/harness-kakashi-creator init
+/harness-creator init
 ```
 
 You'll be asked for the harness name and description. The garden gets created:
@@ -310,7 +326,7 @@ You'll be asked for the harness name and description. The garden gets created:
 ```
 harness/
 ├── harness.config.json   ← the garden's nameplate
-├── agents/tamer.md       ← Gardener Kakashi (built-in)
+├── agents/tamer.md       ← the Gardener (built-in)
 ├── knowledge/            ← sunlight — domain knowledge
 ├── engine/               ← water channels — workflows
 ├── docs/                 ← garden journal
@@ -319,13 +335,13 @@ harness/
 
 ### Step 2: The gardener guides you
 
-Once init finishes, Gardener Kakashi appears.
-He shows the current garden state and suggests the first expert suited to your project.
+Once init finishes, the Gardener appears.
+It shows the current garden state and suggests the first expert suited to your project.
 
 ```
 The garden has opened — MyProject (v1.0.0)
 
-Gardener Kakashi stands at the gate.
+The Gardener stands at the gate.
 Right now, this garden has only the gardener.
 
 Looking at the garden's name and description, I suggest these experts:
@@ -341,7 +357,7 @@ Accept the suggestion and I'll plant them for you.
 Accept the suggestion, or add your own:
 
 ```
-/harness-kakashi-creator add new agent
+/harness-creator add new agent
 ```
 
 ### Step 4: Receive coaching
@@ -349,7 +365,7 @@ Accept the suggestion, or add your own:
 Once agents are planted, your code can receive expert review:
 
 ```
-/harness-kakashi-creator full review
+/harness-creator full review
 ```
 
 Five experts analyze the code in parallel and deliver concrete improvements.
@@ -358,10 +374,10 @@ Five experts analyze the code in parallel and deliver concrete improvements.
 
 ## Real case: "I just asked for a pyramid"
 
-A user with limited development experience used Kakashi Harness for the first time.
+A user with limited development experience used Garden Harness for the first time.
 
 ```
-User input              Kakashi Harness response
+User input              Garden Harness response
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 "Make a pyramid"      → 173 lines of .NET code + build + run
 "Run a full review"   → 5 experts in parallel, overall grade B+
@@ -370,7 +386,7 @@ User input              Kakashi Harness response
 
 In the process, the user learned naturally:
 
-| What Kakashi taught | The textbook name |
+| What the garden taught | The textbook name |
 |---------------------|-------------------|
 | "Separate the method" | Single Responsibility Principle (SRP) |
 | "Capture with StringWriter" | Testable design |
@@ -383,43 +399,44 @@ In the process, the user learned naturally:
 
 ## Usage
 
-### `/harness-kakashi-creator` — use the garden
+### `/harness-creator` — use the garden
 
 #### Plant flowers (authoring)
 
 | Command | Description |
 |---------|-------------|
-| `/harness-kakashi-creator init` | Initialize the garden |
-| `/harness-kakashi-creator explain the harness` | Report garden state |
-| `/harness-kakashi-creator improve the harness` | 3-axis evaluation + improvement plan |
-| `/harness-kakashi-creator update the harness` | Update to match project changes |
-| `/harness-kakashi-creator check the eval log` | Log analysis and trends |
-| `/harness-kakashi-creator add new agent` | Plant a new flower |
-| `/harness-kakashi-creator copy skill` | Activate Sharingan — clone a skill |
+| `/harness-creator init` | Initialize the garden |
+| `/harness-creator explain the harness` | Report garden state |
+| `/harness-creator improve the harness` | 3-axis evaluation + improvement plan |
+| `/harness-creator update the harness` | Update to match project changes |
+| `/harness-creator check the eval log` | Log analysis and trends |
+| `/harness-creator add new agent` | Plant a new flower |
+| `/harness-creator copy skill` | Grafting (接木) — transplant a skill from another garden |
 
 #### Make flowers bloom (execution)
 
 | Command | Description |
 |---------|-------------|
-| `/harness-kakashi-creator full review` | Full review (all agents) |
-| `/harness-kakashi-creator review changes` | git-diff-based change review |
-| `/harness-kakashi-creator run the harness` | Same as full review |
+| `/harness-creator full review` | Full review (all agents) |
+| `/harness-creator review changes` | git-diff-based change review |
+| `/harness-creator run the harness` | Same as full review |
 
 ### Garden design — structure verification & version management (built into creator)
 
-Commands for shaping the harness internals. All built into `/harness-kakashi-creator`.
+Commands for shaping the harness internals. All built into `/harness-creator`.
 
 | Command | Description |
 |---------|-------------|
-| `/harness-kakashi-creator add new agent` | Agent suggestion → approval → creation (recruit workflow) |
-| `/harness-kakashi-creator verify structure` | Check config ↔ file consistency, 3-Layer balance |
-| `/harness-kakashi-creator bump version` | Version numbering + history authoring |
+| `/harness-creator add new agent` | Agent suggestion → approval → creation (recruit workflow) |
+| `/harness-creator verify structure` | Check config ↔ file consistency, 3-Layer balance |
+| `/harness-creator bump version` | Version numbering + history authoring |
+| `/harness-creator migrate` | Move a pre-2.1.0 garden to the Gardener naming (Mode F) |
 
 ---
 
 ## The garden's structure — three layers of soil
 
-Kakashi Harness is made of three layers.
+Garden Harness is made of three layers.
 
 | Layer | Directory | Metaphor | Role |
 |-------|-----------|----------|------|
@@ -436,7 +453,7 @@ Only when all three layers are in place does the code-flower bloom.
 
 ## With harness vs without
 
-| | Claude alone | Kakashi Harness |
+| | Claude alone | Garden Harness |
 |---|--------------|-----------------|
 | Code generation | ✓ | ✓ |
 | Expert review | ✗ | 5 in parallel |
@@ -457,12 +474,14 @@ harness-kakashi/
 ├── plugins/harness-kakashi/                  # Plugin distribution package
 │   ├── .claude-plugin/plugin.json            #   Manifest
 │   └── skills/
-│       ├── harness-kakashi-creator/          #   Garden use & design skill (default)
+│       ├── harness-creator/                  #   Gardener skill (default)
 │       │   ├── SKILL.md
 │       │   ├── references/                   #   Reference docs
 │       │   └── templates/harness/            #   init templates
-│       └── harness-chakra-kakashi/           #   Chakra-audit skill (default)
-│           └── SKILL.md
+│       ├── harness-chakra/                   #   Chakra Auditor skill (default)
+│       │   └── SKILL.md
+│       ├── harness-kakashi-creator/          #   deprecated alias → harness-creator
+│       └── harness-chakra-kakashi/           #   deprecated alias → harness-chakra
 │
 ├── harness/                                  # This repo's own harness (dev)
 │   ├── harness.config.json
@@ -483,10 +502,10 @@ harness-kakashi/
 |---------|----------|-------------|
 | **Harness** | Garden | Quality-management framework for the project |
 | **Agent** | Flower | Expert performing a specific role (security, performance, tests, etc.) |
-| **Gardener (Tamer)** | Caretaker | Meta-agent that manages the harness itself |
+| **Gardener (Tamer)** | Caretaker | Meta-agent that manages the harness itself (formerly "Kakashi") |
 | **Knowledge** | Sunlight | Domain knowledge the agents reference |
 | **Engine** | Water channels | Workflow composing agents into execution |
-| **Sharingan** | Copy ability | The power to clone an existing skill by seeing it |
+| **Grafting (接木)** | Transplanting | Bringing a skill from another garden into yours (formerly "Sharingan") |
 
 ---
 
@@ -498,7 +517,7 @@ harness-kakashi/
 2. Register it in the `agents` array in `harness/harness.config.json`
 3. If needed, add a workflow under `harness/engine/`
 
-Or run `/harness-kakashi-creator add new agent` for a guided flow.
+Or run `/harness-creator add new agent` for a guided flow.
 
 ### Version policy — the plugin and the mother count separately
 
@@ -527,12 +546,12 @@ MIT
 > Open this repository as an Obsidian vault — the graph view lights up. The Star Keeper [[hoshimori]] tends the constellation.
 
 - [[README|🌐 한국어 README]] — Korean entry star
-- [[naruto-worldview|🥷 Worldview Mapping]] — Kakashi / Sage / Hoshimori / Chizumori / Sai 1:1 mapping
+- [[naruto-worldview|🥷 Worldview Mapping]] — Gardener (archetype: Kakashi) / Sage / Hoshimori / Chizumori / Sai 1:1 mapping
 - [[hoshimori|🌟 Hoshimori (Star Keeper)]] — Obsidian vault constellation keeper
 - [[chizumori|🗺️ Chizumori (Map Keeper)]] — harness-view manifests & publishing
 - [[sai|🖌️ Sai (Ink Shinobi)]] — design-first executor
 - [[zettelkasten-llm-era|📚 Zettelkasten · Wiki-Tag Doctrine]] — Academic basis of the Star Keeper's doctrine
-- [[tamer|🧑‍🌾 Gardener Kakashi]] — Meta agent
+- [[tamer|🧑‍🌾 The Gardener]] — Meta agent (formerly "Kakashi")
 - [[sage-deming|🐸 Sage Deming]] — PDSA base evaluation
 - [[toad-summoning|🐸 Toad Summoning Engine]] — Sage invocation
 - [[choujuu-giga|🖌️ Chōjū Giga Engine]] — design-first sync engine
@@ -542,4 +561,5 @@ MIT
 - [[evaluation-base-pdsa|⚙️ Base Evaluation Operating Rules]]
 - [[naruto-harness-story-tutorial.en|📖 Naruto Harness Story Tutorial (EN)]]
 - [[pdsa-vs-pdca|📜 PDSA vs PDCA history]]
+- [[v1.9.0|📝 v1.9.0 — Gardener naming (plugin 2.1.0)]]
 - [[v1.7.0|📝 v1.7.0 — Sai recruited]]

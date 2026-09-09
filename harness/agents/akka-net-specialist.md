@@ -87,5 +87,5 @@ nuance: "blocking in actor", "shared state", "supervision strategy 오용" 같�
 - [[dotnet-benchmark-designer|📊 .NET Benchmark Designer]]
 - [[aaronontheweb-dotnet-skills-index|📚 Aaronontheweb/dotnet-skills 인덱스]] — 영입 출처
 - [[dotnet-expert-evaluation|⚖️ .NET 전문가 평가 체계]]
-- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[tamer|🧑‍🌾 정원지기]]
 - [[hoshimori|🌟 호시모리 (별지기)]]

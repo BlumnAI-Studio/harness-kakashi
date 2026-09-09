@@ -133,7 +133,7 @@ These are the canonical references the harness cites. Do not replace them with s
 ## 8. Document Provenance
 
 - **Sources verified**: 2026-04-23 (current date at time of writing)
-- **Maintained by**: tamer (정원지기 카카시) on behalf of sage-deming
+- **Maintained by**: tamer (정원지기) on behalf of sage-deming
 - **Status**: canonical — changes require re-verification against deming.org primary sources
 - **Cross-references**: `harness/knowledge/lore/naruto-worldview.md` (worldview), `harness/knowledge/methodology/evaluation-base-pdsa.md` (operational rules), `harness/agents/sage-deming.md` (agent definition)
 
@@ -147,5 +147,5 @@ These are the canonical references the harness cites. Do not replace them with s
 - [[toad-summoning|🐸 Toad Summoning Engine]]
 - [[zettelkasten-llm-era|📚 Zettelkasten · Wiki-Tag Doctrine]]
 - [[pdsa-vs-pdca|📜 PDSA vs PDCA history]]
-- [[tamer|🧑‍🌾 Gardener Kakashi]]
+- [[tamer|🧑‍🌾 The Gardener]]
 - [[hoshimori|🌟 Hoshimori (Star Keeper)]]

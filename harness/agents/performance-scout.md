@@ -88,7 +88,7 @@ Pass 1에서 발견된 신호를 기반으로 해당 영역 심화 분석:
 - [[dotnet-performance-analyst|⚙️ .NET Performance Analyst]] — 데이터 해석/회귀 판정 동료
 - [[dotnet-benchmark-designer|📊 .NET Benchmark Designer]] — 벤치마크 작성 동료
 - [[dotnet-concurrency-specialist|🔀 .NET Concurrency Specialist]]
-- [[tamer|🧑‍🌾 정원지기 카카시]]
+- [[tamer|🧑‍🌾 정원지기]]
 - [[sage-deming|🐸 데밍 현자]] — 기본 평가 베이스
 - [[hoshimori|🌟 호시모리 (별지기)]]
 - [[agents-and-evaluation|👥 전문가 및 평가 체계]]

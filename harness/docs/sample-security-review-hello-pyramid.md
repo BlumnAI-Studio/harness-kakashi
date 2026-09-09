@@ -12,7 +12,7 @@
 ```
 [Step 1] 하네스 초기화
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  /harness-kakashi-creator init
+  /harness-creator init
 
   → harness/ 디렉토리 생성
   → harness.config.json (메타 설정)
@@ -21,7 +21,7 @@
 
 [Step 2] 전문가 에이전트 영입 (개선부)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  /harness-kakashi-creator 새 에이전트 추가해
+  /harness-creator 새 에이전트 추가해
 
   → 5명의 전문가 에이전트를 harness/agents/에 추가:
      performance-scout  — 성능 안티패턴 탐지
@@ -39,7 +39,7 @@
 
 [Step 3] 프로젝트 코드 작성 (일반 개발)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  /harness-kakashi-creator projects 하위에 닷넷 콘솔프로젝트 생성
+  /harness-creator projects 하위에 닷넷 콘솔프로젝트 생성
 
   → projects/HelloPyramid/ 생성
   → Program.cs — "HELLO WORLD" 아스키 아트 피라미드 (173줄)
@@ -47,7 +47,7 @@
 
 [Step 4] 전체 평가 수행 (수행부)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  /harness-kakashi-creator projects/HelloPyramid 프로젝트 전체평가 수행
+  /harness-creator projects/HelloPyramid 프로젝트 전체평가 수행
 
   → 5개 에이전트가 동시에 프로젝트 코드를 분석
   → 각 에이전트가 자신의 점검 절차에 따라 평가
@@ -167,9 +167,9 @@
 
 **트리거 문구:**
 ```
-/harness-kakashi-creator 보안 점검해
-/harness-kakashi-creator 취약점 분석해
-/harness-kakashi-creator security review
+/harness-creator 보안 점검해
+/harness-creator 취약점 분석해
+/harness-creator security review
 ```
 
 이 에이전트는 코드 레벨 보안 취약점을 탐지하고 수정안을 제시합니다.

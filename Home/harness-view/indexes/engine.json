@@ -23,8 +23,8 @@
         "펜슬 → 뷰",
         "harness-view 디자인 반영"
       ],
-      "size": 9429,
-      "modified": "2026-06-02T14:57:56"
+      "size": 9174,
+      "modified": "2026-09-09T03:28:57"
     },
     {
       "id": "toad-summoning",
@@ -45,8 +45,8 @@
         "{현자명} 소환",
         "summon sage"
       ],
-      "size": 8247,
-      "modified": "2026-06-02T16:03:25"
+      "size": 8090,
+      "modified": "2026-09-09T03:29:59"
     }
   ]
 }

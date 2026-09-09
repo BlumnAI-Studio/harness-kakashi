@@ -274,15 +274,16 @@ function extractWorldviewGraph() {
         name,
         summary,
         file: fileLink.startsWith('harness/') ? fileLink : null,
-        icon: name.includes('카카시') ? '🥷' :
+        icon: name.includes('차크라') ? '👤' :
+              name.includes('카카시') || name.includes('정원지기') ? '🧑‍🌾' :
               name.includes('현자') ? '🐸' :
               name.includes('호시모리') ? '🌟' :
               name.includes('치즈모리') ? '🗺️' :
               name.includes('차크라') ? '👤' : '🥷',
         role: name.includes('호시모리') || name.includes('치즈모리') ? 'keeper' :
               name.includes('현자') ? 'sage' :
-              name.includes('카카시') && !name.includes('차크라') ? 'tamer' :
-              name.includes('차크라') ? 'shadow' : null,
+              name.includes('차크라') ? 'shadow' :
+              name.includes('카카시') || name.includes('정원지기') ? 'tamer' : null,
       });
     }
   }
